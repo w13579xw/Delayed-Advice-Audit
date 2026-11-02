@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+outputs/
+*.zip
+source_manifest.sha256
+.env
+.env.*
+!.env.example
+logs/
+checkpoints/
+data/
+runs/
