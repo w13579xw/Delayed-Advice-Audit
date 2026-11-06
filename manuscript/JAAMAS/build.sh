@@ -2,7 +2,8 @@
 set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 if ! command -v pdflatex >/dev/null 2>&1; then
-  source /home/ez/DelayedAdviceAudit/code/outputs/jaamas/local_tex_env.sh
+  echo "A standard pdflatex installation is required." >&2
+  exit 1
 fi
 pdflatex -interaction=nonstopmode -halt-on-error main.tex > build_current_pass1.log 2>&1
 pdflatex -interaction=nonstopmode -halt-on-error main.tex > build_current_pass2.log 2>&1

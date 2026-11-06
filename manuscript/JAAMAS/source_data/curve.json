@@ -15,7 +15,6 @@
         "within_tolerance": 15,
         "minimum": -8.403416182863756,
         "maximum": 8.652263668067382,
-        "vector_sha256": "a3c8c5c6a9daf5b60e9f2c4124a6a36a7a7f6b0c033673de7ddac3a9bdc98036",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       },
@@ -33,7 +32,6 @@
         "within_tolerance": 14,
         "minimum": -8.403416182863756,
         "maximum": 8.652263668067382,
-        "vector_sha256": "1e248cfd4f00e9d91b9fe4ac43eb58dd1a3ed0c8421dea4749a078e9ffa83489",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       },
@@ -51,7 +49,6 @@
         "within_tolerance": 99,
         "minimum": -1.1404901593991017,
         "maximum": 0.0,
-        "vector_sha256": "ee3fc2424861cef9ca7ceb1285df3d2a8f2431c0bb8575fb86fed38eba7d98a7",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       },
@@ -69,7 +66,6 @@
         "within_tolerance": 29,
         "minimum": -8.212771649126225,
         "maximum": 8.398771453420395,
-        "vector_sha256": "fa8f32413085ed8d653b269520575be13e1a704e14814be3e79fd447a2cea8d9",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       }
@@ -291,7 +287,6 @@
         "within_tolerance": 38,
         "minimum": -3.8192558810637633,
         "maximum": 3.6956185433289463,
-        "vector_sha256": "6694d5a91dc72f23ccd610f35c1337908c3989c0caf995fa35bb9cc1f4499c33",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       },
@@ -309,7 +304,6 @@
         "within_tolerance": 42,
         "minimum": -4.064462755203247,
         "maximum": 4.475045866949406,
-        "vector_sha256": "61d146080e3b29a04e2373e7a18df72f4d5f4dc0c26d86e4e0a12377176efd05",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       },
@@ -327,7 +321,6 @@
         "within_tolerance": 85,
         "minimum": -2.4701806349542963,
         "maximum": 2.7969171309173095,
-        "vector_sha256": "2a09a85009fe822d48ce40f28968b8f5a2eb0e522dbb7c9752e68d9c68b1c912",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       },
@@ -345,7 +338,6 @@
         "within_tolerance": 80,
         "minimum": -3.8192558810637633,
         "maximum": 3.6956185433289463,
-        "vector_sha256": "91f939366455cab81caf7e1ec7a0f5fc014ea069668af4e067fc2fc8192e9fd7",
         "lower_above_zero": false,
         "lower_above_reward_scale_reference": false
       }

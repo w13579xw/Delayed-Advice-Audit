@@ -3,6 +3,5 @@
   "independent_native_prefix_steps": 4000,
   "source_and_features_checked": 136,
   "expected_cases": 68,
-  "bitwise_packet_features_heads_robots_actions_rewards": true,
-  "entry_sha256": "04535dfd749e8738d04185c6539aa36a70af6b28841e7982daa1070b71ad9ad1"
+  "bitwise_packet_features_heads_robots_actions_rewards": true
 }

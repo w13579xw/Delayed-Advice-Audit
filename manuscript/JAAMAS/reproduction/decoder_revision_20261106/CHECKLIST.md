@@ -1,9 +1,0 @@
-- [x] Existing source/results/skills and matrix audited; separate estimator boundary fixed
-- [x] Selected current outline and campaign charter before outcomes
-- [x] Immutable models/entries/schedules and native decoder implementation
-- [x] Two smoke cases/index/parity/replay checks and timing; 8excludedcases/64choices/24fixedindexplans independently audited
-- [x] Main60 + separate6identity complete
-- [x] Independent raw/choice/index/model/source audit; all4primary intervals
-- [x] Main/SI duplicate removal and independent decoder interpretation
-- [x] FourPDFs/source-data/template/citation/layout checks
-- [x] SourceZIP/extractedbuild; report/ledger/matrix/HANDOFF

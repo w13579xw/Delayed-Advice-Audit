@@ -1,9 +1,0 @@
-{
-  "cases": 68,
-  "suffix_plans": 200,
-  "raw_plans": 0,
-  "blend_plans": 0,
-  "source_steps_exact": 9280,
-  "status": "passed",
-  "scope": "direct source suffix/raw commands; blend local component not independently regenerated"
-}

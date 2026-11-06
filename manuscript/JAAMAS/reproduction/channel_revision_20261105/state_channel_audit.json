@@ -1,9 +1,0 @@
-{
-  "branches": 2280,
-  "choices": 10800,
-  "delay0_case_checks": 60,
-  "source_provenance_checks": 360,
-  "maximum_reward_error": 0.0,
-  "native_reward_min": 0.14653612210065875,
-  "native_reward_max": 10.0
-}

@@ -220,6 +220,5 @@
     }
   },
   "door_native_criterion": "abs(obs[4]-target_pos[0])<=0.08; success sets reward10; otherwise shaped grasp/readiness/opening terms; flag loss alone does not identify reclosure",
-  "door_source_sha256": "8169e20d95a476d789c2fab312dc1cf403c27fe5d97fb4350f3d62c483d628c9",
   "checks": "raw contrasts equal independently audited vectors; all cases retained; environment-equal and critic-equal weighting; no independence claim for300records"
 }

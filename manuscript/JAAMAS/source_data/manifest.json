@@ -1,156 +1,30 @@
-[
-  {
-    "file": "visual.json",
-    "sha256": "35207f71ea5b1ee3932c83d970f29740900a72d08c29be9991c6a2594009e01d",
-    "frozen_original_sha256": "35207f71ea5b1ee3932c83d970f29740900a72d08c29be9991c6a2594009e01d",
-    "record_locator": "outputs/vision/arrival_confirmation_analysis_20261104_v1/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "curve.json",
-    "sha256": "aa4b87c3b60449b8903a8dbbae4000711d8f5c6f0bd7161f33daa5c00b4d6cf2",
-    "frozen_original_sha256": "aa4b87c3b60449b8903a8dbbae4000711d8f5c6f0bd7161f33daa5c00b4d6cf2",
-    "record_locator": "outputs/vision/critic_learning_curve_recovery_20261104_v1/analysis/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "state.json",
-    "sha256": "f7a5d87323a8b1ecab5dffd058410c228d4219ac859f76b607e2cfdfc942d81a",
-    "frozen_original_sha256": "f7a5d87323a8b1ecab5dffd058410c228d4219ac859f76b607e2cfdfc942d81a",
-    "record_locator": "outputs/jaamas/state_campaign_20261105_v1/analysis/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "state_checks.json",
-    "sha256": "ac2d01c505c8b9b6d83fb3dee513b231c4898e8c73993171af99fda71d249a50",
-    "frozen_original_sha256": "ac2d01c505c8b9b6d83fb3dee513b231c4898e8c73993171af99fda71d249a50",
-    "record_locator": "outputs/jaamas/state_campaign_20261105_v1/analysis/checks.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "state_models.json",
-    "sha256": "213ac6531c00ac786b2688938bdf06f9fcb067306b9cdd37ebd1d31882f32074",
-    "frozen_original_sha256": "213ac6531c00ac786b2688938bdf06f9fcb067306b9cdd37ebd1d31882f32074",
-    "record_locator": "outputs/jaamas/state_campaign_20261105_v1/models/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "qualification.json",
-    "sha256": "a6716028dd39da6b2e8e34d5d7c48cc32264beb43ea8d4cb60cc0e1971eca00d",
-    "frozen_original_sha256": "c19be675e9868ab9222d986dd61b09ba52a00e52e460cb12750f2ab1dcccc7a0",
-    "record_locator": "outputs/jaamas/state_qualification_20261105_v1/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "channel_analysis.json",
-    "sha256": "feacf605ae8ca3c79bbc894f09b81170f3314fdff6a4a13d59b6e884d35885e6",
-    "frozen_original_sha256": "feacf605ae8ca3c79bbc894f09b81170f3314fdff6a4a13d59b6e884d35885e6",
-    "record_locator": "outputs/jaamas/channel_revision_analysis_20261105_v2/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "channel_secondary_success.json",
-    "sha256": "f91408dbc5619df990c928cc24081c93841c811df034bf61db4575bdf5b7ee70",
-    "frozen_original_sha256": "f91408dbc5619df990c928cc24081c93841c811df034bf61db4575bdf5b7ee70",
-    "record_locator": "outputs/jaamas/revision_20261105/derived_channel_secondary_success.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "confirmation_delay.json",
-    "sha256": "681e3a00d2779c60533c4e3f16caa905d476a861e3e5c66122d1dfe79e6174d9",
-    "frozen_original_sha256": "681e3a00d2779c60533c4e3f16caa905d476a861e3e5c66122d1dfe79e6174d9",
-    "record_locator": "outputs/jaamas/revision_descriptives_20261105_v1/confirmation_delay.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "tolerance_grid.json",
-    "sha256": "be18253df0d901258beb5474ede2578ce40994a73c1e948114d563dc393f9571",
-    "frozen_original_sha256": "be18253df0d901258beb5474ede2578ce40994a73c1e948114d563dc393f9571",
-    "record_locator": "outputs/jaamas/revision_descriptives_20261105_v1/tolerance_grid.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "visual_replication_analysis.json",
-    "sha256": "4dc652baec7ec6589432fdecaa100fca996c6f014a4d33bbfadecf77aa8e9f55",
-    "frozen_original_sha256": "4dc652baec7ec6589432fdecaa100fca996c6f014a4d33bbfadecf77aa8e9f55",
-    "record_locator": "outputs/jaamas/visual_replication_analysis_20261105_v1/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "visual_replication_audit.json",
-    "sha256": "1b0c9f71364aa3980f7efb8d90e2edd64fa1d9913e8b02bd91454df6623faf62",
-    "frozen_original_sha256": "1b0c9f71364aa3980f7efb8d90e2edd64fa1d9913e8b02bd91454df6623faf62",
-    "record_locator": "outputs/jaamas/visual_replication_analysis_20261105_v1/audit.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "visual_channel_analysis.json",
-    "sha256": "335635ef254dc1ed861adefb9a414065518fe280a831b13629af9b98b5adf2b7",
-    "frozen_original_sha256": "335635ef254dc1ed861adefb9a414065518fe280a831b13629af9b98b5adf2b7",
-    "record_locator": "outputs/jaamas/visual_channel_bridge_analysis_20261105_v1/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "visual_channel_audit.json",
-    "sha256": "0c2ea30079bc7479a27b3989872eb3ab33713443dfafbf6c3578e8ed65aae176",
-    "frozen_original_sha256": "0c2ea30079bc7479a27b3989872eb3ab33713443dfafbf6c3578e8ed65aae176",
-    "record_locator": "outputs/jaamas/visual_channel_bridge_analysis_20261105_v1/audit.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "visual_channel_source_audit.json",
-    "sha256": "f07cba4063d3119b2d8fe4533da8783d739547471c3f8951f3706fded8934241",
-    "frozen_original_sha256": "f07cba4063d3119b2d8fe4533da8783d739547471c3f8951f3706fded8934241",
-    "record_locator": "outputs/jaamas/visual_channel_source_audit_20261105_v1/checks.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "state_temporal_analysis.json",
-    "sha256": "bde3c3f7d14cd23d5b589929232ee129820b58e6a88976920b234534eb215bbc",
-    "frozen_original_sha256": "bde3c3f7d14cd23d5b589929232ee129820b58e6a88976920b234534eb215bbc",
-    "record_locator": "outputs/jaamas/state_temporal_20261105_v1/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "door_curves.npz",
-    "sha256": "c6fce691fd3f915a16f036c669a1043a9c1b9b7f5fd933d47af5438466d53b0e",
-    "frozen_original_sha256": "c6fce691fd3f915a16f036c669a1043a9c1b9b7f5fd933d47af5438466d53b0e",
-    "record_locator": "outputs/jaamas/state_temporal_20261105_v1/curves.npz",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "visual_channel_vectors.npz",
-    "sha256": "b87013a9bfb25b1a02c5d17ee26517b71938476f517af5460cf777e9e8b8c527",
-    "frozen_original_sha256": "b87013a9bfb25b1a02c5d17ee26517b71938476f517af5460cf777e9e8b8c527",
-    "record_locator": "outputs/jaamas/visual_channel_bridge_analysis_20261105_v1/condition_vectors.npz",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "decoder_analysis.json",
-    "sha256": "068dfbffde9c32d8f13bd6166c8f7330c538e05f7a7e558f1673a8ec60eb3c97",
-    "frozen_original_sha256": "068dfbffde9c32d8f13bd6166c8f7330c538e05f7a7e558f1673a8ec60eb3c97",
-    "record_locator": "outputs/jaamas/decoder_analysis_20261106_v1/analysis.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "decoder_audit.json",
-    "sha256": "2166f6dc0c720e5b8db5a7fc81bd1dbd6152e74ea2d37cd72f33e89bf95ad63d",
-    "frozen_original_sha256": "2166f6dc0c720e5b8db5a7fc81bd1dbd6152e74ea2d37cd72f33e89bf95ad63d",
-    "record_locator": "outputs/jaamas/decoder_analysis_20261106_v1/audit.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "decoder_source_audit.json",
-    "sha256": "278544fc5c7988cc9e62cba2c0ab2ae490404076e980571b3ec225f4f99edb03",
-    "frozen_original_sha256": "278544fc5c7988cc9e62cba2c0ab2ae490404076e980571b3ec225f4f99edb03",
-    "record_locator": "outputs/jaamas/decoder_source_audit_20261106_v1/checks.json",
-    "naming_metadata_normalized": true
-  },
-  {
-    "file": "decoder_vectors.npz",
-    "sha256": "125ce63b9a34a2747e2d24aa1be17cf890be3420d0902e4c3b73beebe5bc5e48",
-    "frozen_original_sha256": "125ce63b9a34a2747e2d24aa1be17cf890be3420d0902e4c3b73beebe5bc5e48",
-    "record_locator": "outputs/jaamas/decoder_analysis_20261106_v1/condition_vectors.npz",
-    "naming_metadata_normalized": true
-  }
-]
+{
+  "project": "Delayed Advice Audit",
+  "article_title": "Auditing the Value of Delayed Advice in Autonomous Agents",
+  "records": [
+    "visual.json",
+    "curve.json",
+    "state.json",
+    "state_checks.json",
+    "state_models.json",
+    "qualification.json",
+    "channel_analysis.json",
+    "channel_secondary_success.json",
+    "confirmation_delay.json",
+    "tolerance_grid.json",
+    "visual_replication_analysis.json",
+    "visual_replication_audit.json",
+    "visual_channel_analysis.json",
+    "visual_channel_audit.json",
+    "visual_channel_source_audit.json",
+    "state_temporal_analysis.json",
+    "door_curves.npz",
+    "visual_channel_vectors.npz",
+    "decoder_analysis.json",
+    "decoder_audit.json",
+    "decoder_source_audit.json",
+    "decoder_vectors.npz"
+  ],
+  "record_count": 22,
+  "note": "Analyzed quantitative records; machine-specific locations and opaque implementation identifiers omitted."
+}
