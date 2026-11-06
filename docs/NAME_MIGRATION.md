@@ -4,7 +4,7 @@
 |---|---|
 | Article | Auditing the Value of Delayed Advice in Autonomous Agents |
 | Project | Delayed Advice Audit |
-| Repository target | w13579xw/delayed-advice-audit |
+| Repository target | w13579xw/Delayed-Advice-Audit |
 | Distribution | delayed-advice-audit |
 | Import | advice_audit |
 | Console | advice-audit |
@@ -23,4 +23,8 @@ Base/Fetch: 65 passed; MetaWorld: 31 passed; vision: 1 passed. Deterministic toy
 
 ## GitHub
 
-Code and the current manuscript export are synchronized through the connected GitHub service. Repository metadata renaming requires GitHub Settings because the available connector has no rename endpoint and browser navigation timed out. Actual remote name and synchronization commit are recorded in [the release report](name_migration_20261106/REPORT.md) and [sync record](name_migration_20261106/GITHUB_SYNC.json), with machine logs in `outputs/renaming/20261106/github_sync.json`; the target above is not a claim that the metadata rename has completed. Visibility must remain private.
+The user renamed the repository, verified through stable repository ID 1442458398. Current repository: [w13579xw/Delayed-Advice-Audit](https://github.com/w13579xw/Delayed-Advice-Audit). Visibility remains private. The About description is:
+
+> Delayed Advice Audit: simulation-based evaluation of pipeline performance, message dependence, and the value of delayed expert advice in autonomous agents.
+
+The About description was saved and verified in the authenticated GitHub browser. Local `origin` now uses the canonical repository URL. Current code and manuscript export are synchronized; see [release report](name_migration_20261106/REPORT.md) and [sync record](name_migration_20261106/GITHUB_SYNC.json). Original timeout and pre-rename states are retained only in dated execution logs, not as outstanding tasks.

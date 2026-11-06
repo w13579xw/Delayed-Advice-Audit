@@ -2,6 +2,8 @@
 
 **Auditing the Value of Delayed Advice in Autonomous Agents**
 
+当前仓库：[w13579xw/Delayed-Advice-Audit](https://github.com/w13579xw/Delayed-Advice-Audit)。
+
 本项目研究如何区分三个不能互相替代的评估结果：独立训练策略的性能差异、冻结接收器对消息的依赖，以及预先定义的消息通道干预带来的实际轨迹收益。目标期刊为 Autonomous Agents and Multi-Agent Systems；尚未投稿。
 
 ## 当前证据与论文

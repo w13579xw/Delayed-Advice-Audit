@@ -1,6 +1,6 @@
 # Descriptive-name release report — 2026-11-06
 
-Status: complete except repository metadata rename. The paper is **Auditing the Value of Delayed Advice in Autonomous Agents**; the project is **Delayed Advice Audit**. Canonical code is `/home/ez/DelayedAdviceAudit/code`; the authoring paper is `/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS`.
+Status: descriptive-name migration complete, including repository metadata and About. The paper is **Auditing the Value of Delayed Advice in Autonomous Agents**; the project is **Delayed Advice Audit**. Canonical code is `/home/ez/DelayedAdviceAudit/code`; the authoring paper is `/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS`.
 
 ## Changes
 
@@ -23,7 +23,11 @@ The initial document-QA call used the research environment, which lacks pdfplumb
 
 Code and current article release are verified on private `main` in commit `d6365088008cc7d2fd910ba0cefaca44181afc00`. The update used an expected-parent guarded fast-forward, with no force or history rewrite. Nine old implementation files were removed after moving to the canonical package; the compatibility package remains. Local inherited branch changes were preserved rather than reset or represented as a clean working tree.
 
-Actual repository name is still `w13579xw/daci-robotic-agent`; target is `w13579xw/delayed-advice-audit`. The connector has no metadata rename endpoint. GitHub settings navigation timed out; the user must perform this last settings action. No fee, visibility change, author certification or journal submission occurred. GitHub code synchronization and metadata renaming are separate statuses.
+The user renamed the repository to `w13579xw/Delayed-Advice-Audit`, verified by stable ID 1442458398. The authenticated GitHub UI now shows the descriptive About text below, with the old prototype wording removed. Local origin uses the new canonical URL. Visibility remains private. Earlier connector/browser limitations were resolved by the user's rename and browser login, followed by an authorized UI edit.
+
+> Delayed Advice Audit: simulation-based evaluation of pipeline performance, message dependence, and the value of delayed expert advice in autonomous agents.
+
+No fee, visibility change, author certification or journal submission occurred.
 
 Detailed machine checks: `outputs/renaming/20261106/`; source archive: `/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS_20261106_sources.zip`. Historical source hashes and experiments are not recomputed under new names to imply identical source versions.
 

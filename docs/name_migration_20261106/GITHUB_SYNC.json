@@ -1,15 +1,14 @@
 {
   "repository_id": 1442458398,
-  "actual_repository": "w13579xw/daci-robotic-agent",
-  "target_repository": "w13579xw/delayed-advice-audit",
+  "actual_repository": "w13579xw/Delayed-Advice-Audit",
+  "target_repository": "w13579xw/Delayed-Advice-Audit",
   "visibility": "private",
   "branch": "main",
   "commit": "d6365088008cc7d2fd910ba0cefaca44181afc00",
   "expected_parent": "712d7e3fdb28d36aec795440c28dd405695834af",
   "tree": "dc3ab98b4119ffd92e38d4e0cea16c3a48f69437",
   "code_document_sync": "verified",
-  "metadata_rename": "pending_user_settings_action",
-  "blocker": "Connector has no repository rename endpoint; GitHub settings navigation timed out twice. Existing failure data URL binding also rejected by browser URL policy.",
+  "metadata_rename": "verified_by_stable_repository_id",
   "verification": [
     "README current title",
     "pyproject package and CLI",
@@ -18,5 +17,10 @@
   ],
   "uploaded_files": 448,
   "deleted_moved_implementation_files": 9,
-  "local_branch": "run/arrival-confirmation-20261104 (inherited changes preserved; no reset)"
+  "local_branch": "run/arrival-confirmation-20261104 (inherited changes preserved; no reset)",
+  "previous_repository": "w13579xw/daci-robotic-agent",
+  "about_description": "Delayed Advice Audit: simulation-based evaluation of pipeline performance, message dependence, and the value of delayed expert advice in autonomous agents.",
+  "about_update": "saved_and_verified_in_authenticated_GitHub_UI",
+  "metadata_completed_local_date": "2026-11-06",
+  "proof_screenshot": "outputs/renaming/20261106/github_about_updated.png"
 }

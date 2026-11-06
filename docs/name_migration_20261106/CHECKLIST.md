@@ -5,5 +5,5 @@
 - [x] Unit + real Fetch + MetaWorld + vision + numeric parity checks
 - [x] Rebuilt four PDFs/render/source-data/template/source-ZIP and extracted-build QA
 - [x] Private GitHub code/document sync and remote verification
-- [ ] GitHub repository settings rename verified — user settings action pending; connector endpoint unavailable/browser timeout
+- [x] GitHub repository settings rename verified by stable ID; About saved/verified through authenticated UI; local origin updated
 - [x] Current naming/legacy exceptions/report/HANDOFF

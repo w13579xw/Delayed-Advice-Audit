@@ -8,3 +8,5 @@
 - 命名迁移验证：`outputs/renaming/20261106/`
 
 `/home/ez/DACI` 及 `Springer/DACI_JAAMAS` 为兼容符号链接，保证固定环境、旧日志与现有文件链接继续有效。完成的实验、模型、哈希与历史源码包不改写。项目镜像的 sources/ 为只读参考，没有移动或编辑。
+
+GitHub 与本地 origin 已统一为 `https://github.com/w13579xw/Delayed-Advice-Audit.git`；About 已更新为描述性的仿真评估研究简介。
