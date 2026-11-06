@@ -23,4 +23,4 @@ Base/Fetch: 65 passed; MetaWorld: 31 passed; vision: 1 passed. Deterministic toy
 
 ## GitHub
 
-Code and the current manuscript export are synchronized through the connected GitHub service. Repository metadata renaming requires GitHub Settings because the available connector has no rename endpoint and browser navigation timed out. Actual remote name and synchronization commit are recorded in `outputs/renaming/20261106/github_sync.json`; the target above is not a claim that the metadata rename has completed. Visibility must remain private.
+Code and the current manuscript export are synchronized through the connected GitHub service. Repository metadata renaming requires GitHub Settings because the available connector has no rename endpoint and browser navigation timed out. Actual remote name and synchronization commit are recorded in [the release report](name_migration_20261106/REPORT.md) and [sync record](name_migration_20261106/GITHUB_SYNC.json), with machine logs in `outputs/renaming/20261106/github_sync.json`; the target above is not a claim that the metadata rename has completed. Visibility must remain private.

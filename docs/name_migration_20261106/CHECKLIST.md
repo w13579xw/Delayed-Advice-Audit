@@ -1,9 +1,9 @@
 - [x] User approved descriptive title/project/repository
-- [ ] Pre-migration source snapshot and numeric fixtures
-- [ ] Canonical root/package/CLI with legacy compatibility
-- [ ] Current docs/paper/output metadata and filenames
-- [ ] Unit + realFetch + MetaWorld + vision + numeric parity checks
-- [ ] Rebuilt4PDF/render/source-data/template/sourcezip QA
-- [ ] PrivateGitHub code/document sync and remote verification
-- [ ] GitHub repository settings rename verified
-- [ ] Current naming/legacy exceptions/report/HANDOFF
+- [x] Pre-migration source snapshot and numeric fixtures
+- [x] Canonical root/package/CLI with legacy compatibility
+- [x] Current docs/paper/output metadata and filenames
+- [x] Unit + real Fetch + MetaWorld + vision + numeric parity checks
+- [x] Rebuilt four PDFs/render/source-data/template/source-ZIP and extracted-build QA
+- [x] Private GitHub code/document sync and remote verification
+- [ ] GitHub repository settings rename verified — user settings action pending; connector endpoint unavailable/browser timeout
+- [x] Current naming/legacy exceptions/report/HANDOFF
