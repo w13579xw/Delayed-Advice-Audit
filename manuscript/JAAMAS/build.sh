@@ -21,4 +21,6 @@ cp main.pdf Delayed_Advice_Audit_manuscript.pdf
   cp information_sheet.pdf Delayed_Advice_Audit_Information_Sheet.pdf
   pdflatex -interaction=nonstopmode -halt-on-error cover_letter.tex > cover_build.log 2>&1
   cp cover_letter.pdf Delayed_Advice_Audit_Cover_Letter.pdf
+  pdflatex -interaction=nonstopmode -halt-on-error title_page.tex > title_build.log 2>&1
+  cp title_page.pdf Delayed_Advice_Audit_Title_Page.pdf
 )

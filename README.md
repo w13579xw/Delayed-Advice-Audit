@@ -13,7 +13,7 @@
 - PickPlace 的 packet-input 策略相对 local-input 策略奖励增加 +0.735，但胜出的零预测器在 250 个测试案例中全部拒绝干预。这证明该策略间差异不能归因于新返回的专家信息。
 - 已完成 Push/PickPlace 视觉任务及 Drawer/Door/Button 状态任务研究、冻结策略 S/F/absence 配对仿真、候选动作 headroom、选择规则敏感性与三个完整视觉训练系统复现。没有建立跨种子的完整到达策略正收益。
 - 独立视觉解码实验中，预定义固定 48 步新消息按生成时间解码，相比旧解码提高 +0.579061，98.75% CI [+0.172635,+0.997332]；它不证明刷新相对陈旧消息或门控策略相对本地继续执行有正收益。
-- [主论文 PDF](manuscript/JAAMAS/Delayed_Advice_Audit_manuscript.pdf)（28 页）、[Online Resource 1](manuscript/JAAMAS/supplement/Advice_Audit_Online_Resource_1.pdf)（19 页）、[LaTeX 源码与构建](manuscript/JAAMAS/README.md)。作者身份、批准与投稿行政信息仍待作者完成。
+- [主论文 PDF](manuscript/JAAMAS/Delayed_Advice_Audit_manuscript.pdf)（28 页）、[Online Resource 1](manuscript/JAAMAS/supplement/Advice_Audit_Online_Resource_1.pdf)（19 页）、[Title Page](manuscript/JAAMAS/submission/Delayed_Advice_Audit_Title_Page.pdf)、[LaTeX 源码与构建](manuscript/JAAMAS/README.md)。作者为 Junxiang Wang 和 Jiaoyang Su（通讯作者）；两位作者已确认审阅与投稿批准，无资助、无利益冲突。
 
 当前证据支持仿真评估与归因方法；没有真实机器人、人类教师、真实异步服务或独立私有专家观测验证。合成环境步延迟不等于实测服务延迟。
 

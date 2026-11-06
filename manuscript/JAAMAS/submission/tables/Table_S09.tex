@@ -1,0 +1,21 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,longtable,graphicx,float,url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\E}{\mathbb{E}}\newcommand{\U}{U}\newcommand{\ind}{\mathbf{1}}
+\setlength{\emergencystretch}{3em}\pagestyle{empty}
+\hypersetup{pdftitle={Table S9: Delayed Advice Audit},pdfauthor={Junxiang Wang and Jiaoyang Su}}
+\begin{document}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{8}
+\begin{table}[H]\centering\small
+\caption{Per-system complete-episode competence on the new shared test initial states. Source executes 100-step chunks from reset; local is the reject continuation from reset. Each row has 50 environments, shared across rows of a task. These are different complete policies, not a source-message channel contrast. Success means ever reaching native success.}
+\begin{tabular}{llrrrr}\toprule Task & Seed & Source reward & Local reward & Source success & Local success\\\midrule
+Push & 0 & 5.687 & 7.520 & 72.0 & 96.0\\
+Push & 1 & 5.525 & 7.024 & 72.0 & 98.0\\
+Push & 2 & 6.423 & 7.720 & 82.0 & 98.0\\
+PickPlace & 0 & 5.748 & 6.329 & 90.0 & 96.0\\
+PickPlace & 1 & 5.575 & 6.488 & 86.0 & 94.0\\
+PickPlace & 2 & 4.374 & 5.778 & 92.0 & 90.0\\
+\bottomrule\end{tabular}\end{table}
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,longtable,graphicx,float,url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\E}{\mathbb{E}}\newcommand{\U}{U}\newcommand{\ind}{\mathbf{1}}
+\setlength{\emergencystretch}{3em}\pagestyle{empty}
+\hypersetup{pdftitle={Table S15: Delayed Advice Audit},pdfauthor={Junxiang Wang and Jiaoyang Su}}
+\begin{document}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{14}
+\begin{table}[H]\centering\small
+\caption{Primary reward inference by study. $n$ counts independent initial environments; seed resampling crosses shared environments. Confidence is per contrast, with Bonferroni allocation within each declared family. Intervals remain approximate, not finite-sample guarantees.}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrl}\toprule Study & $n$ & Resamples & CI (\%) & Unit / family size\\\midrule
+Original visual & 500 & 50,000 & 99.5833 & Paired env.; $6+6$ bounds\\
+Critic-data curve & 200 & 50,000 & 99.3750 & Paired env.; 8\\
+State stress suite & 360 & 20,000 & 99.4444 & Env./5 critics; 9\\
+State channels & 180 & 30,000 & 99.5833 & Env./5 critics; 12\\
+Full visual seeds & 100 & 30,000 & 99.1667 & Env./3 systems; 6\\
+Visual channels & 60 & 30,000 & 98.3333 & Stratified env.; 3\\
+Decoder control & 60 & 30,000 & 98.7500 & Stratified env.; 4\\\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

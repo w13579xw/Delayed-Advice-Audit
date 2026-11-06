@@ -1,26 +1,25 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=25mm]{geometry}
 \usepackage[hidelinks]{hyperref}
-\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{9pt}
-\hypersetup{pdftitle={Cover Letter: Auditing the Value of Delayed Advice in Autonomous Agents},pdfsubject={Delayed Advice Audit},pdfkeywords={Delayed Advice Audit, autonomous agents, delayed advice}}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{8pt}
+\hypersetup{pdftitle={Cover Letter: Auditing the Value of Delayed Advice in Autonomous Agents},pdfauthor={Junxiang Wang and Jiaoyang Su},pdfsubject={Delayed Advice Audit}}
 \begin{document}
-\textbf{Initial-submission cover letter draft}\\
-\textbf{Author verification required before use}
-
 Dear Editors,
 
-Please consider our manuscript, ``Auditing the Value of Delayed Advice in Autonomous Agents,'' as a Regular Paper in \emph{Autonomous Agents and Multi-Agent Systems}.
+Please consider our manuscript, ``Auditing the Value of Delayed Advice in Autonomous Agents,'' by Junxiang Wang and Jiaoyang Su, for publication as a Regular Paper in \emph{Autonomous Agents and Multi-Agent Systems}.
 
-The manuscript addresses how to interpret the reward gains of an advice-taking agent. A policy trained with packet features can outperform a separately fitted local-input policy while its deployed decisions and actions do not depend on the returned packet. We document such a case in prospective visual manipulation experiments and give an executable null-policy certificate explaining its behavior.
+The paper addresses a problem in evaluating advice-taking agents: a performance gain between separately trained policies need not reflect information in the returned expert message. In visual manipulation, a packet-input variant improved mean reward by 0.735 while its deployed zero predictor rejected every intervention. We explain this counterexample through an executable null-policy certificate.
 
-The contribution is an evaluation framework linking pipeline comparisons, runtime message dependence and measured outcomes under explicitly specified message channels. It combines executable local references, fixed-packet counterfactual branches, decisions recorded before outcomes and native replay audits. A fixed-policy bridge now evaluates the original visual PickPlace system on 60 nonzero-delay environments, alongside 180 state-task environments. Refresh changes actual behavior while positive refresh benefit remains unresolved. An independent generation-time decoder control improves a predefined fresh chunk relative to stale-offset decoding, while the frozen selector does not establish a corresponding benefit. This changes the receiver and is kept separate from the channel study. Finite-pool headroom diagnostics separate available opportunity from harmful selection. A complete visual replication includes three independently trained 15k-budget systems, all local heads and separate arrival critics; full-policy benefit remains unresolved. Supporting condition, tolerance and historical results are retained in a separate Online Resource, keeping the main article focused.
+Our evaluation framework separates fitted-pipeline performance, runtime message dependence and measured outcomes under specified message-channel interventions. Paired native simulation branches connect the original visual system to channel outcomes and complement three state-task studies. An independent generation-time control distinguishes decoder correction from advice value. Candidate-action headroom and three complete visual training systems further examine intervention failures and conditional training variability. These results support reliable evaluation of agent decision-making without claiming a universally better controller.
 
-This work fits the journal's interest in agent decision-making architectures and their evaluation. It complements advice acquisition and reuse research by asking which role the newly returned message plays in an already fitted architecture. It does not claim a new best-performing controller or priority for standard counterfactual branching. The evidence is limited to simulated robotic agents; real-robot performance and asynchronous deployment remain untested.
+The manuscript is original, has not been published previously, and is not under consideration elsewhere. There are no related prior publications or preprints. Both authors have reviewed and approved the manuscript and its submission. No funding was received, and the authors declare no competing interests. The manuscript includes a concise disclosure of the computational assistance used. The accompanying Information Sheet answers the journal's four questions.
 
-\textbf{AUTHOR INPUT NEEDED:} Confirm all-author approval, originality, prior or related publications, concurrent-submission status, funding and competing interests. Review the manuscript's substantive AI-use disclosure and verify all methods, numbers and references. The accompanying Information Sheet addresses the journal's four required questions, with publication history explicitly pending.
-
-Thank you for considering this work.
+Thank you for considering our work.
 
 Sincerely,\\
-\textbf{AUTHOR INPUT NEEDED: Corresponding author's name, affiliation and email}
+Jiaoyang Su\\
+Corresponding author, on behalf of both authors\\
+School of Computer Science and Technology, Xidian University\\
+Xi'an 710126, China\\
+\href{mailto:3765032@qq.com}{3765032@qq.com}
 \end{document}

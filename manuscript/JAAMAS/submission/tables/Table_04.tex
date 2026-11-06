@@ -1,0 +1,25 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,longtable,graphicx,float,url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\E}{\mathbb{E}}\newcommand{\U}{U}\newcommand{\ind}{\mathbf{1}}
+\setlength{\emergencystretch}{3em}\pagestyle{empty}
+\hypersetup{pdftitle={Table 4: Delayed Advice Audit},pdfauthor={Junxiang Wang and Jiaoyang Su}}
+\begin{document}
+\setcounter{table}{3}
+\begin{table}[H]
+\centering\small
+\caption{Original visual confirmation. $L/P$: local/packet input; $C/F$: local/full action set; $R$: reject. All are separately fitted frozen variants. $n=250$ paired environments/task; approximate 99.5833\% intervals.}
+\begin{tabular}{llrr}
+\toprule Task & Contrast & Mean & Interval\\
+\midrule
+Push & $P,C-L,C$ & +0.007 & [-0.078, +0.144]\\
+Push & $P,F-P,C$ & +0.139 & [-0.005, +0.355]\\
+Push & $P,F-R$ & -0.365 & [-0.719, -0.050]\\
+PickPlace & $P,C-L,C$ & +0.735 & [+0.294, +1.216]\\
+PickPlace & $P,F-P,C$ & -0.636 & [-1.080, -0.230]\\
+PickPlace & $P,F-R$ & -0.636 & [-1.080, -0.230]\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

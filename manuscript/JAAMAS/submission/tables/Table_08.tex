@@ -1,0 +1,18 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,longtable,graphicx,float,url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\E}{\mathbb{E}}\newcommand{\U}{U}\newcommand{\ind}{\mathbf{1}}
+\setlength{\emergencystretch}{3em}\pagestyle{empty}
+\hypersetup{pdftitle={Table 8: Delayed Advice Audit},pdfauthor={Junxiang Wang and Jiaoyang Su}}
+\begin{document}
+\setcounter{table}{7}
+\begin{table}[H]\centering\small
+\caption{Independent generation-time decoding control: four primary reward contrasts on 60 new environments. Time uses generation age; legacy uses request delay. Stale decoding is identical for both. Approximate 98.75\% stratified paired-bootstrap intervals retain the four-contrast family. Fixed48 applies the predefined source suffix on every environment; the frozen gate uses unchanged choices across fresh decoders. This study does not alter the original channel estimates.}
+\setlength{\tabcolsep}{3pt}\begin{tabular}{llrr}\toprule Receiver & Contrast & Mean & Interval\\\midrule
+Fixed48 & Fresh: time $-$ legacy & +0.579 & [+0.173, +0.997]\\
+Fixed48 & Time-fresh $-$ stale & +0.149 & [-0.204, +0.516]\\
+Frozen $P,F$ & Fresh: time $-$ legacy & -0.030 & [-0.298, +0.192]\\
+Frozen $P,F$ & Time-fresh $-$ stale & -0.188 & [-0.541, +0.116]\\
+\bottomrule\end{tabular}\end{table}
+\end{document}
