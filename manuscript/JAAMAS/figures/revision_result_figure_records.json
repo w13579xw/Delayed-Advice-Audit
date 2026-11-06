@@ -1,0 +1,22 @@
+[
+  {
+    "name": "state_contrasts",
+    "surface_class": "appendix",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/analysis/analysis.json",
+    "source_sha256": "f7a5d87323a8b1ecab5dffd058410c228d4219ac859f76b607e2cfdfc942d81a",
+    "message": "Common horizontal scale across all three primary comparison types.",
+    "review": "actualPNG viewed; finalwidthfonts/commonaxis checked; finalcontextPDFpasspending",
+    "status": "manuscriptdraft",
+    "final_context_pdf_review": "passed; localmanuscriptdraft, not externalcertification"
+  },
+  {
+    "name": "critic_learning_curve",
+    "surface_class": "appendix",
+    "source": "/home/ez/DACI/code/outputs/vision/critic_learning_curve_recovery_20261104_v1/analysis/analysis.json",
+    "source_sha256": "aa4b87c3b60449b8903a8dbbae4000711d8f5c6f0bd7161f33daa5c00b4d6cf2",
+    "message": "Descriptive actor-seed0 learning curves; readable at final text width, same scale in both tasks.",
+    "review": "actualPNG viewed; finalwidthfonts/commonaxis checked; finalcontextPDFpasspending",
+    "status": "manuscriptdraft",
+    "final_context_pdf_review": "passed; localmanuscriptdraft, not externalcertification"
+  }
+]

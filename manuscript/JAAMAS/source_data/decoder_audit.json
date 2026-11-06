@@ -1,0 +1,8 @@
+{
+  "cases": 68,
+  "choices": 544,
+  "unique_paths": 320,
+  "fixed48_index_checks": 204,
+  "maximum_reward_mean_error": 0.0,
+  "source_packet_hash_checks": 136
+}

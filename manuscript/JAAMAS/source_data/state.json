@@ -1,0 +1,1408 @@
+{
+  "drawer-open-v3": {
+    "primary_contrasts": {
+      "packet_cheap_minus_local_cheap": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positive_lower": false
+      },
+      "packet_full_minus_packet_cheap": {
+        "mean": -0.40917547146674416,
+        "ci": [
+          -0.709988174184108,
+          -0.16532884985886032
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          -0.4028584936153943,
+          -0.42233602926505825,
+          -0.4113426676677193,
+          -0.40342723671555186,
+          -0.40591293006999674
+        ],
+        "positive_lower": false
+      },
+      "packet_full_minus_reject": {
+        "mean": -0.40917547146674416,
+        "ci": [
+          -0.7022247849826262,
+          -0.16197130647798275
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          -0.4028584936153943,
+          -0.42233602926505825,
+          -0.4113426676677193,
+          -0.40342723671555186,
+          -0.40591293006999674
+        ],
+        "positive_lower": false
+      }
+    },
+    "condition_means": {
+      "seed0/local/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed0/packet/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed1/local/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed1/packet/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed2/local/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed2/packet/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed3/local/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed3/packet/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed4/local/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed4/local/full": {
+        "reward": 7.72615086089512,
+        "any_success": 0.975
+      },
+      "seed4/packet/cheap": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "reject": {
+        "reward": 8.053897464788127,
+        "any_success": 1.0
+      },
+      "seed0/local/full": {
+        "reward": 7.61951975712923,
+        "any_success": 0.975
+      },
+      "seed0/packet/full": {
+        "reward": 7.651038971172733,
+        "any_success": 0.975
+      },
+      "seed3/local/full": {
+        "reward": 7.5933276026886976,
+        "any_success": 0.9666666666666667
+      },
+      "seed1/local/full": {
+        "reward": 7.625644632334436,
+        "any_success": 0.975
+      },
+      "seed4/packet/full": {
+        "reward": 7.647984534718131,
+        "any_success": 0.9666666666666667
+      },
+      "seed1/packet/full": {
+        "reward": 7.631561435523069,
+        "any_success": 0.975
+      },
+      "seed2/packet/full": {
+        "reward": 7.6425547971204075,
+        "any_success": 0.975
+      },
+      "seed2/local/full": {
+        "reward": 7.573527665992686,
+        "any_success": 0.9666666666666667
+      },
+      "seed3/packet/full": {
+        "reward": 7.650470228072575,
+        "any_success": 0.975
+      },
+      "fixed_expert32": {
+        "reward": 3.133557748429027,
+        "any_success": 0.30833333333333335
+      }
+    },
+    "choice_counts": {
+      "seed0/local/cheap": {
+        "reject": 300
+      },
+      "seed0/packet/cheap": {
+        "reject": 300
+      },
+      "seed1/local/cheap": {
+        "reject": 300
+      },
+      "seed1/packet/cheap": {
+        "reject": 300
+      },
+      "seed2/local/cheap": {
+        "reject": 300
+      },
+      "seed2/packet/cheap": {
+        "reject": 300
+      },
+      "seed3/local/cheap": {
+        "reject": 300
+      },
+      "seed3/packet/cheap": {
+        "reject": 300
+      },
+      "seed4/local/cheap": {
+        "reject": 300
+      },
+      "seed4/local/full": {
+        "reject": 8,
+        "local_k3_8": 54,
+        "request_hold8": 19,
+        "expert32": 62,
+        "blend8": 73,
+        "arrival_hold8": 25,
+        "expert8": 9,
+        "expert1": 9,
+        "zero_hold8": 28,
+        "local_k5_8": 13
+      },
+      "seed4/packet/cheap": {
+        "reject": 300
+      },
+      "reject": {
+        "reject": 300
+      },
+      "seed0/local/full": {
+        "expert8": 17,
+        "expert1": 46,
+        "local_k3_8": 61,
+        "reject": 3,
+        "expert32": 85,
+        "local_k5_8": 33,
+        "arrival_hold8": 15,
+        "blend8": 18,
+        "request_hold8": 5,
+        "zero_hold8": 17
+      },
+      "seed0/packet/full": {
+        "expert1": 31,
+        "reject": 33,
+        "expert32": 84,
+        "local_k5_8": 18,
+        "blend8": 18,
+        "expert8": 19,
+        "request_hold8": 8,
+        "zero_hold8": 22,
+        "local_k3_8": 62,
+        "arrival_hold8": 5
+      },
+      "seed3/local/full": {
+        "expert1": 26,
+        "local_k3_8": 70,
+        "local_k5_8": 45,
+        "expert32": 91,
+        "request_hold8": 15,
+        "arrival_hold8": 25,
+        "blend8": 14,
+        "zero_hold8": 9,
+        "expert8": 4,
+        "reject": 1
+      },
+      "seed1/local/full": {
+        "local_k5_8": 52,
+        "local_k3_8": 78,
+        "expert32": 85,
+        "arrival_hold8": 21,
+        "zero_hold8": 20,
+        "blend8": 13,
+        "request_hold8": 4,
+        "expert1": 22,
+        "expert8": 5
+      },
+      "seed4/packet/full": {
+        "local_k5_8": 11,
+        "reject": 48,
+        "expert32": 74,
+        "request_hold8": 13,
+        "expert8": 32,
+        "arrival_hold8": 20,
+        "blend8": 24,
+        "local_k3_8": 12,
+        "expert1": 44,
+        "zero_hold8": 22
+      },
+      "seed1/packet/full": {
+        "arrival_hold8": 33,
+        "local_k5_8": 39,
+        "local_k3_8": 34,
+        "blend8": 11,
+        "expert32": 77,
+        "request_hold8": 20,
+        "expert8": 16,
+        "reject": 4,
+        "zero_hold8": 13,
+        "expert1": 53
+      },
+      "seed2/packet/full": {
+        "arrival_hold8": 25,
+        "blend8": 56,
+        "expert32": 86,
+        "expert1": 26,
+        "expert8": 16,
+        "zero_hold8": 26,
+        "request_hold8": 6,
+        "local_k5_8": 17,
+        "local_k3_8": 42
+      },
+      "seed2/local/full": {
+        "request_hold8": 31,
+        "local_k3_8": 93,
+        "reject": 12,
+        "arrival_hold8": 24,
+        "expert1": 10,
+        "expert32": 82,
+        "zero_hold8": 7,
+        "blend8": 21,
+        "local_k5_8": 4,
+        "expert8": 16
+      },
+      "seed3/packet/full": {
+        "blend8": 29,
+        "local_k3_8": 26,
+        "arrival_hold8": 13,
+        "reject": 36,
+        "expert32": 70,
+        "zero_hold8": 41,
+        "expert1": 14,
+        "request_hold8": 6,
+        "local_k5_8": 46,
+        "expert8": 19
+      },
+      "fixed_expert32": {
+        "expert32": 300
+      }
+    },
+    "finite_packet_sensitivity": {
+      "seed0/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed0/packet/full": {
+        "total": 300,
+        "zero": 268,
+        "negated": 274,
+        "reversed": 264
+      },
+      "seed1/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed1/packet/full": {
+        "total": 300,
+        "zero": 279,
+        "negated": 288,
+        "reversed": 280
+      },
+      "seed2/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed2/packet/full": {
+        "total": 300,
+        "zero": 248,
+        "negated": 274,
+        "reversed": 249
+      },
+      "seed3/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed3/packet/full": {
+        "total": 300,
+        "zero": 209,
+        "negated": 209,
+        "reversed": 212
+      },
+      "seed4/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed4/packet/full": {
+        "total": 300,
+        "zero": 210,
+        "negated": 226,
+        "reversed": 214
+      }
+    },
+    "global_always_reject_certificates": [
+      "seed0/local/cheap",
+      "seed0/packet/cheap",
+      "seed1/local/cheap",
+      "seed1/packet/cheap",
+      "seed2/local/cheap",
+      "seed2/packet/cheap",
+      "seed3/local/cheap",
+      "seed3/packet/cheap",
+      "seed4/local/cheap",
+      "seed4/packet/cheap"
+    ],
+    "descriptive_condition_breakdown": [
+      {
+        "cell": 0,
+        "delay": 0,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.001737664215521182,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.001737664215521182
+      },
+      {
+        "cell": 1,
+        "delay": 0,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.0022502263887917095,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.0022502263887917095
+      },
+      {
+        "cell": 2,
+        "delay": 0,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.01574929157570164,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.01574929157570164
+      },
+      {
+        "cell": 3,
+        "delay": 0,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.2547324934991437,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.2547324934991437
+      },
+      {
+        "cell": 4,
+        "delay": 16,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.010818370033014588,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.010818370033014588
+      },
+      {
+        "cell": 5,
+        "delay": 16,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.038965010033736557,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.038965010033736557
+      },
+      {
+        "cell": 6,
+        "delay": 16,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.11354040269564482,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.11354040269564482
+      },
+      {
+        "cell": 7,
+        "delay": 16,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.2900413946001606,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.2900413946001606
+      },
+      {
+        "cell": 8,
+        "delay": 64,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -1.174166258490829,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -1.174166258490829
+      },
+      {
+        "cell": 9,
+        "delay": 64,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -1.0192374809143736,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -1.0192374809143736
+      },
+      {
+        "cell": 10,
+        "delay": 64,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.7816572773424656,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -0.7816572773424656
+      },
+      {
+        "cell": 11,
+        "delay": 64,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -1.2072097878115455,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": -1.2072097878115455
+      }
+    ]
+  },
+  "door-open-v3": {
+    "primary_contrasts": {
+      "packet_cheap_minus_local_cheap": {
+        "mean": 0.00508174750117537,
+        "ci": [
+          -0.01253991562691833,
+          0.054098215556648926
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          0.03381354412073126,
+          -0.006914988125653517,
+          0.0022825031457470056,
+          -0.0009262775705815204,
+          -0.0028460440643663784
+        ],
+        "positive_lower": false
+      },
+      "packet_full_minus_packet_cheap": {
+        "mean": -0.19146474077367717,
+        "ci": [
+          -0.32251489225264407,
+          -0.08094396274350589
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          -0.1544179660602796,
+          -0.19091689059973296,
+          -0.24732828080937336,
+          -0.21197603319609312,
+          -0.1526845332029067
+        ],
+        "positive_lower": false
+      },
+      "packet_full_minus_reject": {
+        "mean": -0.19331474723813544,
+        "ci": [
+          -0.3219793498864611,
+          -0.07469881711991576
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          -0.15476845863524805,
+          -0.193783272824133,
+          -0.24932754061947826,
+          -0.21513546276901305,
+          -0.15355900134280484
+        ],
+        "positive_lower": false
+      }
+    },
+    "condition_means": {
+      "seed0/local/cheap": {
+        "reward": 8.562007719780508,
+        "any_success": 0.9416666666666667
+      },
+      "seed0/local/full": {
+        "reward": 8.4920715540565,
+        "any_success": 0.9416666666666667
+      },
+      "seed0/packet/full": {
+        "reward": 8.441403297840962,
+        "any_success": 0.9333333333333333
+      },
+      "seed1/packet/full": {
+        "reward": 8.402388483652079,
+        "any_success": 0.9333333333333333
+      },
+      "seed2/local/full": {
+        "reward": 8.47075094299073,
+        "any_success": 0.9416666666666667
+      },
+      "seed2/packet/full": {
+        "reward": 8.34684421585673,
+        "any_success": 0.9333333333333333
+      },
+      "seed3/packet/cheap": {
+        "reward": 8.59301232690329,
+        "any_success": 0.9416666666666667
+      },
+      "seed3/packet/full": {
+        "reward": 8.381036293707197,
+        "any_success": 0.9416666666666667
+      },
+      "seed4/local/full": {
+        "reward": 8.441581945339541,
+        "any_success": 0.9416666666666667
+      },
+      "seed4/packet/full": {
+        "reward": 8.442612755133405,
+        "any_success": 0.9416666666666667
+      },
+      "seed0/packet/cheap": {
+        "reward": 8.595821263901241,
+        "any_success": 0.9416666666666667
+      },
+      "seed2/local/cheap": {
+        "reward": 8.59188999352036,
+        "any_success": 0.9416666666666667
+      },
+      "seed2/packet/cheap": {
+        "reward": 8.594172496666106,
+        "any_success": 0.9416666666666667
+      },
+      "seed3/local/full": {
+        "reward": 8.464955949208651,
+        "any_success": 0.9416666666666667
+      },
+      "reject": {
+        "reward": 8.596171756476208,
+        "any_success": 0.9416666666666667
+      },
+      "seed1/local/cheap": {
+        "reward": 8.600220362377463,
+        "any_success": 0.9416666666666667
+      },
+      "seed3/local/cheap": {
+        "reward": 8.593938604473871,
+        "any_success": 0.9416666666666667
+      },
+      "seed4/local/cheap": {
+        "reward": 8.598143332400676,
+        "any_success": 0.9416666666666667
+      },
+      "seed4/packet/cheap": {
+        "reward": 8.595297288336313,
+        "any_success": 0.9416666666666667
+      },
+      "seed1/local/full": {
+        "reward": 8.444238157021749,
+        "any_success": 0.9416666666666667
+      },
+      "seed1/packet/cheap": {
+        "reward": 8.593305374251807,
+        "any_success": 0.9416666666666667
+      },
+      "fixed_expert32": {
+        "reward": 6.093241395495871,
+        "any_success": 0.8
+      }
+    },
+    "choice_counts": {
+      "seed0/local/cheap": {
+        "local_k1_8": 69,
+        "local_k3_8": 72,
+        "request_hold8": 59,
+        "reject": 11,
+        "arrival_hold8": 78,
+        "zero_hold8": 11
+      },
+      "seed0/local/full": {
+        "local_k1_8": 29,
+        "request_hold8": 34,
+        "blend8": 13,
+        "expert8": 29,
+        "reject": 14,
+        "arrival_hold8": 40,
+        "expert32": 86,
+        "local_k3_8": 22,
+        "expert1": 12,
+        "zero_hold8": 21
+      },
+      "seed0/packet/full": {
+        "local_k1_8": 65,
+        "blend8": 16,
+        "expert1": 61,
+        "request_hold8": 16,
+        "expert8": 20,
+        "expert32": 84,
+        "local_k3_8": 26,
+        "arrival_hold8": 9,
+        "zero_hold8": 3
+      },
+      "seed1/packet/full": {
+        "local_k1_8": 34,
+        "expert8": 34,
+        "request_hold8": 51,
+        "expert1": 18,
+        "blend8": 18,
+        "local_k3_8": 38,
+        "expert32": 76,
+        "arrival_hold8": 24,
+        "reject": 4,
+        "zero_hold8": 3
+      },
+      "seed2/local/full": {
+        "local_k1_8": 56,
+        "expert8": 25,
+        "request_hold8": 17,
+        "expert32": 89,
+        "expert1": 28,
+        "local_k3_8": 27,
+        "blend8": 15,
+        "zero_hold8": 10,
+        "reject": 8,
+        "arrival_hold8": 25
+      },
+      "seed2/packet/full": {
+        "local_k1_8": 43,
+        "local_k3_8": 51,
+        "expert8": 36,
+        "arrival_hold8": 15,
+        "expert32": 97,
+        "blend8": 25,
+        "expert1": 15,
+        "request_hold8": 7,
+        "zero_hold8": 11
+      },
+      "seed3/packet/cheap": {
+        "local_k1_8": 47,
+        "reject": 12,
+        "local_k3_8": 85,
+        "request_hold8": 98,
+        "arrival_hold8": 49,
+        "zero_hold8": 9
+      },
+      "seed3/packet/full": {
+        "local_k1_8": 37,
+        "expert1": 43,
+        "local_k3_8": 54,
+        "reject": 11,
+        "arrival_hold8": 19,
+        "request_hold8": 16,
+        "expert32": 83,
+        "zero_hold8": 8,
+        "expert8": 23,
+        "blend8": 6
+      },
+      "seed4/local/full": {
+        "local_k1_8": 47,
+        "request_hold8": 55,
+        "local_k3_8": 36,
+        "expert32": 76,
+        "expert8": 9,
+        "arrival_hold8": 26,
+        "expert1": 13,
+        "blend8": 32,
+        "zero_hold8": 5,
+        "reject": 1
+      },
+      "seed4/packet/full": {
+        "local_k1_8": 44,
+        "local_k3_8": 56,
+        "request_hold8": 36,
+        "expert32": 77,
+        "blend8": 23,
+        "arrival_hold8": 28,
+        "expert1": 17,
+        "expert8": 14,
+        "zero_hold8": 4,
+        "reject": 1
+      },
+      "seed0/packet/cheap": {
+        "reject": 31,
+        "request_hold8": 37,
+        "local_k1_8": 132,
+        "local_k3_8": 30,
+        "arrival_hold8": 66,
+        "zero_hold8": 4
+      },
+      "seed2/local/cheap": {
+        "reject": 14,
+        "local_k1_8": 115,
+        "local_k3_8": 40,
+        "request_hold8": 60,
+        "arrival_hold8": 42,
+        "zero_hold8": 29
+      },
+      "seed2/packet/cheap": {
+        "reject": 24,
+        "local_k1_8": 99,
+        "local_k3_8": 69,
+        "request_hold8": 64,
+        "arrival_hold8": 32,
+        "zero_hold8": 12
+      },
+      "seed3/local/full": {
+        "reject": 19,
+        "local_k3_8": 32,
+        "local_k1_8": 51,
+        "expert1": 11,
+        "expert32": 73,
+        "request_hold8": 62,
+        "blend8": 28,
+        "arrival_hold8": 16,
+        "expert8": 8
+      },
+      "reject": {
+        "reject": 300
+      },
+      "seed1/local/cheap": {
+        "local_k3_8": 54,
+        "local_k1_8": 91,
+        "reject": 35,
+        "request_hold8": 63,
+        "arrival_hold8": 51,
+        "zero_hold8": 6
+      },
+      "seed3/local/cheap": {
+        "local_k3_8": 53,
+        "local_k1_8": 95,
+        "request_hold8": 41,
+        "reject": 21,
+        "arrival_hold8": 89,
+        "zero_hold8": 1
+      },
+      "seed4/local/cheap": {
+        "local_k3_8": 86,
+        "local_k1_8": 123,
+        "reject": 12,
+        "arrival_hold8": 58,
+        "request_hold8": 18,
+        "zero_hold8": 3
+      },
+      "seed4/packet/cheap": {
+        "local_k3_8": 105,
+        "local_k1_8": 62,
+        "arrival_hold8": 73,
+        "request_hold8": 34,
+        "zero_hold8": 5,
+        "reject": 21
+      },
+      "seed1/local/full": {
+        "expert1": 16,
+        "request_hold8": 55,
+        "local_k3_8": 26,
+        "reject": 22,
+        "local_k1_8": 23,
+        "expert32": 61,
+        "zero_hold8": 47,
+        "blend8": 24,
+        "arrival_hold8": 23,
+        "expert8": 3
+      },
+      "seed1/packet/cheap": {
+        "request_hold8": 66,
+        "reject": 30,
+        "local_k3_8": 54,
+        "local_k1_8": 70,
+        "arrival_hold8": 67,
+        "zero_hold8": 13
+      },
+      "fixed_expert32": {
+        "expert32": 300
+      }
+    },
+    "finite_packet_sensitivity": {
+      "seed0/packet/cheap": {
+        "total": 300,
+        "zero": 168,
+        "negated": 168,
+        "reversed": 178
+      },
+      "seed0/packet/full": {
+        "total": 300,
+        "zero": 171,
+        "negated": 215,
+        "reversed": 199
+      },
+      "seed1/packet/cheap": {
+        "total": 300,
+        "zero": 253,
+        "negated": 230,
+        "reversed": 212
+      },
+      "seed1/packet/full": {
+        "total": 300,
+        "zero": 216,
+        "negated": 220,
+        "reversed": 179
+      },
+      "seed2/packet/cheap": {
+        "total": 300,
+        "zero": 231,
+        "negated": 231,
+        "reversed": 212
+      },
+      "seed2/packet/full": {
+        "total": 300,
+        "zero": 261,
+        "negated": 280,
+        "reversed": 235
+      },
+      "seed3/packet/cheap": {
+        "total": 300,
+        "zero": 215,
+        "negated": 215,
+        "reversed": 191
+      },
+      "seed3/packet/full": {
+        "total": 300,
+        "zero": 245,
+        "negated": 249,
+        "reversed": 238
+      },
+      "seed4/packet/cheap": {
+        "total": 300,
+        "zero": 196,
+        "negated": 195,
+        "reversed": 162
+      },
+      "seed4/packet/full": {
+        "total": 300,
+        "zero": 256,
+        "negated": 244,
+        "reversed": 203
+      }
+    },
+    "global_always_reject_certificates": [],
+    "descriptive_condition_breakdown": [
+      {
+        "cell": 0,
+        "delay": 0,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.0036719978224053398,
+        "packet_cheap_minus_local_cheap": -0.003786080001648813,
+        "packet_full_minus_packet_cheap": 0.0020286274797608693
+      },
+      {
+        "cell": 1,
+        "delay": 0,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.004765886471421439,
+        "packet_cheap_minus_local_cheap": -0.005292090452959641,
+        "packet_full_minus_packet_cheap": 0.0062263587799746035
+      },
+      {
+        "cell": 2,
+        "delay": 0,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.16786525350184733,
+        "packet_cheap_minus_local_cheap": 0.06362026302968941,
+        "packet_full_minus_packet_cheap": -0.16707718420696469
+      },
+      {
+        "cell": 3,
+        "delay": 0,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.8961851052684676,
+        "packet_cheap_minus_local_cheap": 0.001052317902792881,
+        "packet_full_minus_packet_cheap": -0.8865573440072906
+      },
+      {
+        "cell": 4,
+        "delay": 16,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.0024612338583643112,
+        "packet_cheap_minus_local_cheap": 0.0037775639962063677,
+        "packet_full_minus_packet_cheap": -0.0024052503123863644
+      },
+      {
+        "cell": 5,
+        "delay": 16,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0016387759642239618,
+        "packet_cheap_minus_local_cheap": -0.0014277069805219789,
+        "packet_full_minus_packet_cheap": -0.0018934934620917331
+      },
+      {
+        "cell": 6,
+        "delay": 16,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.01891171060486098,
+        "packet_cheap_minus_local_cheap": -0.025068420337891802,
+        "packet_full_minus_packet_cheap": -0.024528235755911662
+      },
+      {
+        "cell": 7,
+        "delay": 16,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.18790403665895902,
+        "packet_cheap_minus_local_cheap": 0.031148675214617505,
+        "packet_full_minus_packet_cheap": -0.18998563459841528
+      },
+      {
+        "cell": 8,
+        "delay": 64,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.034845114971956775,
+        "packet_cheap_minus_local_cheap": 0.0015442340331715343,
+        "packet_full_minus_packet_cheap": -0.03483001373758283
+      },
+      {
+        "cell": 9,
+        "delay": 64,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.0367509540434555,
+        "packet_cheap_minus_local_cheap": -0.004609967896516789,
+        "packet_full_minus_packet_cheap": -0.02820242138842575
+      },
+      {
+        "cell": 10,
+        "delay": 64,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": -0.35086174852492236,
+        "packet_cheap_minus_local_cheap": -0.0025317540663626304,
+        "packet_full_minus_packet_cheap": -0.3468439883046166
+      },
+      {
+        "cell": 11,
+        "delay": 64,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": -0.6267244740380313,
+        "packet_cheap_minus_local_cheap": 0.002553935573528392,
+        "packet_full_minus_packet_cheap": -0.6235083097701758
+      }
+    ]
+  },
+  "button-press-v3": {
+    "primary_contrasts": {
+      "packet_cheap_minus_local_cheap": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positive_lower": false
+      },
+      "packet_full_minus_packet_cheap": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positive_lower": false
+      },
+      "packet_full_minus_reject": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.9944444444444445,
+        "per_training_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positive_lower": false
+      }
+    },
+    "condition_means": {
+      "seed0/local/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed0/local/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed0/packet/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed0/packet/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed1/local/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed1/local/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed1/packet/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed1/packet/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed2/local/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed2/local/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed2/packet/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed2/packet/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed3/local/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed3/local/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed3/packet/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed3/packet/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed4/local/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed4/local/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed4/packet/cheap": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "seed4/packet/full": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "reject": {
+        "reward": 1.1247612893375738,
+        "any_success": 1.0
+      },
+      "fixed_expert32": {
+        "reward": 0.7551139484794669,
+        "any_success": 0.75
+      }
+    },
+    "choice_counts": {
+      "seed0/local/cheap": {
+        "reject": 300
+      },
+      "seed0/local/full": {
+        "reject": 300
+      },
+      "seed0/packet/cheap": {
+        "reject": 300
+      },
+      "seed0/packet/full": {
+        "reject": 300
+      },
+      "seed1/local/cheap": {
+        "reject": 300
+      },
+      "seed1/local/full": {
+        "reject": 300
+      },
+      "seed1/packet/cheap": {
+        "reject": 300
+      },
+      "seed1/packet/full": {
+        "reject": 300
+      },
+      "seed2/local/cheap": {
+        "reject": 300
+      },
+      "seed2/local/full": {
+        "reject": 300
+      },
+      "seed2/packet/cheap": {
+        "reject": 300
+      },
+      "seed2/packet/full": {
+        "reject": 300
+      },
+      "seed3/local/cheap": {
+        "reject": 300
+      },
+      "seed3/local/full": {
+        "reject": 300
+      },
+      "seed3/packet/cheap": {
+        "reject": 300
+      },
+      "seed3/packet/full": {
+        "reject": 300
+      },
+      "seed4/local/cheap": {
+        "reject": 300
+      },
+      "seed4/local/full": {
+        "reject": 300
+      },
+      "seed4/packet/cheap": {
+        "reject": 300
+      },
+      "seed4/packet/full": {
+        "reject": 300
+      },
+      "reject": {
+        "reject": 300
+      },
+      "fixed_expert32": {
+        "expert32": 300
+      }
+    },
+    "finite_packet_sensitivity": {
+      "seed0/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed0/packet/full": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed1/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed1/packet/full": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed2/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed2/packet/full": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed3/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed3/packet/full": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed4/packet/cheap": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      },
+      "seed4/packet/full": {
+        "total": 300,
+        "zero": 0,
+        "negated": 0,
+        "reversed": 0
+      }
+    },
+    "global_always_reject_certificates": [
+      "seed0/local/cheap",
+      "seed0/local/full",
+      "seed0/packet/cheap",
+      "seed0/packet/full",
+      "seed1/local/cheap",
+      "seed1/local/full",
+      "seed1/packet/cheap",
+      "seed1/packet/full",
+      "seed2/local/cheap",
+      "seed2/local/full",
+      "seed2/packet/cheap",
+      "seed2/packet/full",
+      "seed3/local/cheap",
+      "seed3/local/full",
+      "seed3/packet/cheap",
+      "seed3/packet/full",
+      "seed4/local/cheap",
+      "seed4/local/full",
+      "seed4/packet/cheap",
+      "seed4/packet/full"
+    ],
+    "descriptive_condition_breakdown": [
+      {
+        "cell": 0,
+        "delay": 0,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 1,
+        "delay": 0,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 2,
+        "delay": 0,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 3,
+        "delay": 0,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 4,
+        "delay": 16,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 5,
+        "delay": 16,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 6,
+        "delay": 16,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 7,
+        "delay": 16,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 8,
+        "delay": 64,
+        "frequency": "single",
+        "sigma": 0.0,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 9,
+        "delay": 64,
+        "frequency": "single",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 10,
+        "delay": 64,
+        "frequency": "periodic",
+        "sigma": 0.0,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      },
+      {
+        "cell": 11,
+        "delay": 64,
+        "frequency": "periodic",
+        "sigma": 0.005,
+        "packet_full_minus_reject": 0.0,
+        "packet_cheap_minus_local_cheap": 0.0,
+        "packet_full_minus_packet_cheap": 0.0
+      }
+    ]
+  }
+}

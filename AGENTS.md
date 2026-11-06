@@ -1,3 +1,5 @@
+> 阶段说明（2026-11-06）：本文保留早期服务器原型的执行约束与验收流程。当前已完成视觉与状态任务研究；最新论文、证据范围及命名以根目录 README.md 和 docs/NAME_MIGRATION.md 为准。
+
 # 服务器模型执行入口
 
 本文件写给在 Linux 服务器接手本仓库的编码/研究模型。用户后续明确指令优先于本文件。请先读完，再执行。
@@ -26,7 +28,7 @@
 使用项目 `.venv`，不要向系统 Python 安装依赖，不要升级 CUDA/驱动或其他项目环境。
 
 ```bash
-# 自动选择已有 Python 3.11/3.12；亦可显式指定 DACI_PYTHON=python3.12
+# 自动选择已有 Python 3.11/3.12；亦可显式指定 ADVICE_AUDIT_PYTHON=python3.12
 bash scripts/setup_linux.sh
 .venv/bin/python scripts/server_run.py --help
 .venv/bin/python scripts/server_run.py --backend toy --run-dir outputs/server/toy_initial

@@ -1,0 +1,7 @@
+# Independent optional runtime; do not install into the original Fetch venv.
+numpy==2.5.4
+gymnasium==1.2.3
+metaworld==3.1.1
+mujoco==3.3.0
+scipy==1.18.1
+pytest==8.4.2

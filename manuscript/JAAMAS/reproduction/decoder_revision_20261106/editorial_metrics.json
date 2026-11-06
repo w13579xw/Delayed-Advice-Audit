@@ -1,0 +1,20 @@
+{
+  "method": "pdftotext whitespace tokens forPDF; expandedTeX ASCIIwordtokensforsubsectionsincludingcaptions,notpublisherwordcount",
+  "main_before": 10869,
+  "main_after": 10309,
+  "results_before": {
+    "A positive pipeline contrast required no runtime packet": 323,
+    "Direct visual and state message-channel outcomes": 540,
+    "Headroom separates opportunity from harmful selection": 309,
+    "Complete visual training variation leaves benefit unresolved": 257,
+    "Supporting analyses bound rather than erase the counterexample": 199
+  },
+  "results_after": {
+    "A positive pipeline contrast required no runtime packet": 323,
+    "Direct visual and state message-channel outcomes": 600,
+    "Headroom separates opportunity from harmful selection": 309,
+    "Complete visual training variation leaves benefit unresolved": 261,
+    "Generation-time decoding and the frozen selector differ": 309,
+    "Supporting analyses bound rather than erase the counterexample": 199
+  }
+}

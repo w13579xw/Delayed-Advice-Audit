@@ -7,9 +7,9 @@ import sys
 import time
 from pathlib import Path
 import numpy as np
-from daci.envs import make_env
-from daci.policies import local_action, expert_plan
-from daci.counterfactual import paired_gain
+from advice_audit.envs import make_env
+from advice_audit.policies import local_action, expert_plan
+from advice_audit.counterfactual import paired_gain
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--backend", choices=["toy", "fetch"], default="fetch")

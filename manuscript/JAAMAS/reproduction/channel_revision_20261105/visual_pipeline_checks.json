@@ -1,0 +1,12 @@
+{
+  "checks": "passed",
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "independent_environment_seeds": 100,
+  "logical_arrival_cases": 300,
+  "full_source_competence_trajectories": 300,
+  "all_models_unchanged": true
+}

@@ -1,0 +1,46 @@
+{
+  "surface_class": "paper_main",
+  "review": "actualPNG inspected; revised rowspacing to remove two-line label overlap; 8ptlabels; no outcome-based sample choice; finalcontextPDF review pending",
+  "script": "/home/ez/DACI/code/outputs/jaamas/revision_20261105/draw_simulator_scenes.py",
+  "sources": [
+    {
+      "task": "push-v3",
+      "seed": 859000100,
+      "query": 32,
+      "delay": 32,
+      "selected_option": "cheap_head2_48",
+      "raw_scene_file": "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed0_test_smoke/push-v3_859000100_scene_frames.npz",
+      "raw_scene_sha256": "fc0da9d2c456054c7bd6082d2d05617fae77d9e4d5d9b30175dd991a53f05e05",
+      "choices_sha256": "210148b6eef74324e25defd2f5ae9c386d671a119f79d319ee6f0aef52f86173",
+      "frame_keys": [
+        "request",
+        "arrival",
+        "branch_reject_after48",
+        "branch_cheap_head2_48_after48"
+      ],
+      "display_transform": "verticalflipundoneforcameraorientation;nocrop,nopixeladjustment",
+      "sample_role": "firstpreassignedengineeringsmokecase,notselectedbyoutcome;notformaltest"
+    },
+    {
+      "task": "pick-place-v3",
+      "seed": 859010100,
+      "query": 32,
+      "delay": 32,
+      "selected_option": "cheap_head3_48",
+      "raw_scene_file": "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed0_test_smoke/pick-place-v3_859010100_scene_frames.npz",
+      "raw_scene_sha256": "3607bed070fd3ec8cb2131506bac4131f003adcbda56919a5eac9854fd6bd387",
+      "choices_sha256": "e3bfb69b2139459410b45171ab2567643f3200656ef169cb2dbfe78fa234b674",
+      "frame_keys": [
+        "request",
+        "arrival",
+        "branch_reject_after48",
+        "branch_cheap_head3_48_after48"
+      ],
+      "display_transform": "verticalflipundoneforcameraorientation;nocrop,nopixeladjustment",
+      "sample_role": "firstpreassignedengineeringsmokecase,notselectedbyoutcome;notformaltest"
+    }
+  ],
+  "claim": "Illustrates timing/continuation and selectedcommands;notpositiveinterventionexample",
+  "status": "manuscriptdraft",
+  "final_context_pdf_review": "passed; localmanuscriptdraft, not externalcertification"
+}

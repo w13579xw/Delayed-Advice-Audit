@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "daci-research"
+name = "delayed-advice-audit"
 version = "0.1.0"
-description = "Research prototype for delay-aware counterfactual intervention"
+description = "Simulation audit of pipeline performance, message dependence and delayed advice value"
 requires-python = ">=3.8"
 dependencies = ["numpy>=1.24,<3"]
 
@@ -15,7 +15,11 @@ dev = ["pytest>=7,<9"]
 plot = ["matplotlib>=3.7"]
 
 [project.scripts]
-daci = "daci.cli:main"
+advice-audit = "advice_audit.cli:main"
+daci = "advice_audit.cli:main" # Archived command compatibility
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

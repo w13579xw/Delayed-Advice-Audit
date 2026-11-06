@@ -1,0 +1,8 @@
+{
+  "checks": "passed",
+  "independent_native_prefix_steps": 4000,
+  "source_and_features_checked": 136,
+  "expected_cases": 68,
+  "bitwise_packet_features_heads_robots_actions_rewards": true,
+  "entry_sha256": "57ed16a44c0af4cc3f4c88882a0d74c9f6b7976c81fa59b2b1542502c19dc9a4"
+}

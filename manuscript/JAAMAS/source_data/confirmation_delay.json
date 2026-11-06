@@ -1,0 +1,378 @@
+{
+  "push-v3": {
+    "delay_breakdown": [
+      {
+        "delay": 0,
+        "conditions": {
+          "cheap_inputs/cheap_actions": {
+            "n": 67,
+            "reward": 7.1003437378313965,
+            "success": 0.9402985074626866,
+            "terminal_success": 0.5373134328358209,
+            "reject_rate": 0.6865671641791045
+          },
+          "cheap_inputs/all_actions": {
+            "n": 67,
+            "reward": 7.10209418416275,
+            "success": 0.9402985074626866,
+            "terminal_success": 0.5373134328358209,
+            "reject_rate": 0.5970149253731343
+          },
+          "with_packet/cheap_actions": {
+            "n": 67,
+            "reward": 7.06647838087363,
+            "success": 0.9402985074626866,
+            "terminal_success": 0.5373134328358209,
+            "reject_rate": 0.6716417910447762
+          },
+          "with_packet/all_actions": {
+            "n": 67,
+            "reward": 7.139322104942839,
+            "success": 0.9552238805970149,
+            "terminal_success": 0.5373134328358209,
+            "reject_rate": 0.5522388059701493
+          },
+          "reject": {
+            "n": 67,
+            "reward": 7.466130444370227,
+            "success": 0.9701492537313433,
+            "terminal_success": 0.5223880597014925,
+            "reject_rate": 1.0
+          },
+          "fixed_cheap": {
+            "n": 67,
+            "reward": 6.174726355864483,
+            "success": 0.8805970149253731,
+            "terminal_success": 0.5074626865671642,
+            "reject_rate": 0.0
+          },
+          "fixed_full": {
+            "n": 67,
+            "reward": 6.174726355864483,
+            "success": 0.8805970149253731,
+            "terminal_success": 0.5074626865671642,
+            "reject_rate": 0.0
+          },
+          "elapsed_suffix48": {
+            "n": 67,
+            "reward": 7.371333148368656,
+            "success": 0.9850746268656716,
+            "terminal_success": 0.5223880597014925,
+            "reject_rate": 0.0
+          }
+        }
+      },
+      {
+        "delay": 16,
+        "conditions": {
+          "cheap_inputs/cheap_actions": {
+            "n": 96,
+            "reward": 6.544936223016401,
+            "success": 0.8958333333333334,
+            "terminal_success": 0.4583333333333333,
+            "reject_rate": 0.3541666666666667
+          },
+          "cheap_inputs/all_actions": {
+            "n": 96,
+            "reward": 6.719958258644727,
+            "success": 0.8958333333333334,
+            "terminal_success": 0.4791666666666667,
+            "reject_rate": 0.3541666666666667
+          },
+          "with_packet/cheap_actions": {
+            "n": 96,
+            "reward": 6.530456409999086,
+            "success": 0.8958333333333334,
+            "terminal_success": 0.4583333333333333,
+            "reject_rate": 0.3229166666666667
+          },
+          "with_packet/all_actions": {
+            "n": 96,
+            "reward": 6.8419803616137935,
+            "success": 0.90625,
+            "terminal_success": 0.4791666666666667,
+            "reject_rate": 0.3020833333333333
+          },
+          "reject": {
+            "n": 96,
+            "reward": 7.285500083217791,
+            "success": 0.9375,
+            "terminal_success": 0.5208333333333334,
+            "reject_rate": 1.0
+          },
+          "fixed_cheap": {
+            "n": 96,
+            "reward": 6.309174315454979,
+            "success": 0.8854166666666666,
+            "terminal_success": 0.4583333333333333,
+            "reject_rate": 0.0
+          },
+          "fixed_full": {
+            "n": 96,
+            "reward": 6.309174315454979,
+            "success": 0.8854166666666666,
+            "terminal_success": 0.4583333333333333,
+            "reject_rate": 0.0
+          },
+          "elapsed_suffix48": {
+            "n": 96,
+            "reward": 7.46033833816865,
+            "success": 0.9583333333333334,
+            "terminal_success": 0.5625,
+            "reject_rate": 0.0
+          }
+        }
+      },
+      {
+        "delay": 32,
+        "conditions": {
+          "cheap_inputs/cheap_actions": {
+            "n": 87,
+            "reward": 6.827457085132267,
+            "success": 0.8850574712643678,
+            "terminal_success": 0.5057471264367817,
+            "reject_rate": 0.14942528735632185
+          },
+          "cheap_inputs/all_actions": {
+            "n": 87,
+            "reward": 6.827457085132267,
+            "success": 0.8850574712643678,
+            "terminal_success": 0.5057471264367817,
+            "reject_rate": 0.14942528735632185
+          },
+          "with_packet/cheap_actions": {
+            "n": 87,
+            "reward": 6.890644564046716,
+            "success": 0.896551724137931,
+            "terminal_success": 0.4827586206896552,
+            "reject_rate": 0.20689655172413793
+          },
+          "with_packet/all_actions": {
+            "n": 87,
+            "reward": 6.890644564046716,
+            "success": 0.896551724137931,
+            "terminal_success": 0.4827586206896552,
+            "reject_rate": 0.20689655172413793
+          },
+          "reject": {
+            "n": 87,
+            "reward": 7.197847815799417,
+            "success": 0.9195402298850575,
+            "terminal_success": 0.4942528735632184,
+            "reject_rate": 1.0
+          },
+          "fixed_cheap": {
+            "n": 87,
+            "reward": 6.859489538365577,
+            "success": 0.8735632183908046,
+            "terminal_success": 0.5287356321839081,
+            "reject_rate": 0.0
+          },
+          "fixed_full": {
+            "n": 87,
+            "reward": 6.859489538365577,
+            "success": 0.8735632183908046,
+            "terminal_success": 0.5287356321839081,
+            "reject_rate": 0.0
+          },
+          "elapsed_suffix48": {
+            "n": 87,
+            "reward": 7.170360713647291,
+            "success": 0.9195402298850575,
+            "terminal_success": 0.5287356321839081,
+            "reject_rate": 0.0
+          }
+        }
+      }
+    ],
+    "role": "posthocdescriptivefromalreadyanalyzedconfirmation;notnewcausalclockcomparison"
+  },
+  "pick-place-v3": {
+    "delay_breakdown": [
+      {
+        "delay": 0,
+        "conditions": {
+          "cheap_inputs/cheap_actions": {
+            "n": 79,
+            "reward": 4.824907794340037,
+            "success": 0.7721518987341772,
+            "terminal_success": 0.4177215189873418,
+            "reject_rate": 0.0
+          },
+          "cheap_inputs/all_actions": {
+            "n": 79,
+            "reward": 4.705882155828966,
+            "success": 0.759493670886076,
+            "terminal_success": 0.3924050632911392,
+            "reject_rate": 0.0
+          },
+          "with_packet/cheap_actions": {
+            "n": 79,
+            "reward": 6.2947046776217315,
+            "success": 0.9113924050632911,
+            "terminal_success": 0.5316455696202531,
+            "reject_rate": 1.0
+          },
+          "with_packet/all_actions": {
+            "n": 79,
+            "reward": 4.996717308919637,
+            "success": 0.7848101265822784,
+            "terminal_success": 0.4177215189873418,
+            "reject_rate": 0.0
+          },
+          "reject": {
+            "n": 79,
+            "reward": 6.2947046776217315,
+            "success": 0.9113924050632911,
+            "terminal_success": 0.5316455696202531,
+            "reject_rate": 1.0
+          },
+          "fixed_cheap": {
+            "n": 79,
+            "reward": 5.788076971611472,
+            "success": 0.9367088607594937,
+            "terminal_success": 0.5063291139240507,
+            "reject_rate": 0.0
+          },
+          "fixed_full": {
+            "n": 79,
+            "reward": 5.788076971611472,
+            "success": 0.9367088607594937,
+            "terminal_success": 0.5063291139240507,
+            "reject_rate": 0.0
+          },
+          "elapsed_suffix48": {
+            "n": 79,
+            "reward": 6.572234801456011,
+            "success": 0.9367088607594937,
+            "terminal_success": 0.6075949367088608,
+            "reject_rate": 0.0
+          }
+        }
+      },
+      {
+        "delay": 16,
+        "conditions": {
+          "cheap_inputs/cheap_actions": {
+            "n": 74,
+            "reward": 6.1949231423260045,
+            "success": 0.8648648648648649,
+            "terminal_success": 0.6216216216216216,
+            "reject_rate": 0.0
+          },
+          "cheap_inputs/all_actions": {
+            "n": 74,
+            "reward": 5.95135623836379,
+            "success": 0.8108108108108109,
+            "terminal_success": 0.6216216216216216,
+            "reject_rate": 0.0
+          },
+          "with_packet/cheap_actions": {
+            "n": 74,
+            "reward": 6.760059344065993,
+            "success": 0.9324324324324325,
+            "terminal_success": 0.5675675675675675,
+            "reject_rate": 1.0
+          },
+          "with_packet/all_actions": {
+            "n": 74,
+            "reward": 6.193467974821507,
+            "success": 0.8648648648648649,
+            "terminal_success": 0.5945945945945946,
+            "reject_rate": 0.0
+          },
+          "reject": {
+            "n": 74,
+            "reward": 6.760059344065993,
+            "success": 0.9324324324324325,
+            "terminal_success": 0.5675675675675675,
+            "reject_rate": 1.0
+          },
+          "fixed_cheap": {
+            "n": 74,
+            "reward": 6.68485957383905,
+            "success": 0.918918918918919,
+            "terminal_success": 0.6621621621621622,
+            "reject_rate": 0.0
+          },
+          "fixed_full": {
+            "n": 74,
+            "reward": 6.68485957383905,
+            "success": 0.918918918918919,
+            "terminal_success": 0.6621621621621622,
+            "reject_rate": 0.0
+          },
+          "elapsed_suffix48": {
+            "n": 74,
+            "reward": 6.6041258480748795,
+            "success": 0.9594594594594594,
+            "terminal_success": 0.6756756756756757,
+            "reject_rate": 0.0
+          }
+        }
+      },
+      {
+        "delay": 32,
+        "conditions": {
+          "cheap_inputs/cheap_actions": {
+            "n": 97,
+            "reward": 7.240460587234475,
+            "success": 0.979381443298969,
+            "terminal_success": 0.7525773195876289,
+            "reject_rate": 0.0
+          },
+          "cheap_inputs/all_actions": {
+            "n": 97,
+            "reward": 7.32489146225792,
+            "success": 0.9690721649484536,
+            "terminal_success": 0.7835051546391752,
+            "reject_rate": 0.0
+          },
+          "with_packet/cheap_actions": {
+            "n": 97,
+            "reward": 7.506715068525999,
+            "success": 0.9484536082474226,
+            "terminal_success": 0.7525773195876289,
+            "reject_rate": 1.0
+          },
+          "with_packet/all_actions": {
+            "n": 97,
+            "reward": 7.357612108429505,
+            "success": 0.9690721649484536,
+            "terminal_success": 0.7938144329896907,
+            "reject_rate": 0.0
+          },
+          "reject": {
+            "n": 97,
+            "reward": 7.506715068525999,
+            "success": 0.9484536082474226,
+            "terminal_success": 0.7525773195876289,
+            "reject_rate": 1.0
+          },
+          "fixed_cheap": {
+            "n": 97,
+            "reward": 7.1182706629673484,
+            "success": 0.979381443298969,
+            "terminal_success": 0.7525773195876289,
+            "reject_rate": 0.0
+          },
+          "fixed_full": {
+            "n": 97,
+            "reward": 7.1182706629673484,
+            "success": 0.979381443298969,
+            "terminal_success": 0.7525773195876289,
+            "reject_rate": 0.0
+          },
+          "elapsed_suffix48": {
+            "n": 97,
+            "reward": 7.524546705299998,
+            "success": 0.9690721649484536,
+            "terminal_success": 0.8350515463917526,
+            "reject_rate": 0.0
+          }
+        }
+      }
+    ],
+    "role": "posthocdescriptivefromalreadyanalyzedconfirmation;notnewcausalclockcomparison"
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "smoke": {
+    "n_env": 2,
+    "condition_means": {
+      "R": {
+        "reward": 3.5862311028421514,
+        "any_success": 1.0,
+        "terminal_success": 0.0
+      },
+      "fixed_S_legacy": {
+        "reward": 3.4835988459132583,
+        "any_success": 1.0,
+        "terminal_success": 0.0
+      },
+      "gate_S_legacy": {
+        "reward": 3.493769313698463,
+        "any_success": 1.0,
+        "terminal_success": 0.0
+      },
+      "fixed_F_legacy": {
+        "reward": 5.645568165910859,
+        "any_success": 1.0,
+        "terminal_success": 0.5
+      },
+      "gate_F_legacy": {
+        "reward": 5.655738633696064,
+        "any_success": 1.0,
+        "terminal_success": 0.5
+      },
+      "fixed_F_time": {
+        "reward": 3.426992867514912,
+        "any_success": 1.0,
+        "terminal_success": 0.0
+      },
+      "gate_F_time": {
+        "reward": 3.437163335300117,
+        "any_success": 1.0,
+        "terminal_success": 0.0
+      }
+    },
+    "gate_fresh_choice_counts": {
+      "cheap_request48": 1,
+      "act_suffix48": 1
+    },
+    "time_sensitive_source_choices": 1,
+    "decoder_action_changes": 1,
+    "stale_fresh_gate_choice_changes": 0,
+    "native_checks": {
+      "checks": "passed",
+      "cases": 2,
+      "native_steps": 4148,
+      "recorded_paths": 7,
+      "all_models_entries_unchanged": true,
+      "all_reject_replayed": true,
+      "fixed48_index_assertions": true,
+      "zero_delay_identity": true,
+      "source_mode_local_parity": [
+        889019900,
+        889019901
+      ]
+    }
+  },
+  "identity": {
+    "n_env": 6,
+    "condition_means": {
+      "R": {
+        "reward": 6.081360504671561,
+        "any_success": 1.0,
+        "terminal_success": 0.8333333333333334
+      },
+      "fixed_S_legacy": {
+        "reward": 4.876670596962465,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.5
+      },
+      "gate_S_legacy": {
+        "reward": 5.051368894609852,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.5
+      },
+      "fixed_F_legacy": {
+        "reward": 4.876670596962465,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.5
+      },
+      "gate_F_legacy": {
+        "reward": 5.051368894609852,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.5
+      },
+      "fixed_F_time": {
+        "reward": 4.876670596962465,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.5
+      },
+      "gate_F_time": {
+        "reward": 5.051368894609852,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.5
+      }
+    },
+    "gate_fresh_choice_counts": {
+      "cheap_request48": 4,
+      "cheap_head3_48": 1,
+      "act_suffix16": 1
+    },
+    "time_sensitive_source_choices": 1,
+    "decoder_action_changes": 0,
+    "stale_fresh_gate_choice_changes": 0,
+    "native_checks": {
+      "checks": "passed",
+      "cases": 6,
+      "native_steps": 11328,
+      "recorded_paths": 18,
+      "all_models_entries_unchanged": true,
+      "all_reject_replayed": true,
+      "fixed48_index_assertions": true,
+      "zero_delay_identity": true,
+      "source_mode_local_parity": []
+    }
+  },
+  "main": {
+    "n_env": 60,
+    "condition_means": {
+      "R": {
+        "reward": 6.900332474736414,
+        "any_success": 0.9166666666666666,
+        "terminal_success": 0.6666666666666666
+      },
+      "fixed_S_legacy": {
+        "reward": 6.871641778527178,
+        "any_success": 0.9333333333333333,
+        "terminal_success": 0.7333333333333333
+      },
+      "gate_S_legacy": {
+        "reward": 6.449334110819213,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.7
+      },
+      "fixed_F_legacy": {
+        "reward": 6.4413141584301625,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.7166666666666667
+      },
+      "gate_F_legacy": {
+        "reward": 6.290867543603893,
+        "any_success": 0.8166666666666667,
+        "terminal_success": 0.6833333333333333
+      },
+      "fixed_F_time": {
+        "reward": 7.020375613011817,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.7166666666666667
+      },
+      "gate_F_time": {
+        "reward": 6.261075580709605,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.6666666666666666
+      }
+    },
+    "gate_fresh_choice_counts": {
+      "cheap_head3_48": 15,
+      "cheap_request48": 14,
+      "act_suffix48": 21,
+      "cheap_ensemble48": 7,
+      "act_suffix16": 3
+    },
+    "time_sensitive_source_choices": 24,
+    "decoder_action_changes": 24,
+    "stale_fresh_gate_choice_changes": 10,
+    "native_checks": {
+      "checks": "passed",
+      "cases": 60,
+      "native_steps": 159372,
+      "recorded_paths": 295,
+      "all_models_entries_unchanged": true,
+      "all_reject_replayed": true,
+      "fixed48_index_assertions": true,
+      "zero_delay_identity": true,
+      "source_mode_local_parity": []
+    },
+    "primary_contrasts": {
+      "fixed_time_minus_fixed_fresh_legacy": {
+        "mean": 0.579061454581653,
+        "ci": [
+          0.17263450338570524,
+          0.9973323415263227
+        ],
+        "confidence": 0.9875,
+        "n_env": 60,
+        "per_cell": [
+          2.6379877054525354,
+          0.8030852102674085,
+          0.00773374132899054,
+          0.3791240284894128,
+          -0.37938132402888664,
+          0.025819365980458107
+        ]
+      },
+      "fixed_time_minus_fixed_stale_legacy": {
+        "mean": 0.1487338344846383,
+        "ci": [
+          -0.20436569647034739,
+          0.5161210255277098
+        ],
+        "confidence": 0.9875,
+        "n_env": 60,
+        "per_cell": [
+          0.23173788470330708,
+          0.6471738903693364,
+          0.1292386883620848,
+          -0.03378930215239544,
+          -0.08470443069364673,
+          0.0027462763191440365
+        ]
+      },
+      "gate_time_minus_gate_fresh_legacy": {
+        "mean": -0.029791962894289106,
+        "ci": [
+          -0.29795564806867947,
+          0.19217108797965404
+        ],
+        "confidence": 0.9875,
+        "n_env": 60,
+        "per_cell": [
+          0.0,
+          0.3331256678104399,
+          -0.24940073340238453,
+          0.11690461225509656,
+          -0.37938132402888664,
+          0.0
+        ]
+      },
+      "gate_time_minus_gate_stale_legacy": {
+        "mean": -0.18825853010960858,
+        "ci": [
+          -0.5410293024000374,
+          0.11592035033254669
+        ],
+        "confidence": 0.9875,
+        "n_env": 60,
+        "per_cell": [
+          -1.5272078170087695,
+          0.10651449580192543,
+          0.02124520441839679,
+          0.35460136682444243,
+          -0.08470443069364673,
+          0.0
+        ]
+      }
+    },
+    "secondary_vs_reject": {
+      "fixed_S_legacy": {
+        "mean": -0.028690696209236137,
+        "reward_ci95": [
+          -0.41253318852777876,
+          0.34983509452510264
+        ],
+        "any_success_difference": 0.016666666666666666,
+        "terminal_success_difference": 0.06666666666666667,
+        "role": "descriptive;notnewprimaryinference"
+      },
+      "gate_S_legacy": {
+        "mean": -0.4509983639171998,
+        "reward_ci95": [
+          -0.8696018474226613,
+          -0.08860525990939612
+        ],
+        "any_success_difference": -0.03333333333333333,
+        "terminal_success_difference": 0.03333333333333333,
+        "role": "descriptive;notnewprimaryinference"
+      },
+      "fixed_F_legacy": {
+        "mean": -0.4590183163062509,
+        "reward_ci95": [
+          -0.8237823922962423,
+          -0.08376438093776896
+        ],
+        "any_success_difference": -0.08333333333333333,
+        "terminal_success_difference": 0.05,
+        "role": "descriptive;notnewprimaryinference"
+      },
+      "gate_F_legacy": {
+        "mean": -0.6094649311325194,
+        "reward_ci95": [
+          -1.0458957905563586,
+          -0.19322011349507617
+        ],
+        "any_success_difference": -0.1,
+        "terminal_success_difference": 0.016666666666666666,
+        "role": "descriptive;notnewprimaryinference"
+      },
+      "fixed_F_time": {
+        "mean": 0.1200431382754022,
+        "reward_ci95": [
+          -0.18688002877071785,
+          0.4333299170215118
+        ],
+        "any_success_difference": -0.03333333333333333,
+        "terminal_success_difference": 0.05,
+        "role": "descriptive;notnewprimaryinference"
+      },
+      "gate_F_time": {
+        "mean": -0.6392568940268084,
+        "reward_ci95": [
+          -1.0477577124616797,
+          -0.2608924822885392
+        ],
+        "any_success_difference": -0.08333333333333333,
+        "terminal_success_difference": 0.0,
+        "role": "descriptive;notnewprimaryinference"
+      }
+    }
+  }
+}

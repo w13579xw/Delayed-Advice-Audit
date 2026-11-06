@@ -1,0 +1,565 @@
+{
+  "push-v3": {
+    "primary_contrasts": {
+      "n28_total_vs_reject": {
+        "left": "n28/with_packet/all_actions",
+        "right": "reject",
+        "mean": 0.013091249547529351,
+        "bootstrap_ci": [
+          -0.5656467641613566,
+          0.5926559398704724
+        ],
+        "confidence": 0.99375,
+        "positive": 44,
+        "negative": 41,
+        "within_tolerance": 15,
+        "minimum": -8.403416182863756,
+        "maximum": 8.652263668067382,
+        "vector_sha256": "a3c8c5c6a9daf5b60e9f2c4124a6a36a7a7f6b0c033673de7ddac3a9bdc98036",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      },
+      "n14_to_n28_data_increment": {
+        "left": "n28/with_packet/all_actions",
+        "right": "n14/with_packet/all_actions",
+        "mean": 0.1730831332193384,
+        "bootstrap_ci": [
+          -0.4941956556466206,
+          0.8619167354110175
+        ],
+        "confidence": 0.99375,
+        "positive": 47,
+        "negative": 39,
+        "within_tolerance": 14,
+        "minimum": -8.403416182863756,
+        "maximum": 8.652263668067382,
+        "vector_sha256": "1e248cfd4f00e9d91b9fe4ac43eb58dd1a3ed0c8421dea4749a078e9ffa83489",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      },
+      "n28_packet_input_on_cheap": {
+        "left": "n28/with_packet/cheap_actions",
+        "right": "n28/cheap_inputs/cheap_actions",
+        "mean": -0.011404901593991016,
+        "bootstrap_ci": [
+          -0.057024507969955084,
+          0.0
+        ],
+        "confidence": 0.99375,
+        "positive": 0,
+        "negative": 1,
+        "within_tolerance": 99,
+        "minimum": -1.1404901593991017,
+        "maximum": 0.0,
+        "vector_sha256": "ee3fc2424861cef9ca7ceb1285df3d2a8f2431c0bb8575fb86fed38eba7d98a7",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      },
+      "n28_actuation_given_packet": {
+        "left": "n28/with_packet/all_actions",
+        "right": "n28/with_packet/cheap_actions",
+        "mean": 0.3957874074812402,
+        "bootstrap_ci": [
+          -0.17284347356900115,
+          0.9682891801306879
+        ],
+        "confidence": 0.99375,
+        "positive": 55,
+        "negative": 16,
+        "within_tolerance": 29,
+        "minimum": -8.212771649126225,
+        "maximum": 8.398771453420395,
+        "vector_sha256": "fa8f32413085ed8d653b269520575be13e1a704e14814be3e79fd447a2cea8d9",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      }
+    },
+    "condition_means": {
+      "n7/cheap_inputs/cheap_actions": {
+        "native_return": 6.73687835350313,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n7/cheap_inputs/all_actions": {
+        "native_return": 6.73687835350313,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n7/with_packet/cheap_actions": {
+        "native_return": 6.73687835350313,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n7/with_packet/all_actions": {
+        "native_return": 6.73687835350313,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n14/cheap_inputs/cheap_actions": {
+        "native_return": 6.73678663397985,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n14/cheap_inputs/all_actions": {
+        "native_return": 6.929038513897747,
+        "success": 0.93,
+        "terminal_success": 0.45
+      },
+      "n14/with_packet/cheap_actions": {
+        "native_return": 6.7460963364468,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n14/with_packet/all_actions": {
+        "native_return": 6.9617093109403525,
+        "success": 0.93,
+        "terminal_success": 0.46
+      },
+      "n28/cheap_inputs/cheap_actions": {
+        "native_return": 6.750409938272443,
+        "success": 0.95,
+        "terminal_success": 0.32
+      },
+      "n28/cheap_inputs/all_actions": {
+        "native_return": 7.188493547247927,
+        "success": 0.94,
+        "terminal_success": 0.46
+      },
+      "n28/with_packet/cheap_actions": {
+        "native_return": 6.739005036678451,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "n28/with_packet/all_actions": {
+        "native_return": 7.1347924441596895,
+        "success": 0.94,
+        "terminal_success": 0.45
+      },
+      "reject": {
+        "native_return": 7.12170119461216,
+        "success": 0.94,
+        "terminal_success": 0.47
+      },
+      "fixed_cheap": {
+        "native_return": 6.73687835350313,
+        "success": 0.95,
+        "terminal_success": 0.31
+      },
+      "fixed_full": {
+        "native_return": 7.2353658890503745,
+        "success": 0.94,
+        "terminal_success": 0.5
+      },
+      "elapsed_suffix48": {
+        "native_return": 7.2353658890503745,
+        "success": 0.94,
+        "terminal_success": 0.5
+      }
+    },
+    "choices": {
+      "n7/cheap_inputs/cheap_actions": {
+        "histogram": {
+          "cheap_head1_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n7/cheap_inputs/all_actions": {
+        "histogram": {
+          "cheap_head1_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n7/with_packet/cheap_actions": {
+        "histogram": {
+          "cheap_head1_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n7/with_packet/all_actions": {
+        "histogram": {
+          "cheap_head1_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n14/cheap_inputs/cheap_actions": {
+        "histogram": {
+          "cheap_head1_48": 99,
+          "reject": 1
+        },
+        "acceptance_count": 99
+      },
+      "n14/cheap_inputs/all_actions": {
+        "histogram": {
+          "reject": 86,
+          "cheap_request48": 3,
+          "act_raw48": 3,
+          "act_blend48": 2,
+          "cheap_head3_48": 3,
+          "act_raw16": 1,
+          "act_suffix16": 2
+        },
+        "acceptance_count": 14
+      },
+      "n14/with_packet/cheap_actions": {
+        "histogram": {
+          "cheap_head1_48": 94,
+          "reject": 6
+        },
+        "acceptance_count": 94
+      },
+      "n14/with_packet/all_actions": {
+        "histogram": {
+          "reject": 87,
+          "cheap_request48": 4,
+          "act_raw16": 1,
+          "act_blend48": 2,
+          "act_raw48": 2,
+          "cheap_head3_48": 2,
+          "cheap_ensemble48": 1,
+          "act_suffix16": 1
+        },
+        "acceptance_count": 13
+      },
+      "n28/cheap_inputs/cheap_actions": {
+        "histogram": {
+          "cheap_head1_48": 97,
+          "reject": 3
+        },
+        "acceptance_count": 97
+      },
+      "n28/cheap_inputs/all_actions": {
+        "histogram": {
+          "act_suffix48": 79,
+          "cheap_head1_48": 21
+        },
+        "acceptance_count": 100
+      },
+      "n28/with_packet/cheap_actions": {
+        "histogram": {
+          "cheap_head1_48": 98,
+          "reject": 2
+        },
+        "acceptance_count": 98
+      },
+      "n28/with_packet/all_actions": {
+        "histogram": {
+          "act_suffix48": 79,
+          "cheap_head1_48": 21
+        },
+        "acceptance_count": 100
+      },
+      "reject": {
+        "histogram": {
+          "reject": 100
+        },
+        "acceptance_count": 0
+      },
+      "fixed_cheap": {
+        "histogram": {
+          "cheap_head1_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "fixed_full": {
+        "histogram": {
+          "act_suffix48": 100
+        },
+        "acceptance_count": 100
+      },
+      "elapsed_suffix48": {
+        "histogram": {
+          "act_suffix48": 100
+        },
+        "acceptance_count": 100
+      }
+    },
+    "joint_positive_data_rescue": false
+  },
+  "pick-place-v3": {
+    "primary_contrasts": {
+      "n28_total_vs_reject": {
+        "left": "n28/with_packet/all_actions",
+        "right": "reject",
+        "mean": -0.08677953244955804,
+        "bootstrap_ci": [
+          -0.3328579641853188,
+          0.15460057257378962
+        ],
+        "confidence": 0.99375,
+        "positive": 26,
+        "negative": 36,
+        "within_tolerance": 38,
+        "minimum": -3.8192558810637633,
+        "maximum": 3.6956185433289463,
+        "vector_sha256": "6694d5a91dc72f23ccd610f35c1337908c3989c0caf995fa35bb9cc1f4499c33",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      },
+      "n14_to_n28_data_increment": {
+        "left": "n28/with_packet/all_actions",
+        "right": "n14/with_packet/all_actions",
+        "mean": 0.23532686545309076,
+        "bootstrap_ci": [
+          -0.06334698648991356,
+          0.5676916127053352
+        ],
+        "confidence": 0.99375,
+        "positive": 35,
+        "negative": 23,
+        "within_tolerance": 42,
+        "minimum": -4.064462755203247,
+        "maximum": 4.475045866949406,
+        "vector_sha256": "61d146080e3b29a04e2373e7a18df72f4d5f4dc0c26d86e4e0a12377176efd05",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      },
+      "n28_packet_input_on_cheap": {
+        "left": "n28/with_packet/cheap_actions",
+        "right": "n28/cheap_inputs/cheap_actions",
+        "mean": -0.00016511570078947102,
+        "bootstrap_ci": [
+          -0.12143547918151568,
+          0.12838743232636912
+        ],
+        "confidence": 0.99375,
+        "positive": 6,
+        "negative": 9,
+        "within_tolerance": 85,
+        "minimum": -2.4701806349542963,
+        "maximum": 2.7969171309173095,
+        "vector_sha256": "2a09a85009fe822d48ce40f28968b8f5a2eb0e522dbb7c9752e68d9c68b1c912",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      },
+      "n28_actuation_given_packet": {
+        "left": "n28/with_packet/all_actions",
+        "right": "n28/with_packet/cheap_actions",
+        "mean": 0.050364974022961057,
+        "bootstrap_ci": [
+          -0.1296895473952994,
+          0.23774445270080544
+        ],
+        "confidence": 0.99375,
+        "positive": 12,
+        "negative": 8,
+        "within_tolerance": 80,
+        "minimum": -3.8192558810637633,
+        "maximum": 3.6956185433289463,
+        "vector_sha256": "91f939366455cab81caf7e1ec7a0f5fc014ea069668af4e067fc2fc8192e9fd7",
+        "lower_above_zero": false,
+        "lower_above_reward_scale_reference": false
+      }
+    },
+    "condition_means": {
+      "n7/cheap_inputs/cheap_actions": {
+        "native_return": 6.692254588482642,
+        "success": 0.92,
+        "terminal_success": 0.6
+      },
+      "n7/cheap_inputs/all_actions": {
+        "native_return": 6.675313339922257,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n7/with_packet/cheap_actions": {
+        "native_return": 6.675313339922257,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n7/with_packet/all_actions": {
+        "native_return": 6.675313339922257,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n14/cheap_inputs/cheap_actions": {
+        "native_return": 6.687362397680822,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n14/cheap_inputs/all_actions": {
+        "native_return": 6.687362397680822,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n14/with_packet/cheap_actions": {
+        "native_return": 6.687362397680822,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n14/with_packet/all_actions": {
+        "native_return": 6.687362397680822,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n28/cheap_inputs/cheap_actions": {
+        "native_return": 6.872489404811741,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n28/cheap_inputs/all_actions": {
+        "native_return": 6.907297162825211,
+        "success": 0.92,
+        "terminal_success": 0.62
+      },
+      "n28/with_packet/cheap_actions": {
+        "native_return": 6.872324289110952,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "n28/with_packet/all_actions": {
+        "native_return": 6.922689263133913,
+        "success": 0.91,
+        "terminal_success": 0.63
+      },
+      "reject": {
+        "native_return": 7.00946879558347,
+        "success": 0.92,
+        "terminal_success": 0.62
+      },
+      "fixed_cheap": {
+        "native_return": 6.675313339922257,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "fixed_full": {
+        "native_return": 6.675313339922257,
+        "success": 0.92,
+        "terminal_success": 0.61
+      },
+      "elapsed_suffix48": {
+        "native_return": 6.776157082486918,
+        "success": 0.96,
+        "terminal_success": 0.7
+      }
+    },
+    "choices": {
+      "n7/cheap_inputs/cheap_actions": {
+        "histogram": {
+          "cheap_head0_48": 76,
+          "reject": 19,
+          "cheap_ensemble48": 3,
+          "cheap_head2_48": 1,
+          "cheap_head3_48": 1
+        },
+        "acceptance_count": 81
+      },
+      "n7/cheap_inputs/all_actions": {
+        "histogram": {
+          "cheap_head0_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n7/with_packet/cheap_actions": {
+        "histogram": {
+          "cheap_head0_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n7/with_packet/all_actions": {
+        "histogram": {
+          "cheap_head0_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "n14/cheap_inputs/cheap_actions": {
+        "histogram": {
+          "cheap_head0_48": 92,
+          "reject": 8
+        },
+        "acceptance_count": 92
+      },
+      "n14/cheap_inputs/all_actions": {
+        "histogram": {
+          "cheap_head0_48": 92,
+          "reject": 8
+        },
+        "acceptance_count": 92
+      },
+      "n14/with_packet/cheap_actions": {
+        "histogram": {
+          "cheap_head0_48": 92,
+          "reject": 8
+        },
+        "acceptance_count": 92
+      },
+      "n14/with_packet/all_actions": {
+        "histogram": {
+          "cheap_head0_48": 92,
+          "reject": 8
+        },
+        "acceptance_count": 92
+      },
+      "n28/cheap_inputs/cheap_actions": {
+        "histogram": {
+          "cheap_head0_48": 39,
+          "reject": 50,
+          "cheap_ensemble48": 6,
+          "cheap_head2_48": 4,
+          "cheap_head3_48": 1
+        },
+        "acceptance_count": 50
+      },
+      "n28/cheap_inputs/all_actions": {
+        "histogram": {
+          "cheap_head0_48": 37,
+          "reject": 41,
+          "act_suffix48": 13,
+          "act_suffix16": 6,
+          "act_blend48": 1,
+          "cheap_ensemble48": 2
+        },
+        "acceptance_count": 59
+      },
+      "n28/with_packet/cheap_actions": {
+        "histogram": {
+          "cheap_head3_48": 9,
+          "reject": 48,
+          "cheap_head0_48": 36,
+          "cheap_head2_48": 4,
+          "cheap_arrival48": 1,
+          "cheap_ensemble48": 2
+        },
+        "acceptance_count": 52
+      },
+      "n28/with_packet/all_actions": {
+        "histogram": {
+          "cheap_head3_48": 7,
+          "reject": 30,
+          "cheap_head0_48": 34,
+          "act_suffix16": 10,
+          "act_suffix48": 11,
+          "act_blend48": 3,
+          "cheap_ensemble48": 1,
+          "act_raw48": 1,
+          "act_raw16": 3
+        },
+        "acceptance_count": 70
+      },
+      "reject": {
+        "histogram": {
+          "reject": 100
+        },
+        "acceptance_count": 0
+      },
+      "fixed_cheap": {
+        "histogram": {
+          "cheap_head0_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "fixed_full": {
+        "histogram": {
+          "cheap_head0_48": 100
+        },
+        "acceptance_count": 100
+      },
+      "elapsed_suffix48": {
+        "histogram": {
+          "act_suffix48": 100
+        },
+        "acceptance_count": 100
+      }
+    },
+    "joint_positive_data_rescue": false
+  }
+}

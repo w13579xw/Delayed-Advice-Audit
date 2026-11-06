@@ -1,0 +1,361 @@
+{
+  "smoke": {
+    "n_env": 2,
+    "condition_means": {
+      "S/cheap_inputs/cheap_actions": {
+        "reward": 2.7029374054961135,
+        "any_success": 0.5,
+        "terminal_success": 0.0
+      },
+      "S/cheap_inputs/all_actions": {
+        "reward": 2.7022202984440598,
+        "any_success": 0.5,
+        "terminal_success": 0.0
+      },
+      "S/with_packet/cheap_actions": {
+        "reward": 4.515516970416356,
+        "any_success": 0.5,
+        "terminal_success": 0.5
+      },
+      "S/with_packet/all_actions": {
+        "reward": 2.7022202984440598,
+        "any_success": 0.5,
+        "terminal_success": 0.0
+      },
+      "F/cheap_inputs/cheap_actions": {
+        "reward": 2.7029374054961135,
+        "any_success": 0.5,
+        "terminal_success": 0.0
+      },
+      "F/cheap_inputs/all_actions": {
+        "reward": 2.7023928226038936,
+        "any_success": 0.5,
+        "terminal_success": 0.0
+      },
+      "F/with_packet/cheap_actions": {
+        "reward": 4.515516970416356,
+        "any_success": 0.5,
+        "terminal_success": 0.5
+      },
+      "F/with_packet/all_actions": {
+        "reward": 2.7023928226038936,
+        "any_success": 0.5,
+        "terminal_success": 0.0
+      },
+      "E/cheap_inputs/cheap_actions": {
+        "reward": 4.515516970416356,
+        "any_success": 0.5,
+        "terminal_success": 0.5
+      },
+      "E/cheap_inputs/all_actions": {
+        "reward": 4.515516970416356,
+        "any_success": 0.5,
+        "terminal_success": 0.5
+      },
+      "E/with_packet/cheap_actions": {
+        "reward": 4.515516970416356,
+        "any_success": 0.5,
+        "terminal_success": 0.5
+      },
+      "E/with_packet/all_actions": {
+        "reward": 4.515516970416356,
+        "any_success": 0.5,
+        "terminal_success": 0.5
+      }
+    },
+    "dependence": {
+      "cheap_inputs/cheap_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 2
+      },
+      "cheap_inputs/all_actions": {
+        "choices": 0,
+        "actions": 1,
+        "denominator": 2
+      },
+      "with_packet/cheap_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 2
+      },
+      "with_packet/all_actions": {
+        "choices": 0,
+        "actions": 1,
+        "denominator": 2
+      }
+    },
+    "native_checks": {
+      "checks": "passed",
+      "cases": 2,
+      "native_steps": 3680,
+      "recorded_paths": 6,
+      "all_models_unchanged": true,
+      "reject_replayed_every_case": true,
+      "source_mode_parity": [
+        {
+          "seed": 869019900,
+          "source_mode_does_not_change_local_predictions": true
+        },
+        {
+          "seed": 869019901,
+          "source_mode_does_not_change_local_predictions": true
+        }
+      ],
+      "zero_delay_identity": true
+    }
+  },
+  "identity": {
+    "n_env": 6,
+    "condition_means": {
+      "S/cheap_inputs/cheap_actions": {
+        "reward": 3.7805207486889074,
+        "any_success": 0.6666666666666666,
+        "terminal_success": 0.3333333333333333
+      },
+      "S/cheap_inputs/all_actions": {
+        "reward": 3.8345345119037764,
+        "any_success": 0.6666666666666666,
+        "terminal_success": 0.3333333333333333
+      },
+      "S/with_packet/cheap_actions": {
+        "reward": 5.322667012392209,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.16666666666666666
+      },
+      "S/with_packet/all_actions": {
+        "reward": 4.941034958035363,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.3333333333333333
+      },
+      "F/cheap_inputs/cheap_actions": {
+        "reward": 3.7805207486889074,
+        "any_success": 0.6666666666666666,
+        "terminal_success": 0.3333333333333333
+      },
+      "F/cheap_inputs/all_actions": {
+        "reward": 3.8345345119037764,
+        "any_success": 0.6666666666666666,
+        "terminal_success": 0.3333333333333333
+      },
+      "F/with_packet/cheap_actions": {
+        "reward": 5.322667012392209,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.16666666666666666
+      },
+      "F/with_packet/all_actions": {
+        "reward": 4.941034958035363,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.3333333333333333
+      },
+      "E/cheap_inputs/cheap_actions": {
+        "reward": 5.322667012392209,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.16666666666666666
+      },
+      "E/cheap_inputs/all_actions": {
+        "reward": 5.322667012392209,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.16666666666666666
+      },
+      "E/with_packet/cheap_actions": {
+        "reward": 5.322667012392209,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.16666666666666666
+      },
+      "E/with_packet/all_actions": {
+        "reward": 5.322667012392209,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.16666666666666666
+      }
+    },
+    "dependence": {
+      "cheap_inputs/cheap_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 6
+      },
+      "cheap_inputs/all_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 6
+      },
+      "with_packet/cheap_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 6
+      },
+      "with_packet/all_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 6
+      }
+    },
+    "native_checks": {
+      "checks": "passed",
+      "cases": 6,
+      "native_steps": 10344,
+      "recorded_paths": 16,
+      "all_models_unchanged": true,
+      "reject_replayed_every_case": true,
+      "source_mode_parity": [],
+      "zero_delay_identity": true
+    }
+  },
+  "main": {
+    "n_env": 60,
+    "condition_means": {
+      "S/cheap_inputs/cheap_actions": {
+        "reward": 6.168675834756459,
+        "any_success": 0.85,
+        "terminal_success": 0.5833333333333334
+      },
+      "S/cheap_inputs/all_actions": {
+        "reward": 5.990082443417923,
+        "any_success": 0.85,
+        "terminal_success": 0.5666666666666667
+      },
+      "S/with_packet/cheap_actions": {
+        "reward": 6.5569032470841595,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.5833333333333334
+      },
+      "S/with_packet/all_actions": {
+        "reward": 6.038930456724754,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.6
+      },
+      "F/cheap_inputs/cheap_actions": {
+        "reward": 6.168675834756459,
+        "any_success": 0.85,
+        "terminal_success": 0.5833333333333334
+      },
+      "F/cheap_inputs/all_actions": {
+        "reward": 5.973000705469371,
+        "any_success": 0.8333333333333334,
+        "terminal_success": 0.6166666666666667
+      },
+      "F/with_packet/cheap_actions": {
+        "reward": 6.5569032470841595,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.5833333333333334
+      },
+      "F/with_packet/all_actions": {
+        "reward": 5.89615321058323,
+        "any_success": 0.8,
+        "terminal_success": 0.6166666666666667
+      },
+      "E/cheap_inputs/cheap_actions": {
+        "reward": 6.5569032470841595,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.5833333333333334
+      },
+      "E/cheap_inputs/all_actions": {
+        "reward": 6.5569032470841595,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.5833333333333334
+      },
+      "E/with_packet/cheap_actions": {
+        "reward": 6.5569032470841595,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.5833333333333334
+      },
+      "E/with_packet/all_actions": {
+        "reward": 6.5569032470841595,
+        "any_success": 0.8833333333333333,
+        "terminal_success": 0.5833333333333334
+      }
+    },
+    "dependence": {
+      "cheap_inputs/cheap_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 60
+      },
+      "cheap_inputs/all_actions": {
+        "choices": 0,
+        "actions": 19,
+        "denominator": 60
+      },
+      "with_packet/cheap_actions": {
+        "choices": 0,
+        "actions": 0,
+        "denominator": 60
+      },
+      "with_packet/all_actions": {
+        "choices": 10,
+        "actions": 28,
+        "denominator": 60
+      }
+    },
+    "native_checks": {
+      "checks": "passed",
+      "cases": 60,
+      "native_steps": 107844,
+      "recorded_paths": 177,
+      "all_models_unchanged": true,
+      "reject_replayed_every_case": true,
+      "source_mode_parity": [],
+      "zero_delay_identity": true
+    },
+    "primary_contrasts": {
+      "refresh_minus_stale": {
+        "reward": -0.14277724614152454,
+        "reward_ci": [
+          -0.49317790323560434,
+          0.22847586909376247
+        ],
+        "confidence": 0.9833333333333333,
+        "any_success_diff": -0.03333333333333333,
+        "terminal_success_diff": 0.016666666666666666,
+        "role": "primaryreward;successdescriptive",
+        "per_cell": [
+          -0.5510743378979841,
+          0.0039925125280865,
+          0.0005996782302855941,
+          -0.11372874198927727,
+          -0.2569919993354142,
+          0.060539411615156344
+        ]
+      },
+      "stale_minus_absence": {
+        "reward": -0.5179727903594057,
+        "reward_ci": [
+          -1.1556913012748091,
+          0.0521015051476901
+        ],
+        "confidence": 0.9833333333333333,
+        "any_success_diff": -0.05,
+        "terminal_success_diff": 0.016666666666666666,
+        "role": "primaryreward;successdescriptive",
+        "per_cell": [
+          -2.1759972283710907,
+          -0.7161586998050271,
+          -0.12731329003321004,
+          -0.027787540953477397,
+          -0.22284687111443402,
+          0.16226688812080547
+        ]
+      },
+      "refresh_minus_absence": {
+        "reward": -0.6607500365009302,
+        "reward_ci": [
+          -1.2485845300398972,
+          -0.08364704609309906
+        ],
+        "confidence": 0.9833333333333333,
+        "any_success_diff": -0.08333333333333333,
+        "terminal_success_diff": 0.03333333333333333,
+        "role": "primaryreward;successdescriptive",
+        "per_cell": [
+          -2.7270715662690757,
+          -0.7121661872769406,
+          -0.12671361180292445,
+          -0.14151628294275467,
+          -0.4798388704498482,
+          0.22280629973596183
+        ]
+      }
+    }
+  }
+}

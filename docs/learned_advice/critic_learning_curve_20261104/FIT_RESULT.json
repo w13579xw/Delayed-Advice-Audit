@@ -1,0 +1,29 @@
+{
+  "exp_id": "V11b",
+  "status": "complete",
+  "sizes": [
+    7,
+    14,
+    28
+  ],
+  "task_count": 2,
+  "policy_cells": 24,
+  "all_selected_models": "RBFkernelridge",
+  "null_candidate_retained": true,
+  "runtime_checks": {
+    "checks": "passed",
+    "decisions": 288,
+    "all_choices_equal": true,
+    "maximum_predicted_gain_error": 3.608224830031759e-16
+  },
+  "model_freeze": "outputs/vision/critic_learning_curve_recovery_20261104_v1/frozen_models_before_test.json",
+  "test_scope": "200newpaired cases; no performance conclusion before completion",
+  "evaluation_summary": {
+    "takeaway": "Nestedcriticfits and runtime decisions pass validation parity; all24cells selectednonzero models under the fixed rule.",
+    "claim_update": "neutral",
+    "baseline_relation": "not_comparable",
+    "comparability": "high",
+    "failure_mode": "none",
+    "next_action": "complete_prospective_test"
+  }
+}

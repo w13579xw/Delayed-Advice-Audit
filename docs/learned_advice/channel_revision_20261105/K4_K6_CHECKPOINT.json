@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-05T05:53:09.966873+00:00",
+  "status": "partial_campaign",
+  "slices": {
+    "K4": {
+      "takeaway": "Null-selectionfrequency changes with MSEtie/split; frozenzero nondependence unchanged.",
+      "claim_update": "Narrows prevalence; retainscounterexample.",
+      "baseline_relation": "Sameaccepted20dev episodes/task;100preassignedresplits;notnewtest.",
+      "comparability": "All5tolerances/all8cells reported; originaldelaystrata descriptive.",
+      "failure_mode": "No new primaryfailedruns; thresholdsnotretuned.",
+      "next_action": "Retaincountsanddelaytablesappendix;complete3actorpipeline."
+    },
+    "K6": {
+      "takeaway": "31substantivepublishedreferences acrossadvising,delay,OPE,selection/dependence.",
+      "claim_update": "Position integratedaudit,notfirstnull/regression/branching.",
+      "baseline_relation": "Existing11+20primarypublishedworks;neighborpreprints remaintextonly.",
+      "comparability": "NR meansunestablishedinreviewedmaterial; no blanketnegativepriorityclaim.",
+      "failure_mode": "SomeprimaryHTML/PDF networkerrorspreserved; Crossref/primarywebused.",
+      "next_action": "Finalreference/caption/prosevalidation after3seedresults."
+    }
+  }
+}

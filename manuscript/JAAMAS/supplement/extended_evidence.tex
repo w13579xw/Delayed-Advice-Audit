@@ -1,0 +1,108 @@
+\section{Technical conventions beyond the main article}
+The original visual source and all four local heads use the same whole-episode demonstration partition. Local action heads and pose heads differ in target supervision; pose estimates become actions through the public task controller. The fixed deployed local action-head capacities are 16/128 on Push and 32/256 on PickPlace. Full architecture and optimization details are retained below.
+
+Visual arrival inputs use request and arrival $512\times16\times16$ feature maps, robot states and their difference, all four head predictions at both times, and three clock terms. Packet enrichment adds 400 coordinates. A single named source option can execute a different action sequence when its packet changes, even with an invariant gate. State critics instead receive 58 local features or 62 with the four-dimensional packet. Snapshot reward bookkeeping and native success are never online critic inputs.
+
+State sensor noise affects hand/object/goal positions independently at each native step; gripper opening is unnoised. Paired branches use the same time-indexed Gaussian stream. This is coordinate noise, not semantic feedback corruption. Repeated requests at 16/144/272/400 have spacing 128, exceeding the maximum delay-plus-hold $64+32$. Later public-source packets can diverge with closed-loop states across policies; periodic evaluation therefore does not assume identical future messages.
+
+Native state branches use prefix reuse only for exactly identical actions and future noise. Six boundary smoke cases independently execute all 22 learned/reference policies sequentially and compare complete reward/action traces with the reused tree. These cases are excluded from scientific samples. State NumPy critic exports agree with Torch to $1.78\times10^{-15}$ on the checked training/validation inputs.
+
+The larger-budget visual replication trains all 15,000 updates before validation-only source selection. It restarts optimization from the common pretrained initialization rather than resuming archived 3k weights without optimizer state. First-3k loss histories match their earlier counterparts excluding elapsed time. New actor seeds generate their own arrival labels on the same development environment/clock pool. All 160 model/config files are frozen before testing, including engineering tests. No weaker source or trained system is discarded.
+
+The original and current code fingerprints, version changes and failed fit/recovery records remain separated in the archive. Engineering replay validates the executed local configuration; it does not establish simulator correctness or clean-machine portability. The source-data manifest links every quantitative table to its analyzed records.
+
+\section{Additional results and inference details}\label{s-app:inference}
+\subsection{Original exact event bounds}
+For each paired reward difference $D$, define $p=\Pr(D>10^{-10})$. With rewards in 0--10, $D\leq10$ implies $\E[D]\leq10^{-10}+10p$. A one-sided Clopper--Pearson upper bound $p_U$ therefore yields the conservative mean-positive-part bound $10^{-10}+10p_U$. Six such bounds received error $0.05/12$ each, complementing the six approximate bootstrap intervals with the same allocation. All six bounds were too loose to exclude the prespecified 0.25 reward-scale gain. The union-bound allocation for exact event bounds does not make the percentile-bootstrap intervals distribution-free. Sparse nonzero differences, notably 10 and 16 cases for the first two Push contrasts, further limit their interpretation. No finite-sample safety, equivalence or universal non-benefit result is claimed.
+
+\subsection{Supplementary curves, contrasts and figures}
+\begin{figure}[H]
+\centering\includegraphics[width=\textwidth]{../figures/critic_learning_curve.pdf}
+\caption{Descriptive critic-data learning curves, using a common fresh test pool within each task. Training sets are nested, with the same 12 validation episodes. The actor remains training seed 0. The dotted 0.25 line is an investigator-defined reward-scale reference, not a validated operational utility threshold. Primary uncertainty is reported in Table~\ref{s-tab:curveall}.}\label{s-fig:curve}
+\end{figure}
+
+
+
+Table~\ref{s-tab:curveall} retains the complete eight-contrast family. All models were fitted and frozen before the independent test environments. Zero model selection in the original 14/6 cohort does not imply zero selection in this 28/12 cohort. A sample-size comparison within this new nested draw is different from comparing the old and new development cohorts.
+\input{tables/curve_all}
+
+\begin{figure}[H]
+\centering\includegraphics[width=\textwidth]{../figures/state_contrasts.pdf}
+\caption{State-cohort policy contrasts averaged over five critic initializations and the 12 equally weighted delay/frequency/noise conditions. Points and intervals report the predeclared approximate stratified crossed-bootstrap analysis. Zero-width results on Button and the Drawer input contrast have structural null-policy explanations; a degenerate bootstrap is not itself an equivalence proof. All panels use the same horizontal reward-difference scale. Raw reward differences are kept separate by task.}\label{s-fig:state}
+\end{figure}
+
+\subsection{State-cohort condition breakdowns}
+Tables~\ref{s-tab:drawerbreak}--\ref{s-tab:buttonbreak} retain every predeclared condition. These are descriptive averages over five critic seeds and ten environments/cell. Each cell has fresh environment seeds; policy comparisons are paired within a cell, while the delay/frequency/noise entries are not a same-environment factorial crossover. Subgroup point differences are not promoted to new primary tests or used to revise models. All full-state-cohort means, seed-level contrasts, success counts and packet-probe counts are in the accompanying JSON source data.
+\input{tables/state_breakdowns}
+
+\subsection{Development tolerance and descriptive delay strata}
+\input{tables/tolerance_table}
+\input{tables/hyperparameter_grid}
+\input{tables/visual_delay_table}
+These analyses do not refit on test environments. The full JSON retains every visual policy's reward, both success endpoints and rejection rate at each delay, along with every declared tolerance and resplit cell. The model-selection sensitivity question is distinct from changing the deployment threshold after seeing outcomes.
+
+\subsection{Complete visual replication by training seed}
+\input{tables/visual_seed_contrasts}
+\input{tables/visual_fullseed_competence}
+The full JSON retains any-success and terminal-success for every condition, all option choices and all preassigned oracle records. Native success labels are generated during rollout; the visual reward/action archives alone do not independently reconstruct a complete success-flag history. The independent trace audit therefore certifies reward means and frozen choices, not a second derivation of every native success label.
+
+\subsection{Earlier short-budget competence results}
+The separate 3,000-update ACT competence replication changed reward ordering across actor training seeds. On 50 fresh paired environments per task, ACT-minus-local mean reward was positive for Push seed 1 and PickPlace seed 2, and negative for the other seeds. Across seeds 0--2, the averages were $-0.810$ and $-0.911$, with approximate 97.5\% intervals [$-2.286$,0.596] and [$-2.924$,1.576]. These 600 trajectories shared only 100 independent environment seeds. They do not replicate the 15,000-update source or the complete visual arrival experiment across training seeds.
+
+\section{Implementation details}\label{s-app:implementation}
+\subsection{Visual actor implementation}
+All visual policies shared the frozen 11,166,912-parameter ResNet-18 encoder. Cached feature maps were quantized to FP16 and restored to FP32. Local models comprised two action heads and two pose heads, with projection-channel/hidden-width pairs 16/128 and 32/256. Each used a $1\times1$ projection and a two-hidden-layer multilayer perceptron. Pose targets supplied additional offline supervision and were converted to actions by the public task controller. Thus, sharing demonstrations and an encoder did not match training information completely. Earlier development selected the 16/128 action head for Push and 32/256 for PickPlace; no new test result changed those choices.
+
+Each task had 200 complete demonstrations, split by episode into 180 training and 20 validation episodes. Local heads used 20 epochs. ACT used AdamW with learning rate $10^{-5}$, weight decay $10^{-4}$, batch size 16 and gradient clipping at norm 1. The loss was padding-masked normalized L1 plus ten times the latent KL term, with half the sampling probability assigned to the first 100 steps. Training used BF16 autocast and FP32 weights; validation used FP32. The original source-budget and arrival studies used training seed 0.
+
+
+
+\subsection{Visual arrival-critic fitting}
+Standard radial basis function (RBF) kernel ridge regression predicted option reward differences from reject, scaled by ten. Per-block normalization used training-only means and standard deviations floored at 0.05; distances were divided by each block's median positive pairwise training distance. The grid crossed bandwidths $\{0.25,1,4\}$ with ridge values $\{0.01,0.1,1,10\}$. The fitting equation was $B=(K+\lambda I)^{-1}Y$, without a training-size multiplier. A zero predictor was eligible. Candidates within $10^{-12}$ of the global minimum validation MSE were tied, preferring zero, then stronger ridge and smaller bandwidth. Intervention required predicted gain above $10^{-12}$. These are standard estimators and controls, not new neural components.
+
+\subsection{State-critic fitting}
+For each input/action cell we trained five independently initialized 64/32-hidden-unit tanh critics, using float64, AdamW learning rate 0.001, weight decay 0.001, batch size 16 and exactly 1,000 updates. Validation checkpoints were 250/500/750/1,000. The zero predictor initialized selection; a checkpoint replaced the current candidate only if its validation MSE improved by more than $10^{-12}$. In this run, all 60 choices also matched selecting the earliest member of the global minimum-MSE tolerance pool, with zero first. Training-only feature standard deviations were floored at 0.05. An accepted predicted gain had to exceed $10^{-8}$. Exported NumPy inference matched Torch with maximum error $1.78\times10^{-15}$ over all training/validation inputs. Five critic seeds are distinct from five actor seeds.
+
+\subsection{Pinned visual source}
+The ACT source~\cite{act} was adapted from the pinned public \path{RoboHP/metaworld_mt50_act} checkpoint, revision \texttt{680a3b396860b88adcf4036}\allowbreak\texttt{a735fe124b4d850da}. It had 51,593,092 parameters and returned 100 four-dimensional actions. A black second-camera placeholder and the public normalization/action-sign convention were retained. This implementation was not language-conditioned and is not evaluated as a general vision-language-action model. A pinned standalone LeRobot ACT core had strict parameter-load and CPU/GPU/cached-feature parity checks.
+
+
+
+\subsection{Original source-budget qualification}
+A fixed control extended source optimization from 3,000 to 15,000 updates under the same training protocol. Offline validation selected updates 10,750 and 5,500 for the longer-budget Push and PickPlace sources. On 100 fresh paired environments/task, Push any success increased from 69/100 to 79/100 (exact two-sided McNemar $p=0.001953$, passing the four-comparison threshold 0.0125). PickPlace changed from 80/100 to 83/100 without passing that rule. Local success was 91/100 and 90/100. This establishes source competence in this setup, not equal-compute architecture superiority or the marginal value of occasional advice.
+
+
+
+\subsection{Earlier short-budget actor replication}
+The supplementary competence replication independently retrained shorter-budget ACT and local action heads with seeds 1 and 2, retaining seed 0. Fixed previously selected capacities, losses and demonstration splits were used. All 12 evaluated models were hashed before testing. Three seeds, two actor roles and 50 environments/task gave 600 logical complete trajectories and 100 independent environment seeds. Approximate 97.5\% task intervals used 20,000 crossed resamples of training seeds and environment seeds. Three seeds do not provide reliable training-population coverage~\cite{agarwal}. This study does not supply five-seed visual ACT or full-arrival replication.
+
+
+
+\subsection{State controller qualification}
+We generated 200 public-source demonstrations/task and qualified a distance-weighted nearest-neighbor behavior-cloning local controller. A fixed whole-episode ladder of 40/100/200 demonstrations and $k\in\{1,3,5\}$ used 12 separate validation environments, requiring at least 10/12 successes; within the first eligible budget, success, reward and smaller $k$ determined selection. An independent 20-environment qualification then required both source and local success rates at least 0.8. All tasks and qualification failures were to remain visible.
+
+
+
+\section{Reproduction and provenance}\label{s-app:reproduce}
+The research workspace is \path{/home/ez/DelayedAdviceAudit/code}; the manuscript project is its sibling under \texttt{Springer/Advice\_Audit\_JAAMAS}. The source base is commit \texttt{712d7e3fdb28d36aec79}\allowbreak\texttt{5440c28dd405695834af}, with extensive locally modified research code. Commit identity alone therefore does not specify the executed code. Per-run source snapshots, entry hashes and frozen models are authoritative. The later source fingerprint is \texttt{48ffd6ffff1e3eeb5cc15a}\allowbreak\texttt{475888a844c846e} followed by \texttt{ad878292e6137c7f171c5246221}; the original confirmation used its separately archived earlier fingerprint. A path-resolution repair after workspace migration retained the selected actors and was not backdated into earlier runs. The later descriptive-name release changes package and document identifiers; the archived experimental source snapshots and recorded hashes remain authoritative. Legacy aliases preserve access to historical paths. No experimental trace or model was renamed internally or relabelled to claim a new run.
+
+\begin{table}[tb]\centering\small
+\caption{Independent environment groups and principal archived studies. Branches and repeated policies are not additional independent groups.}\label{s-tab:groups}
+\begin{tabular}{lrr}\toprule Study & Development groups & New test groups\\\midrule
+Original visual arrival & 40 & 500\\
+Critic learning curve & 80 & 200\\
+Short-budget actor replication & original corpus reused & 100\\
+New state contact suite & 126 & 360\\
+Fixed-policy channels & state models reused & 180\\
+Full visual training seeds & original 40 reused & 100\\\bottomrule\end{tabular}
+\end{table}
+
+Native execution used Python 3.12.14, MetaWorld 3.1.1, MuJoCo 3.3.0, Gymnasium 1.2.3, NumPy 2.5.4 and SciPy 1.18.1. The visual worker used Python 3.10.12, Torch 2.4.1+cu118, Torchvision 0.19.1+cu118 and NumPy 1.26.4 on one RTX 3090. One simulator process ran at a time, with two OpenMP threads, one OpenBLAS thread and EGL. These version differences motivated a float64 NumPy export for state critics. Local reproducibility does not establish clean-machine portability.
+
+\subsection{Frozen schedules}
+The original visual confirmation used Push seeds 64200000--64200249 and PickPlace 64300000--64300249, with clock generator 2026110415. The new critic curve used development 66400000--66400039 and 66500000--66500039, and test 66600000--66600099 and 66700000--66700099. Nested membership and the fixed 12-episode validation pools were frozen before labels were collected. Bootstrap seed was 2026110427.
+
+For state tasks indexed $i=0,1,2$ in Drawer/Door/Button order, demonstration seeds began at $810000000+10000i$, qualification at that base plus 2000, and validation at base plus 1000. Development seeds were $820000000+10000i+j$, $j=0,\ldots,41$, with $j<30$ training. The development schedule generator was 2026110521. Test seeds were $830000000+10000i+100c+j$, where $c=0,\ldots,11$ enumerated delay, frequency and noise in that order and $j=0,\ldots,9$. Noise generator seed was the environment seed plus 1000000. Bootstrap generator was 2026110531. All smoke seeds were distinct and excluded from scientific samples. The revision channel seeds begin at 850000000, with task increments of 10000 and cell increments of 100; schedule RNG is 2026110551. Full visual tests use 860000000 and 860010000 through offsets 0--49, shared across the three trained systems; clock RNG is 2026110557. Its development initial states and clocks reuse the original accepted 20-per-task pool, with 80 new logical trajectories for seeds 1 and 2.
+
+\subsection{Available local audit routes}
+The original visual offline reproduction script refits the complete kernel grid and reproduces all 500 saved decision records and six paired effect vectors using NumPy without a simulator or GPU. The critic-curve audit additionally reconstructs training normalization, verifies 61 source snapshots and all 200 choices, and checks reward means and branch deduplication. The state audit independently reconstructs development targets and features, every test choice and trajectory mean, and all frozen model hashes. The prefix-tree boundary test independently executes all 22 policies in each of six smoke cases, rather than checking the tree against itself.

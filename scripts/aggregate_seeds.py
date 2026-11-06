@@ -10,7 +10,7 @@ import numpy as np
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dirs", nargs="+", required=True)
-parser.add_argument("--method", default="daci")
+parser.add_argument("--method", default="advice_audit")
 parser.add_argument("--reference", default="local")
 parser.add_argument("--delay", type=int, default=12)
 parser.add_argument("--out", required=True)

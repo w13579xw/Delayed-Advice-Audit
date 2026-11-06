@@ -1,0 +1,15 @@
+{
+  "surface_class": "paper_main",
+  "source": "/home/ez/DACI/code/outputs/jaamas/state_temporal_20261105_v1/curves.npz",
+  "script": "/home/ez/DACI/code/outputs/jaamas/bridge_revision_20261105/plot_temporal.py",
+  "claim": "Door ever-success and terminal-success differ because native success is brief; dense reward is a different trajectory endpoint",
+  "weighting": "60environments equally weighted; average5frozenpacket/fullcritics",
+  "exports": [
+    "door_temporal.pdf",
+    "door_temporal.svg",
+    "door_temporal.png"
+  ],
+  "review": "Rendered preview inspected: readable at article width; color plus dash patterns; no collisions; style hex literals quoted for Matplotlib compatibility",
+  "no_error_band": "descriptive complete-cohort curves; no timewise inference",
+  "placement_revision_20261106": "Existing vector reused unchanged as mainFig4; complete durationdata onlySI; previousplacement appendix"
+}

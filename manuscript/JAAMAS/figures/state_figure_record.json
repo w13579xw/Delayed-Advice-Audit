@@ -1,0 +1,8 @@
+{
+  "surface_class": "internal_review",
+  "source_data": "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/analysis/analysis.json",
+  "source_sha256": "f7a5d87323a8b1ecab5dffd058410c228d4219ac859f76b607e2cfdfc942d81a",
+  "script": "/home/ez/DACI/code/outputs/jaamas/plot_state_20261105.py",
+  "review": "Actual PNG inspected: legible labels/intervals, explicit zero baseline, no overlap; accepted internal-review draft. First panel narrower scale now disclosed in manuscript caption; not a publication-grade certification.",
+  "message": "Separate pipeline input/action/reject contrasts; no positive input effect established; task scales separate"
+}

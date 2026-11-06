@@ -1,0 +1,10 @@
+\begin{table}[tb]\centering\small
+\caption{Complete visual training replication: three independently trained systems, each with a 15,000-update ACT budget, all four local heads and separately fitted arrival critics. Fifty initial environments/task are shared across seeds. These are pipeline contrasts with approximate 99.1667\% crossed-bootstrap intervals (six-contrast family), conditional on the common demonstration corpus and development schedule.}\label{tab:fullseeds}
+\begin{tabular}{llrr}\toprule Task & Contrast & Mean & Interval\\\midrule
+Push & $P,C-L,C$ & -0.009 & [-0.427, +0.260]\\
+Push & $P,F-P,C$ & +0.206 & [-0.066, +0.861]\\
+Push & $P,F-R$ & +0.068 & [-0.593, +0.722]\\
+PickPlace & $P,C-L,C$ & +0.426 & [-0.367, +1.600]\\
+PickPlace & $P,F-P,C$ & -0.361 & [-1.526, +0.000]\\
+PickPlace & $P,F-R$ & -0.382 & [-1.500, +0.319]\\
+\bottomrule\end{tabular}\end{table}

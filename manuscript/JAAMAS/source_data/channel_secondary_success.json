@@ -1,0 +1,143 @@
+{
+  "drawer-open-v3": {
+    "local/full/S": {
+      "native_return": 7.9425072232126555,
+      "success": 1.0,
+      "terminal_success": 0.9833333333333333
+    },
+    "local/full/F": {
+      "native_return": 8.014815400199332,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "local/full/E": {
+      "native_return": 8.064237227101074,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/cheap/S": {
+      "native_return": 8.064237227101074,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/cheap/F": {
+      "native_return": 8.064237227101074,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/cheap/E": {
+      "native_return": 8.064237227101074,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/full/S": {
+      "native_return": 7.988590002371919,
+      "success": 1.0,
+      "terminal_success": 0.99
+    },
+    "packet/full/F": {
+      "native_return": 8.026257441840517,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/full/E": {
+      "native_return": 8.064237227101074,
+      "success": 1.0,
+      "terminal_success": 1.0
+    }
+  },
+  "door-open-v3": {
+    "local/full/S": {
+      "native_return": 8.610659517912557,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "local/full/F": {
+      "native_return": 8.639954665217429,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "local/full/E": {
+      "native_return": 8.705061193070188,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "packet/cheap/S": {
+      "native_return": 8.697552837461787,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "packet/cheap/F": {
+      "native_return": 8.697505372316417,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "packet/cheap/E": {
+      "native_return": 8.705061193070188,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "packet/full/S": {
+      "native_return": 8.602475438420885,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "packet/full/F": {
+      "native_return": 8.641017889294377,
+      "success": 0.95,
+      "terminal_success": 0.0
+    },
+    "packet/full/E": {
+      "native_return": 8.705061193070188,
+      "success": 0.95,
+      "terminal_success": 0.0
+    }
+  },
+  "button-press-v3": {
+    "local/full/S": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "local/full/F": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "local/full/E": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/cheap/S": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/cheap/F": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/cheap/E": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/full/S": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/full/F": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    },
+    "packet/full/E": {
+      "native_return": 1.1235730149256646,
+      "success": 1.0,
+      "terminal_success": 1.0
+    }
+  }
+}

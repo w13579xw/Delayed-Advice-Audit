@@ -1,0 +1,22 @@
+{
+  "schema": "advice_audit.repair_value.v1",
+  "purpose": "Falsify whether repaired advice retains source-specific value beyond a matched cheap source",
+  "validation_seed": 70000,
+  "validation_episodes": 12,
+  "test_seed": 71000,
+  "test_episodes": 12,
+  "horizon": 80,
+  "period": 24,
+  "chunk": 12,
+  "delays": [0, 4, 12],
+  "shift_scale": 0.15,
+  "feedback_gain": 6.0,
+  "sources": ["expert", "local_nominal"],
+  "modes": ["reject", "raw", "prefix3", "suffix", "track"],
+  "epsilon": 0.000001,
+  "minimum_mean_value": 0.0001,
+  "primary_metric": "oracle repaired expert value minus oracle repaired local_nominal value; paired episode average",
+  "fixed_control_selection": "Select one fixed mode per source using validation only, then freeze before test",
+  "go_rule": "Do not train a selector unless held-out source-specific oracle difference has positive episode CI, mean >= 1e-4, and contextual opportunity over the validation-selected fixed control has positive CI; necessary opportunity check only, oracle is not deployable",
+  "limitations": ["state reach diagnostics", "analytic sources", "synthetic delay", "single intervention then local continuation", "12 held-out episodes; pilot only", "no claims of global information-theoretic value or full RTC reimplementation"]
+}

@@ -14,7 +14,7 @@ out.mkdir(parents=True, exist_ok=True)
 
 
 def run(*command):
-    subprocess.run([sys.executable, "-m", "daci.cli", *map(str, command)], cwd=root, check=True)
+    subprocess.run([sys.executable, "-m", "advice_audit.cli", *map(str, command)], cwd=root, check=True)
 
 
 run("collect", "--backend", args.backend, "--episodes", args.episodes,
@@ -22,7 +22,7 @@ run("collect", "--backend", args.backend, "--episodes", args.episodes,
 run("train", "--data", out / "pairs.npz", "--out", out / "model")
 run("evaluate", "--backend", args.backend, "--model-dir", out / "model", "--out", out / "eval",
     "--episodes", 4, "--horizon", 80, "--delays", 0, 4, 12,
-    "--methods", "local", "always", "risk", "ttl", "daci", "daci_calibrated", "--audit")
+    "--methods", "local", "always", "risk", "ttl", "advice_audit", "advice_audit_calibrated", "--audit")
 run("report", "--dir", out / "eval", "--plot")
 run("curves", "--data", out / "pairs.npz", "--out", out / "temporal_curves.png")
 print("Smoke pipeline complete:", out)

@@ -1,0 +1,13 @@
+- [x] Matched180/20 corpus and source adaptation protocol frozen before training.
+- [x] Licensed pinned ACT core retained; installed third-party packages unchanged.
+- [x] Strict checkpoint and original CPU-vs-GPU output parity passed; separate FP16 cache approximation recorded.
+- [x] Full-cache20-update smoke passed; failures retained.
+- [x] Push/PickPlace seed0 fixed3000-update runs completed with finite gradients.
+- [x] Both unadapted and adapted source evaluated on20fresh development episodes × slices1/20/100.
+- [x] Four source execution choices frozen before opening610/611 test pools.
+- [x] Independent50paired episodes/task for frozen cheap, unadapted and matched source completed and audited.
+- [x] Full visual-policy image/action/physics/reward replay and bundle-vs-accepted-worker equivalence passed under explicit MSAA0 observation protocol; native MSAA4failure retained.
+- [x] Bounded strong-cheap-set delay opportunity profile and24row/4episode pilot completed; no primaryany-successexclusiveopportunity observed. Longer-budget control also complete; new training-data pilot now being checked.
+- [ ] Deployed value learner justified by pilot, calibrated by complete episodes, and independently tested.
+- [ ] Multiple training seeds and uncertainty beyond test-episode variation completed.
+- [ ] Publication contribution/limits reassessed using final evidence, then writing routed through nature-writing.

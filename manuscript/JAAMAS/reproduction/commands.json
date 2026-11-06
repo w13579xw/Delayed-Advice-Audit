@@ -1,0 +1,96 @@
+[
+  {
+    "stage": "development_smoke",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/collect_state_data_20261105.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/development_smoke",
+      "--qualification",
+      "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 7.433234162977897
+  },
+  {
+    "stage": "development",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/collect_state_data_20261105.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/development",
+      "--qualification",
+      "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1"
+    ],
+    "exit_code": 0,
+    "seconds": 192.5540371889947
+  },
+  {
+    "stage": "fit",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/fit_state_critics_20261105.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/development",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/models"
+    ],
+    "exit_code": 0,
+    "seconds": 41.61330140894279
+  },
+  {
+    "stage": "boundary_smoke",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/test_state_critics_20261105.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/boundary_smoke",
+      "--qualification",
+      "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/models",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 52.769464873941615
+  },
+  {
+    "stage": "test",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/test_state_critics_20261105.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/test",
+      "--qualification",
+      "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/models"
+    ],
+    "exit_code": 0,
+    "seconds": 520.9616520329146
+  },
+  {
+    "stage": "analysis_audit",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/analyze_audit_state_20261105.py",
+      "--test",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/test",
+      "--data",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/development",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/models",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/analysis"
+    ],
+    "exit_code": 0,
+    "seconds": 3.8205839880974963
+  }
+]

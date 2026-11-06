@@ -1,0 +1,10 @@
+{
+  "checks": "passed",
+  "entry_hashes": 7,
+  "training_only_normalizations_reconstructed": 60,
+  "global_tie_parity_models": 60,
+  "noise_arrays_verified": 2899,
+  "null_policy_episode_identities": 3600,
+  "unique_environment_seeds": 360,
+  "note": "Extra forensic checks after planned analysis; no refit or additional outcome hypotheses"
+}

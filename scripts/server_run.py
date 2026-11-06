@@ -38,7 +38,7 @@ def save(path, data):
 
 def phases(config, directory):
     py = [sys.executable, "-u"]
-    cli = py + ["-m", "daci.cli"]
+    cli = py + ["-m", "advice_audit.cli"]
     model, data = directory / "model", directory / "pairs.npz"
     common = ["--backend", config["backend"], "--model-dir", str(model),
               "--episodes", str(config["test_episodes"]), "--horizon", "80",

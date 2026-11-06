@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm]{geometry}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{3em}
+\begin{document}
+\begin{center}\textbf{Information Sheet for a Regular Paper}\\
+\emph{Autonomous Agents and Multi-Agent Systems}\\[6pt]
+\textbf{Auditing the Value of Delayed Advice in Autonomous Agents}\end{center}
+\textbf{Draft status:} Prepared for author verification. Author names, affiliations and correspondence remain to be supplied. This is not a submitted manuscript.
+
+\textbf{1. Main claim and importance to the agent literature}
+
+A reward difference between separately fitted advice-policy variants does not, by itself, establish runtime value in the returned expert message. We provide an evaluation framework that distinguishes pipeline performance, fixed-policy message dependence and value under an explicitly specified channel intervention. A positive empirical packet-input-labelled contrast is implemented by an identically zero predictor that always rejects intervention and follows the local controller. A simple dependency certificate makes its runtime nondependence inspectable.
+
+The contribution concerns evaluation of agent decision-making and teacher--student architectures. A system may retain expertise in offline representations or demonstrations while having no dependence on a newly returned message. Reward, message use and message value must therefore be separately supported. The audit framework supplies executable local/null controls, pre-outcome decisions, matched branches and replay audits. The distinction is general at the level of the evaluation question; empirical validation is limited to single-learner robotic simulation. We do not claim a new optimal advice policy, novel kernel/MLP architecture, universal expert failure or a first counterfactual-branch protocol.
+
+\textbf{2. Precise evidence and implications}
+
+The original prospective visual study used 250 paired independent environments per task (Push/PickPlace). The PickPlace packet-input/local-action variant improved reward over its local-input counterpart by 0.735, with an approximate multiplicity-adjusted interval [0.294,1.216], yet selected reject in all 250 cases. It matched continued-local trajectories exactly. This is direct evidence against interpreting that particular contrast as runtime expert-information value. Full packet variants instead lost reward versus reject: 0.365 on Push and 0.636 on PickPlace.
+
+The visual channel bridge freezes the original PickPlace actors and receivers on 60 new nonzero-delay environments. Refresh changes 10/60 full-packet choices and 28/60 action sequences, but refresh-minus-stale reward is -0.143 with approximate 98.3333\% interval [-0.493,+0.228]. Fresh-minus-absence is -0.661 [-1.249,-0.084] under the fixed reject wrapper. The original null receiver remains structurally packet-independent. Independent native prefix replay regenerates all 136 request/arrival packet-feature pairs across main and excluded checks. This connects the visual setting to actual channel outcomes without equating the null and nonzero receivers.
+
+An independent new 60-environment decoder control retains those models but changes the execution rule using known generation time. For a predefined 48-step source chunk, time matching gains+0.579 over legacy fresh decoding, with an approximate 98.75\% interval[+0.173,+0.997]. The frozen gate's decoder difference remains unresolved. The experiment changes the executable receiver; it does not reinterpret the original fixed-policy effect or establish an advice advantage over local control.
+
+A fixed-policy native channel study on 180 fresh state-task environments compares stale and refreshed public-source messages and explicit absence under a frozen reject wrapper. The 12 primary channel contrasts do not establish positive refresh value. Audits retain 2,280 option paths and 10,800 channel decisions. Full packet gates changed choices in 62/300 Drawer and 57/300 Door records, while actual action sequences changed in 142/300 and 159/300; critic seeds share the environments. Refreshed joint inputs differ from stale-only training, so these are specified channel effects, not intrinsic private-information value.
+
+Three full visual systems with 15k ACT budgets, all local heads and separate critics share 100 independent test environments. Full-policy gains over local control remain unresolved: Push +0.068[-0.593,+0.722], PickPlace -0.382[-1.500,+0.319]. Data, pretraining and development arrangements are shared; this tests conditional training randomness. Finite-pool diagnostics and all negative outcomes remain reported. Per-seed and detailed temporal records are centralized in Online Resource 1.
+
+\textbf{3. Closest contributions and relationship}
+
+Zhu, Cai, Hu, Leung and Chiu (2023), \emph{Learning by reusing previous advice: a memory-based teacher--student framework}, \emph{Autonomous Agents and Multi-Agent Systems} 37,14, \url{https://doi.org/10.1007/s10458-022-09595-1}, studies advice reuse and learning performance. Our study makes the narrower attribution distinction between expertise retained offline and the newly returned deployment message.
+
+Fachantidis, Taylor and Vlahavas, \emph{Learning to teach reinforcement learning agents}, \emph{Machine Learning and Knowledge Extraction} 1(1),21--42, \url{https://doi.org/10.3390/make1010002}, studies teacher characteristics and learned budgeted advising. Its teacher--student benefit distinction motivates our separate qualification of source competence; our empirical result concerns message dependence of a selected deployed policy. The formal volume/issue record is cited as 2019; online-first publication was in 2017.
+
+Chernova and Veloso (2009), \emph{Interactive policy learning through confidence-based autonomy}, \emph{Journal of Artificial Intelligence Research} 34,1--25, \url{https://doi.org/10.1613/jair.2584}, studies learner requests and corrective demonstrations. We evaluate already fitted arrival policies, rather than proposing a new interactive teaching algorithm. Najar and Chetouani's 2021 journal survey, \url{https://doi.org/10.3389/frobt.2021.584075}, provides context for different advice forms and integration mechanisms.
+
+The closest branch-design precedent is the PACT-VLA preprint (Zhu et al., 2026), \url{https://arxiv.org/abs/2610.28019v1}, Appendix D.2, which fixes candidate pools, records choices before rollout and shares continuation. We explicitly credit it and make no priority claim for matched branching. Our added focus is the executable null-advice counterexample and separation of input selection from expert actuation. Recent enriched-predictor and query-gating work is also acknowledged; neither concept is claimed as new.
+
+\textbf{4. Prior publications and significant added contribution}
+
+\textbf{AUTHOR INPUT NEEDED:} List any prior conference/journal publications, preprints or related manuscripts, or confirm that none exist. Repository files and historical draft versions are not sufficient evidence of publication status. If any part has appeared previously, supply bibliographic details and a precise overlap/extension statement before submission. This draft does not assert novelty relative to an unknown author publication history, absence of concurrent submissions, or all-author approval.
+
+\textbf{Important scope limits}
+
+The five critic seeds in the state extension are not five independently trained visual actors. The visual channel study has one task/system. The full visual replication has three trained systems conditional on a shared corpus, initialization and development schedule; the original 500-environment counterexample is one accepted system. No real robot or actual asynchronous service was tested. Sensor noise is not a human-advice corruption model. Inference intervals are approximate and belong to separate study families; no global finite-sample equivalence or safety guarantee is claimed. Human authors must verify the full analysis, AI-use disclosure and final declarations.
+\end{document}

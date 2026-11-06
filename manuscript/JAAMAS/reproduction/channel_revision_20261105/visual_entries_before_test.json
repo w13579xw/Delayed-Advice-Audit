@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-05T04:53:20.639660+00:00",
+  "files": {
+    "/home/ez/DACI/code/outputs/jaamas/revision_20261105/replication_support.py": "814e002cfe7b136814629a1bab53143c29e92fd6c340c62ed9d868b198df2f4f",
+    "/home/ez/DACI/code/outputs/jaamas/revision_20261105/collect_visual_repl.py": "20dee65ddb4b64ef5f1db68d61709393e5ee6122ce9b94b18868fe14a6f6c1c3",
+    "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py": "35fd68451491e14f53f870357bc581b4af749e3631b59a2ce44b1687c7d34533",
+    "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json": "4978f0354b7024deb25fe88fb025307b3e7dfbf5626e866027b9cd9d177a35be",
+    "/home/ez/DACI/code/outputs/jaamas/revision_20261105/run_visual_pipeline.py": "1593120e61ca3b9b8db48c892a236ce5d9c1884b3920db42f9d3bdd161d2e4f3",
+    "/home/ez/DACI/code/outputs/vision/fit_critic_curve_v2_20261104.py": "a37978297e494ba5bcf7b09de086d8ed8679792b8214fe72f245489c6d3fbade"
+  },
+  "source_fingerprint": "48ffd6ffff1e3eeb5cc15a475888a844c846ead878292e6137c7f171c5246221"
+}

@@ -1,0 +1,14 @@
+# Claim and allocation ledger
+Terminology: DACI=existing evaluation framework name, no invented acronym expansion. Pipeline contrast=reward difference between separately fitted/selected frozen policies. Runtime dependence=whether returned message can change deployed choices/actions with other permitted inputs fixed. Runtime channel value=fixed-policy outcome contrast under an explicitly defined message-channel intervention; not identified by input/action2x2. Information value=stronger claim requiring informational/cost/comparator assumptions. State cohort differs from visual cohort in source,representation,actionfamily and critic. Training seed is never an environment seed.
+
+C1 Core empirical: one positive packet-input-labelled contrast is produced by an identicallyzero/reject policy and requires no returned packet at runtime. Support: original500freshpairedconfirmation+zeroexport+250/250Pickrejection; zero MSE tie within1.42955e-13, notclearbestMSE. Main text. Narrow fact, not expertsgenerallyuseless.
+C2 Evaluation: separatelyselectedpipelinegain does not identify channel value. Support:simplefinitecounterexample and pathwiseindependenceproposition with explicit assumptions, plusC1. Main text. Logicalcounterexample is elementary; no newdeepgeneraltheoremclaim.
+C3 Measurement implementation: matchedsnapshot/prefix/fixedpacket/continuation and wholeepisodegroups;v3derivedarrays/nativealiases/renderMSAA0; sourcehash+preoutcomechoices+audit. Methods+compactschematic, replaydetailsappendix. BuildsonPACT-VLAfixedpoolprecedent;no priorityclaim.
+C4 Critic data: nested7/14/28,80newdev+200newtest;8primary99.375%approximateCIsalllower<=0. Mainqualification/appendixtable. Doesnotshowmoredatawillneverhelp.
+C5 Training sensitivity:3kACT/localseed0/1/2rankreversal;97.5%taskCIsinclude0. Mainlimitation/supporttable. Not15k/fullarrivalreplication. Costsdescriptive151500calls only.
+C6 Added state suite: prospective3newtasks/fivecriticseeds/delay-frequency-noisefactorial. Results awaitcompleted360test+audit. Mainextensiontable+appendixallcells. Doesnotestablishvisualactorseedrobustness, realrobotperformance or packetinformationcausality.
+C7 Nullselectiontransportability:17/100same20episodePickresplitsselectzero at1e-12. Appendix;devdiagnosticnotnewtest.
+
+Primary statistics:original6contrasts99.5833%approximatebootstrap plusseparate6exacteventboundsallocated. Learningcurve8contrasts99.375%. Newstate9contrasts99.4444%crossedstratifiedapproximate. Separatefamilies, notcombinedglobalFWERclaim. Degeneratebootstrapisnotdistributionfreeequivalence. NativeUmean500rewards,notcumulativereturn. No cross-taskrawrewardpooling.
+
+Research additions cannotrepair missingrealrobot/realasync/end-to-endvisualmultiseed evidence byrenamingthem. No promisesofacceptanceorstate-of-artperformance. Fullsourceandnativeoutputs retainedlocally,publicreleaseauthorconfirmationpending. Originaldraft andsuppliedtemplate preserved.

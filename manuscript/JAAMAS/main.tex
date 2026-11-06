@@ -1,0 +1,43 @@
+\RequirePackage{fix-cm}
+\documentclass[smallextended]{svjour3}
+\smartqed
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,longtable}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{url}
+\usepackage{float}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+\usepackage[hidelinks]{hyperref}
+\journalname{Autonomous Agents and Multi-Agent Systems}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\U}{U}
+\newcommand{\ind}{\mathbf{1}}
+\newcommand{\authorinput}[1]{\textbf{AUTHOR INPUT NEEDED: #1}}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+\clubpenalty=10000
+\widowpenalty=10000
+\hypersetup{pdftitle={Auditing the Value of Delayed Advice in Autonomous Agents}}
+\begin{document}
+\title{Auditing the Value of Delayed Advice in Autonomous Agents}
+\titlerunning{Auditing the Value of Delayed Advice}
+\author{Author information pending}
+\authorrunning{Author information pending}
+\institute{Author names, affiliations and correspondence must be supplied before submission.}
+\date{}
+\maketitle
+\begin{abstract}
+Autonomous agents often continue acting while an expert reply is delayed. An improved policy can then be mistaken for evidence that the returned information was useful. We present a simulation evaluation framework that separates fitted-pipeline performance, runtime message dependence and the outcome value of a specified message channel. The protocol freezes policies, records decisions before outcomes, executes paired native trajectories and audits replay. In visual manipulation, a packet-input variant improved PickPlace reward by 0.735 over its local-input counterpart, yet its selected predictor was identically zero and rejected every intervention. The gain therefore did not require the newly returned message. A new channel experiment freezes the original visual system on 60 nonzero-delay environments: refreshing changes decisions and actions, but its reward difference from stale delivery remains unresolved. Defined stale, refreshed and absent channels on 180 further state-task environments provide complementary outcome evidence. An independent timestamp-decoder control improves a fixed fresh chunk relative to stale-offset decoding, without establishing a selector benefit. Finite-pool diagnostics distinguish available action opportunity from harmful selection; three complete visual training systems assess randomness conditional on shared data and pretraining. These findings support an executable evaluation discipline: performance, dependence and channel value require different evidence. They do not establish that delayed advice improves robot performance, that expert information is generally ineffective, or that the results transfer to private observations, real asynchronous services or hardware safety.
+\keywords{Autonomous agents \and Action advising \and Delayed feedback \and Counterfactual evaluation \and Reproducibility}
+\end{abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/formulation}
+\input{sections/framework}
+\input{sections/experiments}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/declarations}
+\input{bibliography}
+\end{document}

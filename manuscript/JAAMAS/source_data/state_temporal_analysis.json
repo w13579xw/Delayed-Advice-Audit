@@ -1,0 +1,225 @@
+{
+  "nonzero_delay": {
+    "drawer-open-v3": {
+      "nonzero": {
+        "mean": 0.056501159202895244,
+        "ci": [
+          -0.019553982180229395,
+          0.2070328904172894
+        ],
+        "n_env": 40,
+        "per_critic_seed": [
+          0.12110208133010143,
+          0.09189344245745013,
+          0.08349394157220565,
+          -0.005918472394835584,
+          -0.008065196950445408
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      },
+      "delay16": {
+        "mean": -0.007135079250047403,
+        "ci": [
+          -0.05970189623658886,
+          0.068346631210382
+        ],
+        "n_env": 20,
+        "per_critic_seed": [
+          0.056266277530591456,
+          -0.01889689872480469,
+          -0.028925322432244726,
+          -0.020768970402767862,
+          -0.023350482221011194
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      },
+      "delay64": {
+        "mean": 0.12013739765583788,
+        "ci": [
+          -0.005503491731410173,
+          0.41973666177587393
+        ],
+        "n_env": 20,
+        "per_critic_seed": [
+          0.1859378851296114,
+          0.20268378363970493,
+          0.195913205576656,
+          0.008932025613096695,
+          0.007220088320120377
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      }
+    },
+    "door-open-v3": {
+      "nonzero": {
+        "mean": 0.05781367631023723,
+        "ci": [
+          -0.08575292838343058,
+          0.2250260789300299
+        ],
+        "n_env": 40,
+        "per_critic_seed": [
+          0.03767916224911033,
+          0.03613169852297689,
+          0.023908092395229008,
+          0.10078779644862987,
+          0.0905616319352401
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      },
+      "delay16": {
+        "mean": 0.13500969631734688,
+        "ci": [
+          0.00011932567405620987,
+          0.39297326432937923
+        ],
+        "n_env": 20,
+        "per_critic_seed": [
+          0.13782958473143286,
+          0.13392369819073272,
+          0.13427832927223166,
+          0.1347689069004089,
+          0.13424796249192822
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      },
+      "delay64": {
+        "mean": -0.019382343696872396,
+        "ci": [
+          -0.24420282977067564,
+          0.1700974677611432
+        ],
+        "n_env": 20,
+        "per_critic_seed": [
+          -0.062471260233212214,
+          -0.06166030114477894,
+          -0.08646214448177365,
+          0.06680668599685084,
+          0.04687530137855198
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      }
+    },
+    "button-press-v3": {
+      "nonzero": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_env": 40,
+        "per_critic_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      },
+      "delay16": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_env": 20,
+        "per_critic_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      },
+      "delay64": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_env": 20,
+        "per_critic_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "role": "posthoc exploratory, not a new confirmatory test"
+      }
+    }
+  },
+  "door": {
+    "S": {
+      "n_env": 60,
+      "n_critic_seeds": 5,
+      "any_success": 0.95,
+      "terminal_success": 0.0,
+      "mean_success_steps": 30.19333333333333,
+      "occupancy": 0.060386666666666665,
+      "conditional_first_mean": 81.3438596491228,
+      "conditional_last_mean": 117.06666666666666,
+      "mean_longest_run": 29.65,
+      "first_range": [
+        73.0,
+        145.0
+      ],
+      "last_range": [
+        102.0,
+        269.0
+      ],
+      "native_mean_reward": 8.602475438420884,
+      "successful_records": 285,
+      "last_success_step_with_any_record": 269
+    },
+    "F": {
+      "n_env": 60,
+      "n_critic_seeds": 5,
+      "any_success": 0.95,
+      "terminal_success": 0.0,
+      "mean_success_steps": 29.823333333333334,
+      "occupancy": 0.05964666666666667,
+      "conditional_first_mean": 80.40350877192982,
+      "conditional_last_mean": 116.78947368421052,
+      "mean_longest_run": 29.386666666666667,
+      "first_range": [
+        73.0,
+        117.0
+      ],
+      "last_range": [
+        102.0,
+        301.0
+      ],
+      "native_mean_reward": 8.641017889294377,
+      "successful_records": 285,
+      "last_success_step_with_any_record": 301
+    },
+    "E": {
+      "n_env": 60,
+      "n_critic_seeds": 5,
+      "any_success": 0.95,
+      "terminal_success": 0.0,
+      "mean_success_steps": 29.216666666666665,
+      "occupancy": 0.05843333333333333,
+      "conditional_first_mean": 80.28070175438596,
+      "conditional_last_mean": 110.03508771929825,
+      "mean_longest_run": 29.216666666666665,
+      "first_range": [
+        73.0,
+        100.0
+      ],
+      "last_range": [
+        102.0,
+        138.0
+      ],
+      "native_mean_reward": 8.705061193070188,
+      "successful_records": 285,
+      "last_success_step_with_any_record": 138
+    }
+  },
+  "door_native_criterion": "abs(obs[4]-target_pos[0])<=0.08; success sets reward10; otherwise shaped grasp/readiness/opening terms; flag loss alone does not identify reclosure",
+  "door_source_sha256": "8169e20d95a476d789c2fab312dc1cf403c27fe5d97fb4350f3d62c483d628c9",
+  "checks": "raw contrasts equal independently audited vectors; all cases retained; environment-equal and critic-equal weighting; no independence claim for300records"
+}

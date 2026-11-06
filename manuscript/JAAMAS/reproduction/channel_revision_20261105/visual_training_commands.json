@@ -1,0 +1,195 @@
+[
+  {
+    "name": "smoke",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_matched_act.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/smoke",
+      "--task",
+      "push-v3",
+      "--updates",
+      "2",
+      "--seed",
+      "1",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 39.835660115932114
+  },
+  {
+    "name": "push_heads_seed1",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_visual_heads.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/push_heads_seed1",
+      "--task",
+      "push-v3",
+      "--seed",
+      "1",
+      "--epochs",
+      "20",
+      "--targets",
+      "action",
+      "pose"
+    ],
+    "exit_code": 0,
+    "seconds": 136.64223440596834
+  },
+  {
+    "name": "push_act15k_seed1",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_matched_act.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/push_act15k_seed1",
+      "--task",
+      "push-v3",
+      "--seed",
+      "1",
+      "--updates",
+      "15000"
+    ],
+    "exit_code": 0,
+    "seconds": 1740.5904567780672
+  },
+  {
+    "name": "push_heads_seed2",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_visual_heads.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/push_heads_seed2",
+      "--task",
+      "push-v3",
+      "--seed",
+      "2",
+      "--epochs",
+      "20",
+      "--targets",
+      "action",
+      "pose"
+    ],
+    "exit_code": 0,
+    "seconds": 132.99317432497628
+  },
+  {
+    "name": "push_act15k_seed2",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_matched_act.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/push_act15k_seed2",
+      "--task",
+      "push-v3",
+      "--seed",
+      "2",
+      "--updates",
+      "15000"
+    ],
+    "exit_code": 0,
+    "seconds": 1749.2401677180314
+  },
+  {
+    "name": "pick_heads_seed1",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_visual_heads.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/pick_heads_seed1",
+      "--task",
+      "pick-place-v3",
+      "--seed",
+      "1",
+      "--epochs",
+      "20",
+      "--targets",
+      "action",
+      "pose"
+    ],
+    "exit_code": 0,
+    "seconds": 152.4285396229243
+  },
+  {
+    "name": "pick_act15k_seed1",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_matched_act.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/pick_act15k_seed1",
+      "--task",
+      "pick-place-v3",
+      "--seed",
+      "1",
+      "--updates",
+      "15000"
+    ],
+    "exit_code": 0,
+    "seconds": 1701.8870472579729
+  },
+  {
+    "name": "pick_heads_seed2",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_visual_heads.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/pick_heads_seed2",
+      "--task",
+      "pick-place-v3",
+      "--seed",
+      "2",
+      "--epochs",
+      "20",
+      "--targets",
+      "action",
+      "pose"
+    ],
+    "exit_code": 0,
+    "seconds": 134.29593080293853
+  },
+  {
+    "name": "pick_act15k_seed2",
+    "command": [
+      "/home/ez/DACI/code/.venv-vision/bin/python",
+      "-u",
+      "scripts/train_matched_act.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_full_training_20261105_v1/pick_act15k_seed2",
+      "--task",
+      "pick-place-v3",
+      "--seed",
+      "2",
+      "--updates",
+      "15000"
+    ],
+    "exit_code": 0,
+    "seconds": 1702.816140940995
+  }
+]

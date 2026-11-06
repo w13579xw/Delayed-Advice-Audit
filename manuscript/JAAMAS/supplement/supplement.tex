@@ -1,0 +1,42 @@
+\RequirePackage{fix-cm}
+\documentclass[smallextended]{svjour3}
+\smartqed
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,longtable}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{url}
+\usepackage{float}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+\usepackage[hidelinks]{hyperref}
+\journalname{Autonomous Agents and Multi-Agent Systems}
+\usepackage{xr}
+\externaldocument[main-]{../main}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\U}{U}
+\newcommand{\ind}{\mathbf{1}}
+\newcommand{\authorinput}[1]{\textbf{AUTHOR INPUT NEEDED: #1}}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+\clubpenalty=10000
+\widowpenalty=10000
+\hypersetup{pdftitle={Delayed Advice Audit: Online Resource 1}}
+
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\begin{document}
+\title{Online Resource 1: Extended Evidence for Delayed Advice Audit}
+\titlerunning{Delayed Advice Audit: Extended Evidence}
+\author{Author information pending}
+\institute{Companion to the delayed-advice audit article.}
+\date{}\maketitle
+This resource preserves detailed experimental methods, every reported condition, numerical selection grids, historical source-budget studies and engineering provenance. It supports the compact main article without supplying additional independent cohorts. Section and table references without an S prefix refer to the main article. Current visual-channel and temporal extensions are documented after the retained evidence; historical protocols remain distinguishable.
+\input{extended_evidence}
+\input{bridge_details}
+\input{consolidated_details}
+\begin{thebibliography}{3}
+\bibitem{metaworld} Yu T et al (2020) Meta-World: A benchmark and evaluation for multi-task and meta reinforcement learning. PMLR100:1094--1100.
+\bibitem{act} Zhao T Z, Kumar V, Levine S, Finn C (2023) Learning fine-grained bimanual manipulation with low-cost hardware. Robotics: Science and Systems XIX. doi:10.15607/RSS.2023.XIX.016.
+\bibitem{agarwal} Agarwal R, Schwarzer M, Castro P S, Courville A C, Bellemare M G (2021) Deep reinforcement learning at the edge of the statistical precipice. NeurIPS34:29304--29320.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,9 @@
+{
+  "branches": 199,
+  "decisions": 816,
+  "source_packets": 136,
+  "primary_envs": 60,
+  "identity_envs": 6,
+  "smoke_envs": 2,
+  "maximum_reward_error": 0.0
+}

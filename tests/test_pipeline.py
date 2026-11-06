@@ -7,13 +7,13 @@ from unittest.mock import patch
 
 import numpy as np
 
-from daci.calibration import group_lower_offset
-from daci.counterfactual import paired_gain
-from daci.envs import make_env
-from daci.evaluation import Gates, episode
-from daci.features import arrival_features, query_features
-from daci.model import GainModel, group_split
-from daci.policies import expert_plan
+from advice_audit.calibration import group_lower_offset
+from advice_audit.counterfactual import paired_gain
+from advice_audit.envs import make_env
+from advice_audit.evaluation import Gates, episode
+from advice_audit.features import arrival_features, query_features
+from advice_audit.model import GainModel, group_split
+from advice_audit.policies import expert_plan
 
 
 class RecordingEnv:
@@ -55,7 +55,7 @@ class PipelineTests(unittest.TestCase):
 
     def test_world_ticks_and_local_policy_continue_during_pending_request(self):
         env = RecordingEnv()
-        with patch("daci.evaluation.make_env", return_value=env):
+        with patch("advice_audit.evaluation.make_env", return_value=env):
             result, trace = episode("toy", "always", seed=9, delay=6, horizon=24,
                                     chunk=3, budget=1, shift_scale=0)
         self.assertEqual([(r[0]) for r in env.records], list(range(24)))

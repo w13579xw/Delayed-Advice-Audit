@@ -1,0 +1,2 @@
+# Final state
+Allthreequeues completed exit0; do not relaunch existing v1 directories. Nativepipeline2026-11-05T09:20:55Z, finalindependentaudits2026-11-05T09:21:08Z. REPORT.md is the canonical evidence/limitations/handoff. No requiredexperiment remains. build.sh recreates the three manuscript PDFs; source archive is manuscript sources/auditentries, not a standalone weightsrelease. SourcepackageCRC/SHA recorded separately.

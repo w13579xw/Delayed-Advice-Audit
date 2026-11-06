@@ -1,0 +1,138 @@
+[
+  {
+    "task": "push-v3",
+    "cell": "cheap_inputs/cheap_actions",
+    "best_nonzero": {
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.016234704927630614
+    },
+    "zero_minus_best_nonzero_mse": 0.0050286524651784285,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.016234704927630614,
+      "global_minimum_mse": 0.016234704927630614
+    }
+  },
+  {
+    "task": "push-v3",
+    "cell": "cheap_inputs/all_actions",
+    "best_nonzero": {
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.011249016458813781
+    },
+    "zero_minus_best_nonzero_mse": 0.0033336868970722487,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.011249016458813781,
+      "global_minimum_mse": 0.011249016458813781
+    }
+  },
+  {
+    "task": "push-v3",
+    "cell": "with_packet/cheap_actions",
+    "best_nonzero": {
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.01618928123918155
+    },
+    "zero_minus_best_nonzero_mse": 0.005074076153627493,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.01618928123918155,
+      "global_minimum_mse": 0.01618928123918155
+    }
+  },
+  {
+    "task": "push-v3",
+    "cell": "with_packet/all_actions",
+    "best_nonzero": {
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.011190285705027347
+    },
+    "zero_minus_best_nonzero_mse": 0.003392417650858683,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 4.0,
+      "ridge": 1.0,
+      "validation_mse": 0.011190285705027347,
+      "global_minimum_mse": 0.011190285705027347
+    }
+  },
+  {
+    "task": "pick-place-v3",
+    "cell": "cheap_inputs/cheap_actions",
+    "best_nonzero": {
+      "bandwidth": 1.0,
+      "ridge": 10.0,
+      "validation_mse": 0.07664914034443233
+    },
+    "zero_minus_best_nonzero_mse": 1.611557324218693e-05,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 1.0,
+      "ridge": 10.0,
+      "validation_mse": 0.07664914034443233,
+      "global_minimum_mse": 0.07664914034443233
+    }
+  },
+  {
+    "task": "pick-place-v3",
+    "cell": "cheap_inputs/all_actions",
+    "best_nonzero": {
+      "bandwidth": 1.0,
+      "ridge": 1.0,
+      "validation_mse": 0.06416434701653338
+    },
+    "zero_minus_best_nonzero_mse": 0.0010253027351037891,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 1.0,
+      "ridge": 1.0,
+      "validation_mse": 0.06416434701653338,
+      "global_minimum_mse": 0.06416434701653338
+    }
+  },
+  {
+    "task": "pick-place-v3",
+    "cell": "with_packet/cheap_actions",
+    "best_nonzero": {
+      "bandwidth": 0.25,
+      "ridge": 0.01,
+      "validation_mse": 0.07666525591753157
+    },
+    "zero_minus_best_nonzero_mse": 1.4295509220829672e-13,
+    "selected": {
+      "model": "zero",
+      "bandwidth": null,
+      "ridge": null,
+      "validation_mse": 0.07666525591767452,
+      "global_minimum_mse": 0.07666525591753157
+    }
+  },
+  {
+    "task": "pick-place-v3",
+    "cell": "with_packet/all_actions",
+    "best_nonzero": {
+      "bandwidth": 1.0,
+      "ridge": 1.0,
+      "validation_mse": 0.06501257163571805
+    },
+    "zero_minus_best_nonzero_mse": 0.0001770781159191187,
+    "selected": {
+      "model": "RBFkernelridge",
+      "bandwidth": 1.0,
+      "ridge": 1.0,
+      "validation_mse": 0.06501257163571805,
+      "global_minimum_mse": 0.06501257163571805
+    }
+  }
+]

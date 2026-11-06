@@ -1,8 +1,10 @@
+> 阶段说明（2026-11-06）：本文保留早期服务器原型的执行约束与验收流程。当前已完成视觉与状态任务研究；最新论文、证据范围及命名以根目录 README.md 和 docs/NAME_MIGRATION.md 为准。
+
 # 服务器模型的第一条任务
 
 可以把下面内容完整复制给服务器上的 coding agent：
 
-> 你正在 Linux + 单卡 RTX 3090 24GB 的服务器上接手 DACI 项目；没有真机、零付费 API 预算。先读取仓库根目录 AGENTS.md、README.md、docs/SERVER_AGENT_GUIDE.md、docs/代码与算法说明.md、docs/验证记录.md，再开始执行。不要假定已经安装 Python 依赖或有可用 GPU 驱动。先记录硬件/系统/Python/git commit，按指南安装独立 .venv，执行完整测试，在两个独立且全新的目录运行 toy 与真实 MuJoCo Fetch 的 server_run.py 默认小规模流程。不得把纯 toy 结果当成 Fetch 结果，不得跳过失败测试伪称成功。当前是状态观测和手写策略的研究诊断原型，尚无视觉 VLA、实际异步服务或顶会结果。
+> 你正在 Linux + 单卡 RTX 3090 24GB 的服务器上接手 Delayed Advice Audit 项目；没有真机、零付费 API 预算。先读取仓库根目录 AGENTS.md、README.md、docs/SERVER_AGENT_GUIDE.md、docs/代码与算法说明.md、docs/验证记录.md，再开始执行。不要假定已经安装 Python 依赖或有可用 GPU 驱动。先记录硬件/系统/Python/git commit，按指南安装独立 .venv，执行完整测试，在两个独立且全新的目录运行 toy 与真实 MuJoCo Fetch 的 server_run.py 默认小规模流程。不得把纯 toy 结果当成 Fetch 结果，不得跳过失败测试伪称成功。当前是状态观测和手写策略的研究诊断原型，尚无视觉 VLA、实际异步服务或顶会结果。
 >
 > 这是一次工程接管与第一阶段实验。可以修复阻断复现的代码问题，并增加针对该问题的回归验证；保留每次失败日志和独立 git diff。不要自动启动五种子长扫、下载大模型、安装收费服务、删除旧输出或访问真机。不要为获得正结果修改评估规则、指标、划分或基线。源码改动后新开 run-dir；仅当源码与参数不变时用 --resume。继续推进已授权的小规模复现，不要对普通安装和诊断反复请求确认；缺失管理员权限、网络或私有仓库登录时报告具体阻断并完成其它独立可做的工作。
 >

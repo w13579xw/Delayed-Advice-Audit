@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-if [[ -n "${DACI_PYTHON:-}" ]]; then
-    PYTHON_BIN="$DACI_PYTHON"
+PYTHON_OVERRIDE="${ADVICE_AUDIT_PYTHON:-${DACI_PYTHON:-}}"
+if [[ -n "$PYTHON_OVERRIDE" ]]; then
+    PYTHON_BIN="$PYTHON_OVERRIDE"
 else
     PYTHON_BIN=""
     for candidate in python3.11 python3.12 python3; do

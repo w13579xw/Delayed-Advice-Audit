@@ -1,0 +1,41 @@
+[
+  {
+    "stage": "development_seed1",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/audit_visual_development.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_development",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_models",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_revision_postprocess_20261105_v1/seed1_development_audit"
+    ],
+    "exit_code": 0,
+    "seconds": 0.7622968381037936
+  },
+  {
+    "stage": "development_seed2",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/audit_visual_development.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_development",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_models",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_revision_postprocess_20261105_v1/seed2_development_audit"
+    ],
+    "exit_code": 0,
+    "seconds": 0.686223560012877
+  },
+  {
+    "stage": "test_audit_analysis",
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/analyze_visual_replicates.py"
+    ],
+    "exit_code": 0,
+    "seconds": 6.968955151969567
+  }
+]

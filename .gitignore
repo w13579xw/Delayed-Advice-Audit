@@ -1,4 +1,6 @@
 .venv/
+.venv-metaworld/
+.venv-act/
 __pycache__/
 *.pyc
 *.egg-info/
@@ -13,3 +15,11 @@ logs/
 checkpoints/
 data/
 runs/
+
+.venv-vision/
+
+# Local offline-paper arrays and fitted geometry (release separately)
+paper/visual_advice_audit/reproduction/assets/
+
+# Local document compiler; never commit binaries or package archives
+.tools/

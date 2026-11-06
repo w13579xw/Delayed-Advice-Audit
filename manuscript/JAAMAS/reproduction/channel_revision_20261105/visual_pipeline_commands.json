@@ -1,0 +1,207 @@
+[
+  {
+    "stage": "collect_smoke_seed1",
+    "seed": 1,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/collect_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_collection_smoke",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 116.45634679007344
+  },
+  {
+    "stage": "collect_seed1",
+    "seed": 1,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/collect_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_development",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json"
+    ],
+    "exit_code": 0,
+    "seconds": 1794.8072142830351
+  },
+  {
+    "stage": "fit_seed1",
+    "seed": 1,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/vision/fit_critic_curve_v2_20261104.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_development",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_models",
+      "--train-count",
+      "14",
+      "--validation-count",
+      "6"
+    ],
+    "exit_code": 0,
+    "seconds": 3.1661228250013664
+  },
+  {
+    "stage": "collect_smoke_seed2",
+    "seed": 2,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/collect_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_collection_smoke",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 118.79190287191886
+  },
+  {
+    "stage": "collect_seed2",
+    "seed": 2,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/collect_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_development",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json"
+    ],
+    "exit_code": 0,
+    "seconds": 1776.7641779209953
+  },
+  {
+    "stage": "fit_seed2",
+    "seed": 2,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/vision/fit_critic_curve_v2_20261104.py",
+      "--data",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_development",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_models",
+      "--train-count",
+      "14",
+      "--validation-count",
+      "6"
+    ],
+    "exit_code": 0,
+    "seconds": 3.1602853550575674
+  },
+  {
+    "stage": "test_smoke_seed0",
+    "seed": 0,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed0_test_smoke",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--models",
+      "/home/ez/DACI/code/outputs/vision/value_kernel_pilot_20261104_v3",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 209.5219156559324
+  },
+  {
+    "stage": "test_smoke_seed1",
+    "seed": 1,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_test_smoke",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_models",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 211.4364457820775
+  },
+  {
+    "stage": "test_smoke_seed2",
+    "seed": 2,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_test_smoke",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_models",
+      "--smoke"
+    ],
+    "exit_code": 0,
+    "seconds": 213.6765954119619
+  },
+  {
+    "stage": "test_seed0",
+    "seed": 0,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed0_test",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--models",
+      "/home/ez/DACI/code/outputs/vision/value_kernel_pilot_20261104_v3"
+    ],
+    "exit_code": 0,
+    "seconds": 2220.9544677770464
+  },
+  {
+    "stage": "test_seed1",
+    "seed": 1,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_test",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed1_models"
+    ],
+    "exit_code": 0,
+    "seconds": 2210.677539977012
+  },
+  {
+    "stage": "test_seed2",
+    "seed": 2,
+    "command": [
+      "/home/ez/DACI/code/.venv-metaworld/bin/python",
+      "-u",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/test_visual_repl.py",
+      "--out",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_test",
+      "--schedule",
+      "/home/ez/DACI/code/outputs/jaamas/revision_20261105/visual_schedule.json",
+      "--models",
+      "/home/ez/DACI/code/outputs/jaamas/visual_pipeline_20261105_v1/seed2_models"
+    ],
+    "exit_code": 0,
+    "seconds": 2402.4083265060326
+  }
+]

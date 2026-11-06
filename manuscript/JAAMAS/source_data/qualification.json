@@ -1,0 +1,764 @@
+{
+  "drawer-open-v3": {
+    "qualified": true,
+    "rates": {
+      "public": 1.0,
+      "local": 1.0
+    },
+    "public": [
+      {
+        "seed": 810002000,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.198381914640391
+      },
+      {
+        "seed": 810002001,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.09202412500489
+      },
+      {
+        "seed": 810002002,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.03899654577926
+      },
+      {
+        "seed": 810002003,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.979056066176234
+      },
+      {
+        "seed": 810002004,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.983502821034367
+      },
+      {
+        "seed": 810002005,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.054016674405567
+      },
+      {
+        "seed": 810002006,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.054844941658375
+      },
+      {
+        "seed": 810002007,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.187594337375266
+      },
+      {
+        "seed": 810002008,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.998714012298108
+      },
+      {
+        "seed": 810002009,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.060405227143269
+      },
+      {
+        "seed": 810002010,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.982784738432804
+      },
+      {
+        "seed": 810002011,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.983682868218499
+      },
+      {
+        "seed": 810002012,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.022864901150877
+      },
+      {
+        "seed": 810002013,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.052960691106346
+      },
+      {
+        "seed": 810002014,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.189983620594672
+      },
+      {
+        "seed": 810002015,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.15926165113209
+      },
+      {
+        "seed": 810002016,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.997226462775348
+      },
+      {
+        "seed": 810002017,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.196441853717792
+      },
+      {
+        "seed": 810002018,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.047365942875253
+      },
+      {
+        "seed": 810002019,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.074272515118244
+      }
+    ],
+    "local": [
+      {
+        "seed": 810002000,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.198726853539467
+      },
+      {
+        "seed": 810002001,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.090936002626087
+      },
+      {
+        "seed": 810002002,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.038613335606346
+      },
+      {
+        "seed": 810002003,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.979098669856848
+      },
+      {
+        "seed": 810002004,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.983154786704352
+      },
+      {
+        "seed": 810002005,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.040269623515897
+      },
+      {
+        "seed": 810002006,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.054851098422084
+      },
+      {
+        "seed": 810002007,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.187332970055275
+      },
+      {
+        "seed": 810002008,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.997930545376823
+      },
+      {
+        "seed": 810002009,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.060635615357093
+      },
+      {
+        "seed": 810002010,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.98132096808509
+      },
+      {
+        "seed": 810002011,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.983059358134888
+      },
+      {
+        "seed": 810002012,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.022785322421921
+      },
+      {
+        "seed": 810002013,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.05050023182654
+      },
+      {
+        "seed": 810002014,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.191597105073738
+      },
+      {
+        "seed": 810002015,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.160476495198452
+      },
+      {
+        "seed": 810002016,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 7.997195733272516
+      },
+      {
+        "seed": 810002017,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.193003903943488
+      },
+      {
+        "seed": 810002018,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.048039035710266
+      },
+      {
+        "seed": 810002019,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 8.074231359213728
+      }
+    ],
+    "model_path": "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1/drawer-open-v3",
+    "selected_demos": 40,
+    "selected_k": 1
+  },
+  "door-open-v3": {
+    "qualified": true,
+    "rates": {
+      "public": 0.9,
+      "local": 0.9
+    },
+    "public": [
+      {
+        "seed": 810012000,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.921491139251005
+      },
+      {
+        "seed": 810012001,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.012682222285898
+      },
+      {
+        "seed": 810012002,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.919680891133495
+      },
+      {
+        "seed": 810012003,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.033559644248772
+      },
+      {
+        "seed": 810012004,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.728330163378706
+      },
+      {
+        "seed": 810012005,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.031755271683535
+      },
+      {
+        "seed": 810012006,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.976545873625419
+      },
+      {
+        "seed": 810012007,
+        "success": 0,
+        "terminal_success": 0,
+        "native_return": 3.7614333178196686
+      },
+      {
+        "seed": 810012008,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.00507858363483
+      },
+      {
+        "seed": 810012009,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.747614712121631
+      },
+      {
+        "seed": 810012010,
+        "success": 0,
+        "terminal_success": 0,
+        "native_return": 3.83596130958741
+      },
+      {
+        "seed": 810012011,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.050089319398872
+      },
+      {
+        "seed": 810012012,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.832788219480744
+      },
+      {
+        "seed": 810012013,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.052792311103083
+      },
+      {
+        "seed": 810012014,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.039675480464764
+      },
+      {
+        "seed": 810012015,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.929743406527571
+      },
+      {
+        "seed": 810012016,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.960215592637583
+      },
+      {
+        "seed": 810012017,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.034416878330251
+      },
+      {
+        "seed": 810012018,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.854043932973257
+      },
+      {
+        "seed": 810012019,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.935938921020908
+      }
+    ],
+    "local": [
+      {
+        "seed": 810012000,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.913988971636446
+      },
+      {
+        "seed": 810012001,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.058837481377353
+      },
+      {
+        "seed": 810012002,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.945786727051619
+      },
+      {
+        "seed": 810012003,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.020840691722974
+      },
+      {
+        "seed": 810012004,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.789315845104802
+      },
+      {
+        "seed": 810012005,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.023669119879928
+      },
+      {
+        "seed": 810012006,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.974738386808822
+      },
+      {
+        "seed": 810012007,
+        "success": 0,
+        "terminal_success": 0,
+        "native_return": 3.8197757656508835
+      },
+      {
+        "seed": 810012008,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.996299024539091
+      },
+      {
+        "seed": 810012009,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.756084999317649
+      },
+      {
+        "seed": 810012010,
+        "success": 0,
+        "terminal_success": 0,
+        "native_return": 3.8094514088046045
+      },
+      {
+        "seed": 810012011,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.087047931142667
+      },
+      {
+        "seed": 810012012,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.862313843981978
+      },
+      {
+        "seed": 810012013,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.064575222253902
+      },
+      {
+        "seed": 810012014,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.02340943659174
+      },
+      {
+        "seed": 810012015,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.937956355497748
+      },
+      {
+        "seed": 810012016,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.960241348074247
+      },
+      {
+        "seed": 810012017,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 9.050949142669058
+      },
+      {
+        "seed": 810012018,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.892406052217797
+      },
+      {
+        "seed": 810012019,
+        "success": 1,
+        "terminal_success": 0,
+        "native_return": 8.922197173424385
+      }
+    ],
+    "model_path": "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1/door-open-v3",
+    "selected_demos": 40,
+    "selected_k": 5
+  },
+  "button-press-v3": {
+    "qualified": true,
+    "rates": {
+      "public": 1.0,
+      "local": 1.0
+    },
+    "public": [
+      {
+        "seed": 810022000,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1506604650481065
+      },
+      {
+        "seed": 810022001,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1131799002265017
+      },
+      {
+        "seed": 810022002,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1278167250536284
+      },
+      {
+        "seed": 810022003,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1129821295162976
+      },
+      {
+        "seed": 810022004,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1229219725908397
+      },
+      {
+        "seed": 810022005,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1299568255374122
+      },
+      {
+        "seed": 810022006,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.098538870493312
+      },
+      {
+        "seed": 810022007,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1273446860585024
+      },
+      {
+        "seed": 810022008,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1358907977399453
+      },
+      {
+        "seed": 810022009,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.135890845333918
+      },
+      {
+        "seed": 810022010,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1076940979881655
+      },
+      {
+        "seed": 810022011,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1109899444128455
+      },
+      {
+        "seed": 810022012,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1080761519686824
+      },
+      {
+        "seed": 810022013,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1156430991233703
+      },
+      {
+        "seed": 810022014,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1028622574485984
+      },
+      {
+        "seed": 810022015,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1320486460328314
+      },
+      {
+        "seed": 810022016,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.107387939076175
+      },
+      {
+        "seed": 810022017,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.0999667383542986
+      },
+      {
+        "seed": 810022018,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1044710476647965
+      },
+      {
+        "seed": 810022019,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1365546035341216
+      }
+    ],
+    "local": [
+      {
+        "seed": 810022000,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1504370662122787
+      },
+      {
+        "seed": 810022001,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1132227459662012
+      },
+      {
+        "seed": 810022002,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1258106023521572
+      },
+      {
+        "seed": 810022003,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1113403475353627
+      },
+      {
+        "seed": 810022004,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1225026616036922
+      },
+      {
+        "seed": 810022005,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1298981249211633
+      },
+      {
+        "seed": 810022006,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.0991446562019926
+      },
+      {
+        "seed": 810022007,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.127115443757883
+      },
+      {
+        "seed": 810022008,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1343391067829296
+      },
+      {
+        "seed": 810022009,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1342385363442287
+      },
+      {
+        "seed": 810022010,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1059725833046796
+      },
+      {
+        "seed": 810022011,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1127549671415875
+      },
+      {
+        "seed": 810022012,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.108089236773293
+      },
+      {
+        "seed": 810022013,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1176893143164413
+      },
+      {
+        "seed": 810022014,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1014466699339123
+      },
+      {
+        "seed": 810022015,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1281797502359732
+      },
+      {
+        "seed": 810022016,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1057743469380183
+      },
+      {
+        "seed": 810022017,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1000890120228282
+      },
+      {
+        "seed": 810022018,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.105669393381713
+      },
+      {
+        "seed": 810022019,
+        "success": 1,
+        "terminal_success": 1,
+        "native_return": 1.1362415820783203
+      }
+    ],
+    "model_path": "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1/button-press-v3",
+    "selected_demos": 40,
+    "selected_k": 1
+  }
+}

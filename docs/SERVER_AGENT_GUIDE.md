@@ -1,3 +1,5 @@
+> 阶段说明（2026-11-06）：本文保留早期服务器原型的执行约束与验收流程。当前已完成视觉与状态任务研究；最新论文、证据范围及命名以根目录 README.md 和 docs/NAME_MIGRATION.md 为准。
+
 # Linux 服务器执行与模型交接指南
 
 更新：2026-11-02。适用设备：Linux + 单 RTX 3090 24GB，无真机，零付费 API。以下命令均从 Git 仓库根目录执行。
@@ -26,7 +28,7 @@ nvidia-smi
 command -v python3.11 || command -v python3.12
 ```
 
-确认这是本项目目录，至少有 `pyproject.toml`、`src/daci`、`scripts`、`tests`。记录commit与已有修改，避免在其他项目中安装。
+确认这是本项目目录，至少有 `pyproject.toml`、`src/advice_audit`、`scripts`、`tests`。记录commit与已有修改，避免在其他项目中安装。
 
 建议首轮至少保留数GB磁盘空间；不要把研究计划未来视觉数据所需100–200GB误认为当前诊断的硬性要求。记录服务器实际CPU/RAM；此前尚未获知这些配置。首轮只开一个Python任务。
 
@@ -39,7 +41,7 @@ command -v python3.11 || command -v python3.12
 bash scripts/setup_linux.sh
 ```
 
-脚本在项目下创建 `.venv`，安装 `.[sim,dev,plot]` 并运行测试。若需要指定独立Python解释器，可设置`DACI_PYTHON`；通常不需要手工选择版本。若已存在Linux `.venv`，脚本检查并复用；不会删除不兼容的Windows环境。
+脚本在项目下创建 `.venv`，安装 `.[sim,dev,plot]` 并运行测试。若需要指定独立Python解释器，可设置`ADVICE_AUDIT_PYTHON`；通常不需要手工选择版本。若已存在Linux `.venv`，脚本检查并复用；不会删除不兼容的Windows环境。
 
 随后核对解释器与依赖：
 
@@ -92,10 +94,10 @@ mkdir -p outputs/server_logs
 如果预计SSH会断开，可先启动tmux：
 
 ```bash
-tmux new -s daci-bootstrap
+tmux new -s advice-audit-bootstrap
 # 在tmux内进入仓库，然后运行上面的命令。
 # Ctrl-b 后按 d 脱离；重新连接后使用：
-tmux attach -t daci-bootstrap
+tmux attach -t advice-audit-bootstrap
 ```
 
 若没有tmux，优先保持当前会话执行小规模诊断；不要自行申请付费云资源。断开后恢复方法见第9节。
@@ -141,13 +143,13 @@ set -euo pipefail
 fixed_run="outputs/server/toy_fixed_$(date -u +%Y%m%dT%H%M%SZ)_$$"
 test ! -e "$fixed_run"
 
-.venv/bin/python -m daci.cli evaluate \
+.venv/bin/python -m advice_audit.cli evaluate \
   --backend toy --model-dir "$toy_run/model" --out "$fixed_run" \
   --episodes 4 --horizon 80 --seed 10000 --delays 0 4 12 \
   --fixed-schedule --period 24 --chunk 12 \
   --methods local always ttl drift veto_only veto_calibrated --audit
 
-.venv/bin/python -m daci.cli report --dir "$fixed_run" --plot
+.venv/bin/python -m advice_audit.cli report --dir "$fixed_run" --plot
 ```
 
 参数约束：24 >= max(delay=12)+chunk=12。训练时chunk若不是12，必须匹配；backend也必须匹配。不同后端分别训练gate，不能拿toy模型跑Fetch。
@@ -181,9 +183,9 @@ runner已经生成`profile.json`。若后续需要单独重测CPU仿真profiling
 
 | 现象 | 先检查/处理 | 不应采用的处理 |
 |---|---|---|
-| `python3.11: command not found` | 检查已有python3.12，设置`DACI_PYTHON=python3.12`；都没有时记录缺失项，并使用用户认可的环境管理方式 | 改系统默认Python、乱用旧3.8装完整依赖 |
+| `python3.11: command not found` | 检查已有python3.12，设置`ADVICE_AUDIT_PYTHON=python3.12`；都没有时记录缺失项，并使用用户认可的环境管理方式 | 改系统默认Python、乱用旧3.8装完整依赖 |
 | `ensurepip`/`venv`不可用 | 检查该Python是否配套venv模块；必要时请管理员安装对应版本venv包，或使用现有独立Conda环境的解释器 | `sudo pip install`到系统环境 |
-| `ModuleNotFoundError: daci` | 确认仓库根目录、`.venv/bin/python`、`pip install -e '.[sim,dev,plot]'`成功 | 手工复制源码到系统site-packages |
+| `ModuleNotFoundError: advice_audit` | 确认仓库根目录、`.venv/bin/python`、`pip install -e '.[sim,dev,plot]'`成功 | 手工复制源码到系统site-packages |
 | 网络/PyPI失败 | 保留错误和index信息；重试可靠官方源或服务器已配置的可信镜像，记录实际依赖版本 | 使用来历不明whl或关闭校验 |
 | Fetch测试skip | 确认gymnasium-robotics、mujoco在当前venv成功导入 | 把skip当作全部通过 |
 | XML/asset文件找不到 | 检查上游包完整性、依赖版本、路径；使用英文目录重新建立venv可避开跨平台Unicode问题 | 屏蔽异常或把Fetch改成toy冒充通过 |

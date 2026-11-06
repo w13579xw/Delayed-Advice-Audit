@@ -1,0 +1,32 @@
+{
+  "campaign_id": "jaamas_campaign_20261105",
+  "slice_id": "new_state_contact_suite",
+  "run_kind": "prospective_extension",
+  "parent_run_id": "arrival_confirmation_20261104_v1",
+  "status": "complete",
+  "fixed_conditions": [
+    "native500",
+    "frozenmodels",
+    "samepertaskqualification",
+    "no-test-tuning"
+  ],
+  "changed_factors": [
+    "3newstatecontacttasks",
+    "5criticinitializations",
+    "delay0/16/64",
+    "single/periodic",
+    "noise0/.005m"
+  ],
+  "evaluation_summary": {
+    "takeaway": "Reward contrasts, message sensitivity and channel value remain distinct; no positive packet-input contrast established",
+    "claim_update": "Supports bounded evaluation framework; does not establish new controller effectiveness",
+    "baseline_relation": "Paired executable local/reject/fixed-source references",
+    "comparability": "State cohort separate from visual; closed-loop policy comparison, not shared packets after divergence",
+    "failure_mode": "No scientific run failures; zero/negative results retained; auxiliary compiler network failure recovered locally",
+    "next_action": "Finalize rendered Springer/JAAMAS draft and author-input checklist"
+  },
+  "paths": [
+    "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1",
+    "/home/ez/DACI/Springer/DACI_JAAMAS"
+  ]
+}

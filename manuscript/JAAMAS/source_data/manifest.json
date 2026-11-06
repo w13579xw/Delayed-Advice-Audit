@@ -1,0 +1,112 @@
+[
+  {
+    "file": "visual.json",
+    "source": "/home/ez/DACI/code/outputs/vision/arrival_confirmation_analysis_20261104_v1/analysis.json",
+    "sha256": "35207f71ea5b1ee3932c83d970f29740900a72d08c29be9991c6a2594009e01d"
+  },
+  {
+    "file": "curve.json",
+    "source": "/home/ez/DACI/code/outputs/vision/critic_learning_curve_recovery_20261104_v1/analysis/analysis.json",
+    "sha256": "aa4b87c3b60449b8903a8dbbae4000711d8f5c6f0bd7161f33daa5c00b4d6cf2"
+  },
+  {
+    "file": "state.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/analysis/analysis.json",
+    "sha256": "f7a5d87323a8b1ecab5dffd058410c228d4219ac859f76b607e2cfdfc942d81a"
+  },
+  {
+    "file": "state_checks.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/analysis/checks.json",
+    "sha256": "ac2d01c505c8b9b6d83fb3dee513b231c4898e8c73993171af99fda71d249a50"
+  },
+  {
+    "file": "state_models.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_campaign_20261105_v1/models/analysis.json",
+    "sha256": "213ac6531c00ac786b2688938bdf06f9fcb067306b9cdd37ebd1d31882f32074"
+  },
+  {
+    "file": "qualification.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_qualification_20261105_v1/analysis.json",
+    "sha256": "c19be675e9868ab9222d986dd61b09ba52a00e52e460cb12750f2ab1dcccc7a0"
+  },
+  {
+    "file": "channel_analysis.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/channel_revision_analysis_20261105_v2/analysis.json",
+    "sha256": "feacf605ae8ca3c79bbc894f09b81170f3314fdff6a4a13d59b6e884d35885e6"
+  },
+  {
+    "file": "channel_secondary_success.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/revision_20261105/derived_channel_secondary_success.json",
+    "sha256": "f91408dbc5619df990c928cc24081c93841c811df034bf61db4575bdf5b7ee70"
+  },
+  {
+    "file": "confirmation_delay.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/revision_descriptives_20261105_v1/confirmation_delay.json",
+    "sha256": "681e3a00d2779c60533c4e3f16caa905d476a861e3e5c66122d1dfe79e6174d9"
+  },
+  {
+    "file": "tolerance_grid.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/revision_descriptives_20261105_v1/tolerance_grid.json",
+    "sha256": "be18253df0d901258beb5474ede2578ce40994a73c1e948114d563dc393f9571"
+  },
+  {
+    "file": "visual_replication_analysis.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/visual_replication_analysis_20261105_v1/analysis.json",
+    "sha256": "4dc652baec7ec6589432fdecaa100fca996c6f014a4d33bbfadecf77aa8e9f55"
+  },
+  {
+    "file": "visual_replication_audit.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/visual_replication_analysis_20261105_v1/audit.json",
+    "sha256": "1b0c9f71364aa3980f7efb8d90e2edd64fa1d9913e8b02bd91454df6623faf62"
+  },
+  {
+    "file": "visual_channel_analysis.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/visual_channel_bridge_analysis_20261105_v1/analysis.json",
+    "sha256": "335635ef254dc1ed861adefb9a414065518fe280a831b13629af9b98b5adf2b7"
+  },
+  {
+    "file": "visual_channel_audit.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/visual_channel_bridge_analysis_20261105_v1/audit.json",
+    "sha256": "0c2ea30079bc7479a27b3989872eb3ab33713443dfafbf6c3578e8ed65aae176"
+  },
+  {
+    "file": "visual_channel_source_audit.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/visual_channel_source_audit_20261105_v1/checks.json",
+    "sha256": "f07cba4063d3119b2d8fe4533da8783d739547471c3f8951f3706fded8934241"
+  },
+  {
+    "file": "state_temporal_analysis.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_temporal_20261105_v1/analysis.json",
+    "sha256": "bde3c3f7d14cd23d5b589929232ee129820b58e6a88976920b234534eb215bbc"
+  },
+  {
+    "file": "door_curves.npz",
+    "source": "/home/ez/DACI/code/outputs/jaamas/state_temporal_20261105_v1/curves.npz",
+    "sha256": "c6fce691fd3f915a16f036c669a1043a9c1b9b7f5fd933d47af5438466d53b0e"
+  },
+  {
+    "file": "visual_channel_vectors.npz",
+    "source": "/home/ez/DACI/code/outputs/jaamas/visual_channel_bridge_analysis_20261105_v1/condition_vectors.npz",
+    "sha256": "b87013a9bfb25b1a02c5d17ee26517b71938476f517af5460cf777e9e8b8c527"
+  },
+  {
+    "file": "decoder_analysis.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/decoder_analysis_20261106_v1/analysis.json",
+    "sha256": "068dfbffde9c32d8f13bd6166c8f7330c538e05f7a7e558f1673a8ec60eb3c97"
+  },
+  {
+    "file": "decoder_audit.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/decoder_analysis_20261106_v1/audit.json",
+    "sha256": "2166f6dc0c720e5b8db5a7fc81bd1dbd6152e74ea2d37cd72f33e89bf95ad63d"
+  },
+  {
+    "file": "decoder_source_audit.json",
+    "source": "/home/ez/DACI/code/outputs/jaamas/decoder_source_audit_20261106_v1/checks.json",
+    "sha256": "278544fc5c7988cc9e62cba2c0ab2ae490404076e980571b3ec225f4f99edb03"
+  },
+  {
+    "file": "decoder_vectors.npz",
+    "source": "/home/ez/DACI/code/outputs/jaamas/decoder_analysis_20261106_v1/condition_vectors.npz",
+    "sha256": "125ce63b9a34a2747e2d24aa1be17cf890be3420d0902e4c3b73beebe5bc5e48"
+  }
+]

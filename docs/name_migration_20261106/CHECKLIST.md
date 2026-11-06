@@ -1,0 +1,9 @@
+- [x] User approved descriptive title/project/repository
+- [ ] Pre-migration source snapshot and numeric fixtures
+- [ ] Canonical root/package/CLI with legacy compatibility
+- [ ] Current docs/paper/output metadata and filenames
+- [ ] Unit + realFetch + MetaWorld + vision + numeric parity checks
+- [ ] Rebuilt4PDF/render/source-data/template/sourcezip QA
+- [ ] PrivateGitHub code/document sync and remote verification
+- [ ] GitHub repository settings rename verified
+- [ ] Current naming/legacy exceptions/report/HANDOFF

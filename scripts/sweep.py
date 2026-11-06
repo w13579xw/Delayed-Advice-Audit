@@ -16,7 +16,7 @@ root.mkdir(parents=True, exist_ok=True)
 
 
 def run(*command):
-    subprocess.run([sys.executable, "-m", "daci.cli", *map(str, command)], check=True)
+    subprocess.run([sys.executable, "-m", "advice_audit.cli", *map(str, command)], check=True)
 
 
 run("collect", "--backend", args.backend, "--episodes", args.train_episodes,

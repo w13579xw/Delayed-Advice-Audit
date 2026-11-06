@@ -5,8 +5,8 @@ import unittest
 
 import numpy as np
 
-from daci.envs import make_env
-from daci.policies import expert_plan, local_action
+from advice_audit.envs import make_env
+from advice_audit.policies import expert_plan, local_action
 
 
 class ToyEnvironmentTests(unittest.TestCase):

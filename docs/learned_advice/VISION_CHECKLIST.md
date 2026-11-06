@@ -1,0 +1,8 @@
+- [x] State-information ceiling and sensory parity problem recorded before new visual runs.
+- [x] Isolated Python3.10/Torch2.4.1+cu118/vision0.19.1 installed, pip check clean,3090 matrix check passed; official wheel hash matched.
+- [x] Encoder strict component load/parity and rendering/storage/runtime profile.
+- [x] Dataset and full visual baseline protocol frozen before material generation.
+- [x] Strong visual local policy qualified on development, then independently tested (single training seed; matched-data ACT control now in progress).
+- [ ] Arrival value mechanism/controls chosen and new train/calibration/test contract frozen.
+- [ ] Actual prospective closed-loop gain, limits and replication recorded.
+- [ ] Novelty and paper readiness independently assessed from actual evidence.

@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "checks": "passed",
+  "source": "outputs/vision/critic_learning_curve_recovery_20261104_v1",
+  "evaluation_summary": {
+    "takeaway": "No positive primary lower bound after increasing critic data",
+    "claim_update": "Narrows small-data explanation; does not establish no advice value",
+    "baseline_relation": "Fixed actors and original RBF/null/tie protocol",
+    "comparability": "Nested critic draw; fresh test pool, not pooled with original confirmation",
+    "failure_mode": "Original fit parent directory missing; recovery changes mkdir only",
+    "next_action": "Bounded new-task state suite then JAAMAS manuscript"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "campaign_id": "channel_revision_20261105",
+  "slice_id": "K1_K2",
+  "section_id": "6",
+  "item_id": "channel-value-headroom",
+  "claim_links": [
+    "C-CH",
+    "C-H"
+  ],
+  "paper_role": "main_required",
+  "evaluation_summary": {
+    "takeaway": "Direct fixed-policy nativechannel effects measured; no positive refresh benefit confirmed and finite-pool headroom is small",
+    "claim_update": "strengthens",
+    "baseline_relation": "mixed",
+    "comparability": "high",
+    "failure_mode": "implementation",
+    "next_action": "write"
+  },
+  "evidence_paths": [
+    "/home/ez/DACI/code/outputs/jaamas/channel_revision_analysis_20261105_v2",
+    "/home/ez/DACI/code/outputs/jaamas/channel_revision_20261105_v1/main"
+  ],
+  "limits": [
+    "refreshjointshift",
+    "erasureruleexplicitwrapper",
+    "fivefrozenstatecritics",
+    "singlearrival",
+    "approximatebootstrap",
+    "oracleofflineonly"
+  ]
+}

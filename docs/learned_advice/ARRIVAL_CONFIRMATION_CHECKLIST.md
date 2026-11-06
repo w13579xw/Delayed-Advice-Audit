@@ -1,0 +1,9 @@
+- [x] Independent reviewer reports frozen; confirmation gap identified without requiring positive results.
+- [x] Newprimaryquestion,6contrasts,δ*.25,250newpairedseeds/task,clockdistribution andinference rules frozen beforetest.
+- [x] V3globalminimumtiepool unit tests2passed; oldv2protocol/outputambiguitypreserved.
+- [x] Frozenruntimecritic48casesmaxerror2.22e-16,identicalchoices.
+- [x] Initial2cases plus4zero/maxdelayboundaryengineeringcasespassed;projectedmain7839secondswithin180minbudget.
+- [x] All500newtestepisodes,prospectivechoices,uniqueplanrollouts andoutputscomplete.
+- [x] Pairedprimaryuncertainty,finitepositive-eventbounds,secondarysuccess andprefixdiagnosticscomputed.
+- [x] Trace/policy forensic audit passed; bounded result claims written. Earlier partial-review confirmation gap addressed; new full-manuscript review is separate.
+- [x] Evidence route selected: bounded internal evaluation draft, no new successful algorithm or automatic publication-readiness claim.

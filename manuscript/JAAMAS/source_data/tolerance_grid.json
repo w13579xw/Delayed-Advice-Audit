@@ -1,0 +1,582 @@
+{
+  "push-v3": {
+    "cheap_inputs/cheap_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 3,
+        "all_reject_count": 15,
+        "selected_validation_reward_minus_reject_mean": -0.3482718568780597,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.0370914539742198,
+          -0.0345059961534672,
+          0.04298594965918698
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 3,
+        "all_reject_count": 15,
+        "selected_validation_reward_minus_reject_mean": -0.3482718568780597,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.0370914539742198,
+          -0.0345059961534672,
+          0.04298594965918698
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 3,
+        "all_reject_count": 15,
+        "selected_validation_reward_minus_reject_mean": -0.3482718568780597,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.0370914539742198,
+          -0.0345059961534672,
+          0.04298594965918698
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 3,
+        "all_reject_count": 15,
+        "selected_validation_reward_minus_reject_mean": -0.3482718568780597,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.0370914539742198,
+          -0.0345059961534672,
+          0.04298594965918698
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 5,
+        "all_reject_count": 17,
+        "selected_validation_reward_minus_reject_mean": -0.34219141001539055,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.0370914539742198,
+          -0.022582095481895603,
+          0.04298594965918698
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ],
+    "cheap_inputs/all_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 12,
+        "selected_validation_reward_minus_reject_mean": -0.43800960114974563,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.1863037180280522,
+          -0.12279709281919438,
+          0.024614480762608387
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 3,
+        "all_reject_count": 13,
+        "selected_validation_reward_minus_reject_mean": -0.432058528813803,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.1863037180280522,
+          -0.055906831034156085,
+          0.024614480762608387
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 4,
+        "all_reject_count": 14,
+        "selected_validation_reward_minus_reject_mean": -0.4314398190814298,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.1863037180280522,
+          -0.04950576069433349,
+          0.024614480762608387
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 4,
+        "all_reject_count": 14,
+        "selected_validation_reward_minus_reject_mean": -0.4314398190814298,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.1863037180280522,
+          -0.04950576069433349,
+          0.024614480762608387
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 6,
+        "all_reject_count": 16,
+        "selected_validation_reward_minus_reject_mean": -0.425885866342959,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.1863037180280522,
+          -0.04702716578155417,
+          0.024614480762608387
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ],
+    "with_packet/cheap_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 12,
+        "selected_validation_reward_minus_reject_mean": -0.30350308787983693,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.9831056610809591,
+          -0.022748362717969577,
+          0.0631460549367583
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 12,
+        "selected_validation_reward_minus_reject_mean": -0.30350308787983693,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.9831056610809591,
+          -0.022748362717969577,
+          0.0631460549367583
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 12,
+        "selected_validation_reward_minus_reject_mean": -0.30350308787983693,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.9831056610809591,
+          -0.022748362717969577,
+          0.0631460549367583
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 12,
+        "selected_validation_reward_minus_reject_mean": -0.30350308787983693,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.9831056610809591,
+          -0.022748362717969577,
+          0.0631460549367583
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 4,
+        "all_reject_count": 14,
+        "selected_validation_reward_minus_reject_mean": -0.3041712187767231,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.9831056610809591,
+          -0.022748362717969577,
+          0.0631460549367583
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ],
+    "with_packet/all_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 9,
+        "selected_validation_reward_minus_reject_mean": -0.42403799355402905,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.161940848082488,
+          -0.228354166439428,
+          0.04871424556440414
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 9,
+        "selected_validation_reward_minus_reject_mean": -0.42403799355402905,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.161940848082488,
+          -0.228354166439428,
+          0.04871424556440414
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 2,
+        "all_reject_count": 9,
+        "selected_validation_reward_minus_reject_mean": -0.42403799355402905,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.161940848082488,
+          -0.228354166439428,
+          0.04871424556440414
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 3,
+        "all_reject_count": 10,
+        "selected_validation_reward_minus_reject_mean": -0.42420512263511934,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.161940848082488,
+          -0.228354166439428,
+          0.04871424556440414
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 5,
+        "all_reject_count": 12,
+        "selected_validation_reward_minus_reject_mean": -0.42487325353200556,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -1.161940848082488,
+          -0.228354166439428,
+          0.04871424556440414
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ]
+  },
+  "pick-place-v3": {
+    "cheap_inputs/cheap_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 5,
+        "all_reject_count": 8,
+        "selected_validation_reward_minus_reject_mean": 0.16261141878908245,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.1518519619401814,
+          0.07806118112498599,
+          0.5138458624323299
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 7,
+        "all_reject_count": 9,
+        "selected_validation_reward_minus_reject_mean": 0.16324845574673139,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.1518519619401814,
+          0.07806118112498599,
+          0.5138458624323299
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 11,
+        "all_reject_count": 11,
+        "selected_validation_reward_minus_reject_mean": 0.16237909534689113,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.1518519619401814,
+          0.07806118112498599,
+          0.5138458624323299
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 13,
+        "all_reject_count": 13,
+        "selected_validation_reward_minus_reject_mean": 0.1616884258069379,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.1518519619401814,
+          0.07806118112498599,
+          0.5138458624323299
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 15,
+        "all_reject_count": 15,
+        "selected_validation_reward_minus_reject_mean": 0.16099775626698473,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.1518519619401814,
+          0.07806118112498599,
+          0.5138458624323299
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ],
+    "cheap_inputs/all_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 4,
+        "all_reject_count": 5,
+        "selected_validation_reward_minus_reject_mean": 0.09252416943503979,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.24338917272236474,
+          0.07281120406255162,
+          0.4870127679088878
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 5,
+        "all_reject_count": 5,
+        "selected_validation_reward_minus_reject_mean": 0.09252416943503979,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.24338917272236474,
+          0.07281120406255162,
+          0.4870127679088878
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 7,
+        "all_reject_count": 7,
+        "selected_validation_reward_minus_reject_mean": 0.09281587162271211,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.24338917272236474,
+          0.07281120406255162,
+          0.4870127679088878
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 9,
+        "all_reject_count": 9,
+        "selected_validation_reward_minus_reject_mean": 0.0921252020827589,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.24338917272236474,
+          0.07281120406255162,
+          0.4870127679088878
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 10,
+        "all_reject_count": 10,
+        "selected_validation_reward_minus_reject_mean": 0.0917798673127823,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.24338917272236474,
+          0.07281120406255162,
+          0.4870127679088878
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ],
+    "with_packet/cheap_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 13,
+        "all_reject_count": 14,
+        "selected_validation_reward_minus_reject_mean": 0.12875476176085962,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.13321040250625105,
+          0.03453347699766048,
+          0.4042177259656187
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 14,
+        "all_reject_count": 14,
+        "selected_validation_reward_minus_reject_mean": 0.12875476176085962,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.13321040250625105,
+          0.03453347699766048,
+          0.4042177259656187
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 17,
+        "all_reject_count": 17,
+        "selected_validation_reward_minus_reject_mean": 0.12771875745092978,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.13321040250625105,
+          0.03453347699766048,
+          0.4042177259656187
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 19,
+        "all_reject_count": 19,
+        "selected_validation_reward_minus_reject_mean": 0.12702808791097658,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.13321040250625105,
+          0.02412053876728974,
+          0.4042177259656187
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 19,
+        "all_reject_count": 19,
+        "selected_validation_reward_minus_reject_mean": 0.12702808791097658,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.13321040250625105,
+          0.02412053876728974,
+          0.4042177259656187
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ],
+    "with_packet/all_actions": [
+      {
+        "tolerance": 0.0,
+        "splits": 100,
+        "null_count": 6,
+        "all_reject_count": 6,
+        "selected_validation_reward_minus_reject_mean": 0.0930398505262643,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.17463732939777016,
+          0.09198769810656765,
+          0.46284246996174655
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-14,
+        "splits": 100,
+        "null_count": 6,
+        "all_reject_count": 6,
+        "selected_validation_reward_minus_reject_mean": 0.0930398505262643,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.17463732939777016,
+          0.09198769810656765,
+          0.46284246996174655
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-12,
+        "splits": 100,
+        "null_count": 9,
+        "all_reject_count": 9,
+        "selected_validation_reward_minus_reject_mean": 0.09200384621633448,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.17463732939777016,
+          0.09198769810656765,
+          0.46284246996174655
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-10,
+        "splits": 100,
+        "null_count": 10,
+        "all_reject_count": 10,
+        "selected_validation_reward_minus_reject_mean": 0.09165851144635788,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.17463732939777016,
+          0.09198769810656765,
+          0.46284246996174655
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      },
+      {
+        "tolerance": 1e-08,
+        "splits": 100,
+        "null_count": 10,
+        "all_reject_count": 10,
+        "selected_validation_reward_minus_reject_mean": 0.09165851144635788,
+        "selected_validation_reward_difference_q10_q50_q90": [
+          -0.17463732939777016,
+          0.09198769810656765,
+          0.46284246996174655
+        ],
+        "not_independent_tests": true,
+        "selection_uses_this_validation_set": true
+      }
+    ]
+  }
+}

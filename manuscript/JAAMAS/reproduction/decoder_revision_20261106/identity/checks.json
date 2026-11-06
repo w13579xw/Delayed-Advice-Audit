@@ -1,0 +1,11 @@
+{
+  "checks": "passed",
+  "cases": 6,
+  "native_steps": 11328,
+  "recorded_paths": 18,
+  "all_models_entries_unchanged": true,
+  "all_reject_replayed": true,
+  "fixed48_index_assertions": true,
+  "zero_delay_identity": true,
+  "source_mode_local_parity": []
+}

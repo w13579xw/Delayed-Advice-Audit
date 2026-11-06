@@ -1,0 +1,10 @@
+{
+  "checks": "passed",
+  "cases": 360,
+  "development_groups": 126,
+  "independent_development_target_feature_checks": true,
+  "choices_replayed": 18000,
+  "unique_leaves_checked": 2899,
+  "reward_reconstruction_max_error": 0,
+  "model_hashes": true
+}
