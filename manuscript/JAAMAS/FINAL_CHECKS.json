@@ -1,180 +1,75 @@
 {
-  "status": "ready_with_author_checks",
-  "current_revision_status": "complete_with_author_checks",
-  "completed_utc": "2026-11-06T06:41:43.817556+00:00",
-  "pdf_pages": {
-    "Delayed_Advice_Audit_manuscript.pdf": 28,
-    "supplement/Advice_Audit_Online_Resource_1.pdf": 19,
-    "submission/information_sheet.pdf": 2,
-    "submission/cover_letter.pdf": 1
-  },
-  "pdf_sha256": {
-    "Delayed_Advice_Audit_manuscript.pdf": "255b58469ab83c97e68bef4fefe0d2fa7b2a11e711438d9558734ab3fb585930",
-    "supplement/Advice_Audit_Online_Resource_1.pdf": "39d6b34722dfb2a5ff9197a12e2bebebfbe89ddee3a67136c6a8a3f5c1e6d69a",
-    "submission/information_sheet.pdf": "53fc762a02c5c9abf9830a267f8ad54072a0a463721e5cde0cb180fa2a0a3084",
-    "submission/cover_letter.pdf": "fa55ee4ac18118e02dca796ae7421f1ebc89afc807c3e4bb7a7aa797de1696ce"
-  },
-  "abstract_words": 235,
-  "keywords": 5,
-  "bibliographic_entries": 31,
-  "figures": 4,
-  "tables": 8,
-  "algorithms": 1,
-  "copied_source_jsons_verified": 19,
-  "provided_class_assets_unchanged": true,
-  "out_of_page_characters": 0,
-  "unresolved_citations": 0,
-  "overfull_boxes": 0,
-  "all_new_experiments_complete": true,
-  "visual_training_seeds": [
-    0,
-    1,
-    2
-  ],
-  "visual_independent_test_environments": 100,
-  "visual_logical_arrival_cases": 300,
-  "visual_source100_trajectories": 300,
-  "visual_audited_decisions": 1200,
-  "visual_recorded_option_tails": 1584,
-  "visual_formal_native_steps": 876800,
-  "channel_independent_test_environments": 180,
-  "channel_decisions": 10800,
-  "channel_recorded_option_paths": 2280,
-  "channel_native_steps": 728240,
-  "raw_reward_mean_reconstruction_error": 0,
-  "frozen_visual_model_config_files": 160,
-  "visual_review": "50 pages rendered; all montage pages inspected; geometry/fonts/references clean; name release preserves scientific figures and numbers",
-  "ai_disclosure_present": true,
-  "author_input_placeholders_intentional": true,
-  "upload_ready": false,
-  "author_approval_obtained": false,
-  "public_release_verified": false,
-  "real_robot_or_live_async_tested": false,
-  "visual_private_information_channel_value_tested": false,
-  "source_package": "DACI_JAAMAS_decoder_revision_20261106_sources.zip;seeexternaldecoder_revision_20261106/source_package_check.json",
-  "frozen_state_model_hashes_unchanged": true,
-  "previous_complete_draft": "DACI_JAAMAS_before_decoder_20261106.zip",
-  "prior_final_checks": "/home/ez/DACI/Springer/DACI_JAAMAS/reproduction/visual_bridge_20261105/prior40page_final_checks.json",
-  "supplement_figures": 2,
-  "supplement_tables": 19,
-  "copied_source_files_verified": 22,
-  "visual_defined_channel_value_tested": true,
-  "visual_channel_primary_environments": 60,
-  "visual_channel_identity_environments": 6,
-  "visual_channel_smoke_environments": 2,
-  "visual_channel_main_paths": 177,
-  "visual_channel_main_native_steps": 107844,
-  "visual_channel_all_saved_decisions": 816,
-  "visual_channel_regenerated_source_pairs": 136,
-  "visual_channel_independent_prefix_native_steps": 4000,
-  "compression_metrics": {
-    "main_pdf_extracted_tokens_before": 14600,
-    "main_pdf_extracted_tokens_after": 10869,
-    "relative_reduction": 0.2555479452054794,
-    "method": "pdftotext whitespace tokens including captions/tables/references/appendices; not publisher word count; relocated material remains in separateSI",
-    "prior_section_tex_tokens": {
-      "results.tex": 2539,
-      "declarations.tex": 283,
-      "formulation.tex": 878,
-      "related_work.tex": 964,
-      "appendix.tex": 2053,
-      "framework.tex": 1123,
-      "experiments.tex": 2385,
-      "discussion.tex": 1246,
-      "introduction.tex": 567
-    },
-    "current_section_tex_tokens": {
-      "results.tex": 1312,
-      "declarations.tex": 227,
-      "formulation.tex": 889,
-      "related_work.tex": 964,
-      "appendix.tex": 1057,
-      "framework.tex": 1123,
-      "experiments.tex": 1297,
-      "discussion.tex": 1240,
-      "introduction.tex": 574
-    }
-  },
-  "main_appendices": 0,
-  "decoder_primary_environment_count": 60,
-  "decoder_identity_count": 6,
-  "decoder_smoke_count": 2,
-  "decoder_raw_choice_checks": 544,
-  "decoder_index_condition_checks": 204,
-  "decoder_distinct_source_plans_checked": 200,
-  "decoder_source_action_steps_checked": 9280,
-  "decoder_main_native_steps": 159372,
-  "decoder_all_native_steps": 174848,
-  "decoder_source_replay_steps": 4000,
-  "decoder_generation_pairs": 136,
-  "decoder_model_entries_unchanged": true,
-  "original_B1_table_data_unchanged": true,
-  "original_crossseed_table7_unchanged": true,
-  "editorial_metrics": {
-    "method": "pdftotext whitespace tokens forPDF; expandedTeX ASCIIwordtokensforsubsectionsincludingcaptions,notpublisherwordcount",
-    "main_before": 10869,
-    "main_after": 10309,
-    "results_before": {
-      "A positive pipeline contrast required no runtime packet": 323,
-      "Direct visual and state message-channel outcomes": 540,
-      "Headroom separates opportunity from harmful selection": 309,
-      "Complete visual training variation leaves benefit unresolved": 257,
-      "Supporting analyses bound rather than erase the counterexample": 199
-    },
-    "results_after": {
-      "A positive pipeline contrast required no runtime packet": 323,
-      "Direct visual and state message-channel outcomes": 600,
-      "Headroom separates opportunity from harmful selection": 309,
-      "Complete visual training variation leaves benefit unresolved": 261,
-      "Generation-time decoding and the frozen selector differ": 309,
-      "Supporting analyses bound rather than erase the counterexample": 199
-    }
-  },
-  "experimental_production_fingerprint": "48ffd6ffff1e3eeb5cc15a475888a844c846ead878292e6137c7f171c5246221",
-  "current_release_source_fingerprint": "4db986927673d39e48b07327b6ec21257d3366d7015714e28b658e30105bb525",
+  "project": "Delayed Advice Audit",
   "article_title": "Auditing the Value of Delayed Advice in Autonomous Agents",
-  "project_name": "Delayed Advice Audit",
-  "name_release": "2026-11-06",
-  "name_release_source_data_copies_verified": 22,
-  "name_release_tests": {
-    "base_fetch": 65,
-    "metaworld": 31,
-    "vision": 1
-  },
-  "numeric_rename_parity": "bitwise_equal_toy_fetch_push_pickplace",
-  "name_release_pdf_qa": {
+  "status": "complete_with_author_checks",
+  "pdfs": {
     "main": {
-      "path": "/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS/Delayed_Advice_Audit_manuscript.pdf",
+      "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/Delayed_Advice_Audit_manuscript.pdf",
       "pages": 28,
-      "sha256": "255b58469ab83c97e68bef4fefe0d2fa7b2a11e711438d9558734ab3fb585930",
+      "sha256": "61e51d8229c21fd871b0bce58e363d4c79a2b070d5a7236ed3833645a9031be7",
       "characters_outside_page": 0,
       "fonts_embedded": true,
-      "text_words": 8124
+      "text_words": 8135
     },
     "supplement": {
-      "path": "/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS/supplement/Advice_Audit_Online_Resource_1.pdf",
+      "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/supplement/Delayed_Advice_Audit_Online_Resource_1.pdf",
       "pages": 19,
-      "sha256": "39d6b34722dfb2a5ff9197a12e2bebebfbe89ddee3a67136c6a8a3f5c1e6d69a",
+      "sha256": "d109cf01d52c595b54da6c58e3cbffa2c0b27c10e10906b4de5079fdfd2125cb",
       "characters_outside_page": 0,
       "fonts_embedded": true,
-      "text_words": 4509
+      "text_words": 4526
     },
     "information": {
-      "path": "/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS/submission/information_sheet.pdf",
+      "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/submission/Delayed_Advice_Audit_Information_Sheet.pdf",
       "pages": 2,
-      "sha256": "53fc762a02c5c9abf9830a267f8ad54072a0a463721e5cde0cb180fa2a0a3084",
+      "sha256": "2c6423371a61d36b3cbf2a57677fb18269a2224a6430e45470535a3e02185df6",
       "characters_outside_page": 0,
       "fonts_embedded": true,
       "text_words": 935
     },
     "letter": {
-      "path": "/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS/submission/cover_letter.pdf",
+      "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/submission/Delayed_Advice_Audit_Cover_Letter.pdf",
       "pages": 1,
-      "sha256": "fa55ee4ac18118e02dca796ae7421f1ebc89afc807c3e4bb7a7aa797de1696ce",
+      "sha256": "54b3da4f229f015217ad89ce294d1e774bf433c9b850d7f36e67a4d33c878177",
       "characters_outside_page": 0,
       "fonts_embedded": true,
       "text_words": 331
     },
     "logs_clean": true
-  }
+  },
+  "tests": {
+    "base_fetch": 61,
+    "metaworld": 31,
+    "vision": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "source_records": 22,
+  "numerical_invariance": "22 records verified; numeric leaves unchanged; all3 NPZ byte-identical",
+  "fixed_simulation_parity": {
+    "base": {
+      "bitwise_equal": true,
+      "arrays": [
+        "toy_paired",
+        "toy_prefix",
+        "fetch_paired",
+        "fetch_prefix"
+      ]
+    },
+    "metaworld": {
+      "bitwise_equal": true,
+      "arrays": [
+        "push-v3",
+        "pick-place-v3"
+      ]
+    }
+  },
+  "figure_pdf_streams_unchanged": 7,
+  "source_fingerprints": {
+    "current_release_source_fingerprint": "a462fa8a4570101660ec1e2ffcff20e52e9f4812203d1393035ecbaba9a34231",
+    "original_experimental_source_fingerprint": "48ffd6ffff1e3eeb5cc15a475888a844c846ead878292e6137c7f171c5246221"
+  },
+  "archive_publication_status": "private local and private repository only; no DOI or journal submission",
+  "obsolete_interface": "excluded from release",
+  "original_records": "private local provenance backup outside repository"
 }

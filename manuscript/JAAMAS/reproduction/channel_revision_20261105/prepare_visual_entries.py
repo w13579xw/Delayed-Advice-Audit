@@ -1,11 +1,11 @@
 from pathlib import Path
 import json,hashlib,numpy as np
-R=Path('/home/ez/DACI/code');D=R/'outputs/jaamas/revision_20261105';old=R/'outputs/vision/collect_critic_curve_data_20261104.py';s=old.read_text().replace('REPO=Path(__file__).resolve().parents[2]','REPO=Path(\'/home/ez/DACI/code\')')
+R=Path('/home/ez/DelayedAdviceAudit/code');D=R/'outputs/jaamas/revision_20261105';old=R/'outputs/vision/collect_critic_curve_data_20261104.py';s=old.read_text().replace('REPO=Path(__file__).resolve().parents[2]','REPO=Path(\'/home/ez/DelayedAdviceAudit/code\')')
 s=s.replace('from server_run import ROOT,fingerprint,save,now','from server_run import ROOT,fingerprint,save,now\nfrom replication_support import make_manifest,source_path')
 s=s.replace("source=ROOT/'outputs/vision'/f'act_budget15k_{tag}_20261103_v1'/'best'","source=source_path(task)")
 s=s.replace("assert len(rows)==(2 if a.smoke else 80)","assert len(rows)==sum(len(v) for v in schedules.values())")
 (D/'collect_visual_repl.py').write_text(s)
-old2=R/'outputs/vision/confirm_critic_curve_20261104.py';s=old2.read_text().replace('REPO=Path(__file__).resolve().parents[2]','REPO=Path(\'/home/ez/DACI/code\')').replace('from server_run import ROOT,fingerprint,save,now','from server_run import ROOT,fingerprint,save,now\nfrom replication_support import make_manifest,source_path')
+old2=R/'outputs/vision/confirm_critic_curve_20261104.py';s=old2.read_text().replace('REPO=Path(__file__).resolve().parents[2]','REPO=Path(\'/home/ez/DelayedAdviceAudit/code\')').replace('from server_run import ROOT,fingerprint,save,now','from server_run import ROOT,fingerprint,save,now\nfrom replication_support import make_manifest,source_path')
 s=s.replace("source=ROOT/'outputs/vision'/f'act_budget15k_{tag}_20261103_v1'/'best'","source=source_path(task)")
 s=s.replace("assert all(json.loads((models/f'n{n}'/'checks.json').read_text())['checks']=='passed' for n in (7,14,28))","assert json.loads((models/'checks.json').read_text())['checks']=='passed'")
 s=s.replace('count=2 if a.smoke else 100','count=2 if a.smoke else 50')

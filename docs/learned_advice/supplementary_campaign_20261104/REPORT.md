@@ -1,6 +1,6 @@
 # 补充实验已完成：证据增量与结论边界
 
-所有代码、模型、数据、日志、论文与Git仓库已迁至/home/ez/DACI/code。原路径为兼容symlink，历史绝对路径/venv shebang/冻结manifest不改。迁移为同一文件系统rename，目录inode保留。投稿期刊待定，未采用MDPI模板或进行投稿。
+所有代码、模型、数据、日志、论文与Git仓库已迁至/home/ez/DelayedAdviceAudit/code。原路径为兼容symlink，历史绝对路径/venv shebang/冻结manifest不改。迁移为同一文件系统rename，目录inode保留。投稿期刊待定，未采用MDPI模板或进行投稿。
 
 ## 本轮完成
 

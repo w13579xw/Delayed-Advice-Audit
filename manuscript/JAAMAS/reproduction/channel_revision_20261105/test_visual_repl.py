@@ -2,10 +2,10 @@
 import argparse,hashlib,json,tempfile,shutil,time
 from pathlib import Path
 import sys
-REPO=Path('/home/ez/DACI/code');sys.path[:0]=[str(REPO/"src"),str(REPO/"scripts")]
+REPO=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(REPO/"src"),str(REPO/"scripts")]
 import numpy as np
-from daci.metaworld_adapter import ContactEnv
-from daci.value_kernel import FrozenKernelDecisions
+from advice_audit.metaworld_adapter import ContactEnv
+from advice_audit.value_kernel import FrozenKernelDecisions
 from visual_bundle import BundleClient,DeterministicCamera,actions,make_manifest
 from visual_value_opportunity import metrics
 from server_run import ROOT,fingerprint,save,now
@@ -34,7 +34,7 @@ def main():
     try:
         for task,tag,base in tasks:
             source=source_path(task);manifest,path=make_manifest(task,root,ROOT,source_override=source);local=manifest['selected'];policies={14:FrozenKernelDecisions(models,task)};fixed_cheap=policies[14].analysis['best_fixed_cheap_from_train']['name'];fixed_full=policies[14].analysis['best_fixed_full_from_train']['name'];tracked_task=[Path(v)/'head.safetensors' for v in manifest['heads']]+[source/'core.safetensors'];task_hashes=file_hashes(tracked_task);save(root/(task+'_actor_sha256.json'),task_hashes)
-            with tempfile.TemporaryDirectory(prefix='daci_confirm_',dir='/dev/shm') as temporary:
+            with tempfile.TemporaryDirectory(prefix='advice_audit_confirm_',dir='/dev/shm') as temporary:
                 work=Path(temporary);client=BundleClient(ROOT/'.venv-vision/bin/python',ROOT/'scripts/visual_bundle_worker.py',path,work/'bundle');save(root/(task+'_worker_ready.json'),client.ready)
                 try:
                     for item in schedules[task]:

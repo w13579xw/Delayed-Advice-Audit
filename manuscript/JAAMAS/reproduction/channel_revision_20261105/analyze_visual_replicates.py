@@ -2,8 +2,8 @@
 import json,hashlib,time,sys,collections
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path[:0]=[str(R/'src'),str(R/'scripts')]
-from daci.value_kernel import FrozenKernelDecisions
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(R/'src'),str(R/'scripts')]
+from advice_audit.value_kernel import FrozenKernelDecisions
 from server_run import save,now,fingerprint
 P=R/'outputs/jaamas/visual_pipeline_20261105_v1';O=R/'outputs/jaamas/visual_replication_analysis_20261105_v1'
 assert json.loads((P/'run.json').read_text())['status']=='complete'

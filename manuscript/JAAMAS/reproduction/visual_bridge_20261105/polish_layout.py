@@ -1,6 +1,6 @@
 from pathlib import Path
 import re
-P=Path('/home/ez/DACI/Springer/DACI_JAAMAS')
+P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS')
 p=P/'submission/information_sheet.tex';p.write_text(p.read_text().replace(r'\newpage',''))
 # Keep the final appendix coherent: its text and both six-row tables share one page.
 p=P/'sections/appendix.tex';s=p.read_text();start=s.index(r'\section{Visual replication by training seed}')

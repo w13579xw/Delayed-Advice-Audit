@@ -3,12 +3,12 @@
   "current_revision_status": "complete_with_author_checks",
   "completed_utc": "2026-11-05T10:06:40.348895+00:00",
   "pdf_pages": {
-    "DACI_JAAMAS_manuscript.pdf": 40,
+    "Delayed_Advice_Audit_manuscript.pdf": 40,
     "submission/information_sheet.pdf": 2,
     "submission/cover_letter.pdf": 1
   },
   "pdf_sha256": {
-    "DACI_JAAMAS_manuscript.pdf": "7185b5d658110061841de8eab7c0e5f07cd1b3cfa9bbab23e29b5dc87e903b5c",
+    "Delayed_Advice_Audit_manuscript.pdf": "7185b5d658110061841de8eab7c0e5f07cd1b3cfa9bbab23e29b5dc87e903b5c",
     "submission/information_sheet.pdf": "3f0d8baba75e40dcb16cb5557a1f9d3cfb4be010f88d95687e00f93653da1ddd",
     "submission/cover_letter.pdf": "790dedb18c58855ff16f9d89a0b510b2a1033e23e0fabde17d930c61443213a9"
   },
@@ -50,6 +50,6 @@
   "public_release_verified": false,
   "real_robot_or_live_async_tested": false,
   "visual_private_information_channel_value_tested": false,
-  "source_package": "DACI_JAAMAS_revision_20261105_sources.zip; see external source_package_check.json for CRC/SHA",
+  "source_package": "Advice_Audit_JAAMAS_revision_20261105_sources.zip; see external source_package_check.json for CRC/SHA",
   "frozen_state_model_hashes_unchanged": true
 }

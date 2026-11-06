@@ -1,10 +1,10 @@
 from pathlib import Path
 import re,json,shutil
-P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');R=Path('/home/ez/DACI/code');O=R/'outputs/jaamas/decoder_revision_20261106';A=(P/'sections/appendix.tex').read_text()
+P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');R=Path('/home/ez/DelayedAdviceAudit/code');O=R/'outputs/jaamas/decoder_revision_20261106';A=(P/'sections/appendix.tex').read_text()
 baseline={str(p.relative_to(P)):p.read_text() for p in [P/'main.tex',*list((P/'sections').glob('*.tex'))]}
 (O/'prose_before.json').write_text(json.dumps(baseline,indent=2))
 shutil.copy2(P/'FINAL_CHECKS.json',O/'previous_final_checks.json')
-x=json.loads((P/'FINAL_CHECKS.json').read_text());x.update(status='revision_in_progress',current_revision_status='decoder_control_and_consolidation_in_progress',previous_complete_draft='DACI_JAAMAS_before_decoder_20261106.zip');(P/'FINAL_CHECKS.json').write_text(json.dumps(x,indent=2))
+x=json.loads((P/'FINAL_CHECKS.json').read_text());x.update(status='revision_in_progress',current_revision_status='decoder_control_and_consolidation_in_progress',previous_complete_draft='Advice_Audit_JAAMAS_before_decoder_20261106.zip');(P/'FINAL_CHECKS.json').write_text(json.dumps(x,indent=2))
 # Move only unique details; original optimization and per-seed tables already exist in SI.
 candidates=A.split(r'\subsection{Candidate functions and fixed continuation}')[1].split('Local pose heads')[0]
 nonzero=A.split(r'\subsection{Exploratory state results at nonzero delay}')[1].split(r'\subsection{Why Door')[0]

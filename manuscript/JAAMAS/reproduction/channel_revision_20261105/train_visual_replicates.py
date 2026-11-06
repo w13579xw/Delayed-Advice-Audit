@@ -1,6 +1,6 @@
 import json,hashlib,os,sys,subprocess,time,shutil
 from pathlib import Path
-ROOT=Path('/home/ez/DACI/code');sys.path.insert(0,str(ROOT/'scripts'));from server_run import save,now,fingerprint
+ROOT=Path('/home/ez/DelayedAdviceAudit/code');sys.path.insert(0,str(ROOT/'scripts'));from server_run import save,now,fingerprint
 OUT=ROOT/'outputs/jaamas/visual_full_training_20261105_v1';OUT.mkdir(parents=True,exist_ok=False);(OUT/'logs').mkdir();fp=fingerprint();start=time.monotonic();env=dict(os.environ,OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1',PYTHONPATH=str(ROOT/'src'),CUBLAS_WORKSPACE_CONFIG=':4096:8');data=ROOT/'outputs/vision/features_200x2_20261103_v1';commands=[]
 save(OUT/'protocol.json',dict(utc=now(),source_fingerprint=fp,training_seeds=[1,2],source_updates=15000,head_targets=['action','pose'],epochs=20,data=str(data),manifest_sha256=hashlib.sha256((data/'episodes.json').read_bytes()).hexdigest(),no_test_access=True));shutil.copy2(__file__,OUT/'entry_snapshot.py')
 def run(name,args):

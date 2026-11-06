@@ -2,7 +2,7 @@
 import json,hashlib
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');O=R/'outputs/jaamas/state_temporal_20261105_v1';O.mkdir(exist_ok=False)
+R=Path('/home/ez/DelayedAdviceAudit/code');O=R/'outputs/jaamas/state_temporal_20261105_v1';O.mkdir(exist_ok=False)
 root=R/'outputs/jaamas/channel_revision_20261105_v1/main';rows=json.loads((root/'rows.json').read_text())
 proto=dict(status='frozen_before_aggregation',rng=2026110564,resamples=30000,confidence=.95,role='exploratory; original primary families unchanged',subsets={'nonzero':[2,3,4,5],'delay16':[2,3],'delay64':[4,5]},unit='environment within original delay/noise cells crossed with five critic seeds',door='all60 environments, all5packet/fullcritics, allS/F/Echannels; no outcome selection')
 (O/'protocol.json').write_text(json.dumps(proto,indent=2))

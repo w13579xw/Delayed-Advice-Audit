@@ -1,7 +1,7 @@
 """Queue read-only audit/analysis after all previously authorized native runs."""
 import json,time,subprocess,sys,os,hashlib,shutil
 from pathlib import Path
-R=Path('/home/ez/DACI/code');D=R/'outputs/jaamas/revision_20261105';O=R/'outputs/jaamas/visual_revision_postprocess_20261105_v1';O.mkdir(exist_ok=False);(O/'logs').mkdir();(O/'entry_snapshot').mkdir();sys.path.insert(0,str(R/'scripts'));from server_run import save,now
+R=Path('/home/ez/DelayedAdviceAudit/code');D=R/'outputs/jaamas/revision_20261105';O=R/'outputs/jaamas/visual_revision_postprocess_20261105_v1';O.mkdir(exist_ok=False);(O/'logs').mkdir();(O/'entry_snapshot').mkdir();sys.path.insert(0,str(R/'scripts'));from server_run import save,now
 files=[D/x for x in ['postprocess_when_ready.py','analyze_visual_replicates.py','audit_visual_development.py']]
 for p in files:shutil.copy2(p,O/'entry_snapshot'/p.name)
 hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files};save(O/'entries.json',dict(files=hashes,utc=now()));env=dict(os.environ,OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1');commands=[]

@@ -1,7 +1,7 @@
 """Independent input/choice/index/trajectory audit and frozen four-contrast inference."""
 from pathlib import Path
 import numpy as np,json,hashlib,sys,collections
-R=Path('/home/ez/DACI/code');sys.path.insert(0,str(R/'src'));from daci.value_kernel import FrozenKernelDecisions
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path.insert(0,str(R/'src'));from advice_audit.value_kernel import FrozenKernelDecisions
 B=R/'outputs/jaamas/decoder_control_20261106_v1';smoke_only='--smoke-only' in sys.argv;O=R/('outputs/jaamas/decoder_analysis_smoke_20261106_v1' if smoke_only else 'outputs/jaamas/decoder_analysis_20261106_v1');O.mkdir(exist_ok=False);PF='with_packet/all_actions'
 policy=FrozenKernelDecisions(R/'outputs/vision/value_kernel_pilot_20261104_v3','pick-place-v3');sha=lambda f:hashlib.sha256(Path(f).read_bytes()).hexdigest()
 audit=dict(cases=0,choices=0,unique_paths=0,fixed48_index_checks=0,maximum_reward_mean_error=0.,source_packet_hash_checks=0);results={}

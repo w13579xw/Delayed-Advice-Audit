@@ -4,7 +4,7 @@ No fitting, parameter replacement, or outcome-based choice is performed here.
 import argparse,json,hashlib,sys,time,shutil
 from pathlib import Path
 import numpy as np
-ROOT=Path('/home/ez/DACI/code');sys.path[:0]=[str(ROOT/'scripts'),str(ROOT/'src'),str(ROOT/'outputs/jaamas')]
+ROOT=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(ROOT/'scripts'),str(ROOT/'src'),str(ROOT/'outputs/jaamas')]
 from server_run import save,now,fingerprint
 from state_core_20261105 import *
 

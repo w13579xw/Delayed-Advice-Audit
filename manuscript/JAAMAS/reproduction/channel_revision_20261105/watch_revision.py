@@ -1,7 +1,7 @@
 """Read-only live progress monitor; never reads outcomes or changes protocols."""
 import json,time,datetime
 from pathlib import Path
-R=Path('/home/ez/DACI/code/outputs/jaamas');last=None
+R=Path('/home/ez/DelayedAdviceAudit/code/outputs/jaamas');last=None
 while True:
  def read(p):
   try:return json.loads(p.read_text())

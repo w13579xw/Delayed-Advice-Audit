@@ -2,10 +2,10 @@
 import argparse,hashlib,json,tempfile,shutil,time
 from pathlib import Path
 import sys
-REPO=Path('/home/ez/DACI/code');sys.path[:0]=[str(REPO/"src"),str(REPO/"scripts")]
+REPO=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(REPO/"src"),str(REPO/"scripts")]
 import numpy as np
-from daci.metaworld_adapter import ContactEnv
-from daci.act_bridge import ACTClient,source_action_to_native
+from advice_audit.metaworld_adapter import ContactEnv
+from advice_audit.act_bridge import ACTClient,source_action_to_native
 from visual_bundle import BundleClient,DeterministicCamera,actions,make_manifest
 from visual_value_opportunity import metrics,summarize
 from server_run import ROOT,fingerprint,save,now
@@ -29,7 +29,7 @@ def main():
     try:
         for task,tag,base in tasks:
             source=source_path(task);manifest,path=make_manifest(task,root,ROOT,source_override=source);local=manifest['selected'];options=['reject']+[f'cheap_head{i}_48' for i in range(4) if i!=local]+['cheap_ensemble48','cheap_request48','cheap_arrival48','act_raw16','act_raw48','act_suffix16','act_suffix48','act_blend48']
-            with tempfile.TemporaryDirectory(prefix='daci_valuedata_',dir='/dev/shm') as temporary:
+            with tempfile.TemporaryDirectory(prefix='advice_audit_valuedata_',dir='/dev/shm') as temporary:
                 work=Path(temporary);client=BundleClient(ROOT/'.venv-vision/bin/python',ROOT/'scripts/visual_bundle_worker.py',path,work/'bundle');save(root/(task+'_worker_ready.json'),client.ready)
                 try:
                     for item in schedules[task]:

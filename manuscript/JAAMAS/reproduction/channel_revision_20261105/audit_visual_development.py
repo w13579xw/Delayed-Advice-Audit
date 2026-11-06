@@ -2,8 +2,8 @@
 import argparse,json,hashlib,sys
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path[:0]=[str(R/'src'),str(R/'scripts')]
-from daci.value_kernel import FrozenKernelDecisions,select_global_minimum
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(R/'src'),str(R/'scripts')]
+from advice_audit.value_kernel import FrozenKernelDecisions,select_global_minimum
 from server_run import save,now
 p=argparse.ArgumentParser();p.add_argument('--data',required=True);p.add_argument('--models',required=True);p.add_argument('--out',required=True);a=p.parse_args();D=Path(a.data);M=Path(a.models);O=Path(a.out);assert json.loads((D/'run.json').read_text())['status']=='complete';assert json.loads((M/'run.json').read_text())['status']=='complete';O.mkdir(exist_ok=False);rows=json.loads((D/'rows.json').read_text());assert len(rows)==40;count=0;groups_by_task={}
 for task in ['push-v3','pick-place-v3']:

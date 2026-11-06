@@ -54,7 +54,7 @@ arrival_confirmation_20261104_v1、analysis和逐轨迹audit均complete/checkspa
 
 ## 补充实验完成与迁移（2026-11-04）
 
-完整工作目录为`/home/ez/DACI/code`；原项目内仓库路径是兼容symlink，历史配置、模型路径和venv shebang保留。投稿期刊待定，论文继续通用Markdown，未采用MDPI模板或提交。
+完整工作目录为`/home/ez/DelayedAdviceAudit/code`；原项目内仓库路径是兼容symlink，历史配置、模型路径和venv shebang保留。投稿期刊待定，论文继续通用Markdown，未采用MDPI模板或提交。
 
 - **V8a/训练随机性：完成。** 新增8个训练任务（8个action头、4个ACT3k），固定原180/20示范划分、优化器与预定容量。3个trainingseed×两角色×两task×50全新环境，共600条native500轨迹、300000steps；只有100独立环境，不能按600独立样本计算。12模型测试前冻结，26阶段命令全部exit0，独立audit通过、rawreward及主平均差重算误差0。
 - **结果：能力reward排序跨seed反转。** Push ACT3k−local为−1.325、+0.437、−1.542；Pick为−2.269、−1.743、+1.277。跨seed平均分别−.810/−.911，97.5%近似crossedbootstrap区间分别[−2.286,.596]/[−2.924,1.576]，均跨0。仅3trainingseed不能提供可靠训练总体覆盖；不能写成本地普遍更强、等效或source无用。原15k和完整arrival策略多seed仍未运行。
@@ -74,4 +74,4 @@ arrival_confirmation_20261104_v1、analysis和逐轨迹audit均complete/checkspa
 
 
 ## Latest completed evidence and JAAMAS draft (2026-11-05 CST)
-V11criticcurveallcomplete,80development/200test,8primarycontrastsnonestrictlypositive. J1–J4newstatesuitecomplete:3tasks/5criticseeds/126development/360test/18000choices; allaudits passed. Fullreport docs/learned_advice/jaamas_campaign_20261105/REPORT.md. Currentpaper /home/ez/DACI/Springer/DACI_JAAMAS/DACI_JAAMAS_manuscript.pdf (23pages), editablemain.tex,2pageinformation sheet,1pageletter,AUTHOR_CHECKLIST. TargetJAAMAS,notMDPI/Robotica. Completevisual15k/fullarrivalactorseedreplicationstillunrun; no realrobot/async/publicrelease/authorapproval/submissionclaim.
+V11criticcurveallcomplete,80development/200test,8primarycontrastsnonestrictlypositive. J1–J4newstatesuitecomplete:3tasks/5criticseeds/126development/360test/18000choices; allaudits passed. Fullreport docs/learned_advice/jaamas_campaign_20261105/REPORT.md. Currentpaper /home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/Delayed_Advice_Audit_manuscript.pdf (23pages), editablemain.tex,2pageinformation sheet,1pageletter,AUTHOR_CHECKLIST. TargetJAAMAS,notMDPI/Robotica. Completevisual15k/fullarrivalactorseedreplicationstillunrun; no realrobot/async/publicrelease/authorapproval/submissionclaim.

@@ -3,8 +3,8 @@ from pathlib import Path
 import json,subprocess,re,hashlib
 import pdfplumber
 from PIL import Image,ImageOps,ImageDraw
-P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');O=P/'preview_decoder';O.mkdir(exist_ok=True)
-docs={'main':P/'DACI_JAAMAS_manuscript.pdf','supplement':P/'supplement/DACI_Online_Resource_1.pdf','information':P/'submission/information_sheet.pdf','letter':P/'submission/cover_letter.pdf'}
+P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');O=P/'preview_decoder';O.mkdir(exist_ok=True)
+docs={'main':P/'Delayed_Advice_Audit_manuscript.pdf','supplement':P/'supplement/Delayed_Advice_Audit_Online_Resource_1.pdf','information':P/'submission/information_sheet.pdf','letter':P/'submission/cover_letter.pdf'}
 report={}
 for name,file in docs.items():
  d=O/name;d.mkdir(exist_ok=True);viol=[];texts=[]

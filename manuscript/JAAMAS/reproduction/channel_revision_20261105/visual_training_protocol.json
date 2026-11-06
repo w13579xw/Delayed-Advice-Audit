@@ -11,7 +11,7 @@
     "pose"
   ],
   "epochs": 20,
-  "data": "/home/ez/DACI/code/outputs/vision/features_200x2_20261103_v1",
+  "data": "/home/ez/DelayedAdviceAudit/code/outputs/vision/features_200x2_20261103_v1",
   "manifest_sha256": "30fe738dcf6be481303dd356485126a753a59db322576b5ef288ae36efe02239",
   "no_test_access": true
 }

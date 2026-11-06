@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,hashlib,subprocess
-R=Path('/home/ez/DACI/code');D=R/'outputs/jaamas/decoder_revision_20261106';B=R/'outputs/jaamas/decoder_control_20261106_v1'
+R=Path('/home/ez/DelayedAdviceAudit/code');D=R/'outputs/jaamas/decoder_revision_20261106';B=R/'outputs/jaamas/decoder_control_20261106_v1'
 p=json.loads((B/'smoke/protocol.json').read_text());assert json.loads((B/'smoke/run.json').read_text())['status']=='complete'
 def check():
  for f,h in {**p['model_hashes'],**p['entry_hashes']}.items():assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==h

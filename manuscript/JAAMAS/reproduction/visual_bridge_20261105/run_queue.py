@@ -1,6 +1,6 @@
 import json,hashlib,subprocess,time
 from pathlib import Path
-R=Path('/home/ez/DACI/code');D=R/'outputs/jaamas/bridge_revision_20261105';B=R/'outputs/jaamas/visual_channel_bridge_20261105_v1'
+R=Path('/home/ez/DelayedAdviceAudit/code');D=R/'outputs/jaamas/bridge_revision_20261105';B=R/'outputs/jaamas/visual_channel_bridge_20261105_v1'
 p=json.loads((B/'smoke/protocol.json').read_text());assert json.loads((B/'smoke/run.json').read_text())['status']=='complete'
 def check():
  assert hashlib.sha256((D/'visual_channel.py').read_bytes()).hexdigest()==p['entry_sha256']

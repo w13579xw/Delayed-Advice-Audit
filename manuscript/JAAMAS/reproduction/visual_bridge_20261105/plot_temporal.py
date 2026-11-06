@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np,json
 import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');D=R/'outputs/jaamas/state_temporal_20261105_v1';z=np.load(D/'curves.npz')
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');D=R/'outputs/jaamas/state_temporal_20261105_v1';z=np.load(D/'curves.npz')
 style=Path('/home/ez/.codex/skills/deepscientist-figure-polish/assets/deepscientist-academic.mplstyle').read_text()
 import re,io
 style=re.sub(r': (#[0-9A-Fa-f]{6})',r': "\1"',style)

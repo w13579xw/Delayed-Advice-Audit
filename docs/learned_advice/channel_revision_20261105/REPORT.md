@@ -1,8 +1,8 @@
-# DACI 论文修订与补充实验报告
+# Delayed Advice Audit 论文修订与补充实验报告
 
 状态：本轮实验和论文修改完成，交付作者核验稿；未投稿、未支付费用。日期：2026-11-05。
 
-论文：`/home/ez/DACI/Springer/DACI_JAAMAS/DACI_JAAMAS_manuscript.pdf`；可编辑源包：`/home/ez/DACI/Springer/DACI_JAAMAS_revision_20261105_sources.zip`。最终40页（正文、参考文献、附录），Information Sheet 2页，cover letter 1页。
+论文：`/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/Delayed_Advice_Audit_manuscript.pdf`；可编辑源包：`/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS_revision_20261105_sources.zip`。最终40页（正文、参考文献、附录），Information Sheet 2页，cover letter 1页。
 
 ## 最重要的发现与贡献
 
@@ -75,7 +75,7 @@
 - outputs/jaamas/visual_replication_analysis_20261105_v1
 - outputs/jaamas/visual_revision_postprocess_20261105_v1
 
-论文构建：在/home/ez/DACI/Springer/DACI_JAAMAS执行bash build.sh。原始数据/权重仍在本地研究目录；源包是可编辑论文和复现入口，不是已公开的完整权重/数据发布。
+论文构建：在/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS执行bash build.sh。原始数据/权重仍在本地研究目录；源包是可编辑论文和复现入口，不是已公开的完整权重/数据发布。
 
 ## 交付边界
 

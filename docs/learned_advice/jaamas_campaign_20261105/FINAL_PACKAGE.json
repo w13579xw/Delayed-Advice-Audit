@@ -2,11 +2,11 @@
   "status": "complete_draft",
   "readiness": "ready_with_author_checks",
   "pdf_pages": {
-    "DACI_JAAMAS_manuscript.pdf": 23,
+    "Delayed_Advice_Audit_manuscript.pdf": 23,
     "submission/information_sheet.pdf": 2,
     "submission/cover_letter.pdf": 1
   },
-  "zip": "/home/ez/DACI/Springer/DACI_JAAMAS_sources.zip",
+  "zip": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS_sources.zip",
   "zip_sha256": "b4fb896100c8bfae0855d07f794b852ad54ea0fa26545f3f87945496e06c8cc0",
   "files": 56,
   "completed_utc": "2026-11-04T17:50:39.145130+00:00"

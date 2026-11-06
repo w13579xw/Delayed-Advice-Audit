@@ -4,7 +4,6 @@ from pathlib import Path
 from .counterfactual import collect
 from .model import fit_models
 from .evaluation import evaluate, METHODS, EXTRA_METHODS
-from .compat import canonical_method
 from .report import summarize, plot, plot_envelopes
 
 
@@ -39,7 +38,7 @@ def main():
     e.add_argument("--out", required=True)
     e.add_argument("--model-dir")
     e.add_argument("--backend", choices=["toy", "fetch"], default="toy")
-    e.add_argument("--methods", nargs="+", type=canonical_method, choices=METHODS + EXTRA_METHODS, default=list(METHODS))
+    e.add_argument("--methods", nargs="+", choices=METHODS + EXTRA_METHODS, default=list(METHODS))
     e.add_argument("--episodes", type=int, default=20)
     e.add_argument("--seed", type=int, default=10000)
     e.add_argument("--delays", nargs="+", type=int, default=[0, 6, 12, 24])

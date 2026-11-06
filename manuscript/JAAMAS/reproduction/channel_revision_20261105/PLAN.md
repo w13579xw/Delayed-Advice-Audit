@@ -1,4 +1,4 @@
-# DACI channel-value revision: frozen charter
+# Delayed Advice Audit channel-value revision: frozen charter
 Created before new smoke/main outcomes, 2026-11-05 CST. User specifically authorizes fixed-policy channel outcomes, oracle headroom, complete visual three-seed reproduction, operational diagrams/algorithm and expanded literature. Parent: state_campaign_20261105_v1 and arrival_confirmation_20261104_v1. Production code remains frozen. Use output-only entries, new directories, hashes and raw traces; no paid API/realrobot/submission. Dedicated campaign, memory and bash_exec tools absent; exec_command/write_stdin + local records are explicit fallback.
 Selected outline: paper/visual_advice_audit/CHANNEL_REVISION_OUTLINE.md.
 

@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,hashlib,shutil
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');A=R/'outputs/jaamas/decoder_analysis_20261106_v1';a=json.loads((A/'analysis.json').read_text())['main']
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');A=R/'outputs/jaamas/decoder_analysis_20261106_v1';a=json.loads((A/'analysis.json').read_text())['main']
 assert json.loads((R/'outputs/jaamas/decoder_revision_20261106/post_queue_complete.json').read_text())['status']=='complete'
 manifest=json.loads((P/'source_data/manifest.json').read_text())
 copies={'decoder_analysis.json':A/'analysis.json','decoder_audit.json':A/'audit.json','decoder_source_audit.json':R/'outputs/jaamas/decoder_source_audit_20261106_v1/checks.json','decoder_vectors.npz':A/'condition_vectors.npz'}

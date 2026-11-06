@@ -5,7 +5,7 @@ User approved 2026-11-06:
 - Repository: delayed-advice-audit
 - Python package: advice_audit; command: advice-audit
 - Canonical root: /home/ez/DelayedAdviceAudit/code
-- Canonical paper: /home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS
+- Canonical paper: /home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS
 
 Scope: current paper/SI/submission materials, current package/CLI/scripts/tests/configs and public-facing GitHub content. Keep repository private. No numerical algorithm, model, data split, threshold, result or assertion is changed. Snapshot original code and preserve completed run files, model hashes, numerical source data and historical source bundles. Historical dated research records and compatibility paths can retain old identifiers; record every intentional exception.
 

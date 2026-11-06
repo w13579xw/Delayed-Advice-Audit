@@ -2,7 +2,7 @@
 import json,sys,hashlib,collections
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path.insert(0,str(R/'src'));from daci.value_kernel import FrozenKernelDecisions
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path.insert(0,str(R/'src'));from advice_audit.value_kernel import FrozenKernelDecisions
 O=R/'outputs/jaamas/visual_channel_bridge_analysis_20261105_v1';O.mkdir(exist_ok=False)
 B=R/'outputs/jaamas/visual_channel_bridge_20261105_v1';policy=FrozenKernelDecisions(R/'outputs/vision/value_kernel_pilot_20261104_v3','pick-place-v3')
 sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()

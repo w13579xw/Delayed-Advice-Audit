@@ -44,7 +44,7 @@ software versions are in paper/visual_advice_audit/REPRODUCIBILITY_SUPPLEMENT.md
 
 ## Completed supplementary replication and workspace relocation
 
-The full repository, environments, datasets, checkpoints, outputs and manuscripts now reside at `/home/ez/DACI/code`. The old project-local repository path is a compatibility symlink. Frozen absolute paths and hashes were not rewritten. See `outputs/server/migration_20261104.json` and `WORKSPACE_LAYOUT.md`.
+The full repository, environments, datasets, checkpoints, outputs and manuscripts now reside at `/home/ez/DelayedAdviceAudit/code`. The old project-local repository path is a compatibility symlink. Frozen absolute paths and hashes were not rewritten. See `outputs/server/migration_20261104.json` and `WORKSPACE_LAYOUT.md`.
 
 |Evidence|Entry point under outputs/vision|Completed artifact|
 |---|---|---|
@@ -58,4 +58,4 @@ All listed runs completed with exit0 and checks passed. The orchestration and au
 
 
 ## Latest completed evidence and JAAMAS draft (2026-11-05 CST)
-V11criticcurveallcomplete,80development/200test,8primarycontrastsnonestrictlypositive. J1–J4newstatesuitecomplete:3tasks/5criticseeds/126development/360test/18000choices; allaudits passed. Fullreport docs/learned_advice/jaamas_campaign_20261105/REPORT.md. Currentpaper /home/ez/DACI/Springer/DACI_JAAMAS/DACI_JAAMAS_manuscript.pdf (23pages), editablemain.tex,2pageinformation sheet,1pageletter,AUTHOR_CHECKLIST. TargetJAAMAS,notMDPI/Robotica. Completevisual15k/fullarrivalactorseedreplicationstillunrun; no realrobot/async/publicrelease/authorapproval/submissionclaim.
+V11criticcurveallcomplete,80development/200test,8primarycontrastsnonestrictlypositive. J1–J4newstatesuitecomplete:3tasks/5criticseeds/126development/360test/18000choices; allaudits passed. Fullreport docs/learned_advice/jaamas_campaign_20261105/REPORT.md. Currentpaper /home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/Delayed_Advice_Audit_manuscript.pdf (23pages), editablemain.tex,2pageinformation sheet,1pageletter,AUTHOR_CHECKLIST. TargetJAAMAS,notMDPI/Robotica. Completevisual15k/fullarrivalactorseedreplicationstillunrun; no realrobot/async/publicrelease/authorapproval/submissionclaim.

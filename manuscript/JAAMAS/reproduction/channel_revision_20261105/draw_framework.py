@@ -3,7 +3,7 @@ import json
 import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch,FancyArrowPatch
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');F=P/'figures';plt.style.use(R/'outputs/vision/critic_learning_curve_report_20261104_v2/academic.mplstyle');plt.rcParams.update({'font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none','text.usetex':False})
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');F=P/'figures';plt.style.use(R/'outputs/vision/critic_learning_curve_report_20261104_v2/academic.mplstyle');plt.rcParams.update({'font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none','text.usetex':False})
 fig,ax=plt.subplots(figsize=(4.7,4.25));ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')
 def box(x,y,w,h,text,color='#F2EEE8',fs=8.3):
  p=FancyBboxPatch((x,y),w,h,boxstyle='round,pad=.008,rounding_size=.012',facecolor=color,edgecolor='#9BA29B',linewidth=.7);ax.add_patch(p);ax.text(x+w/2,y+h/2,text,ha='center',va='center',fontsize=fs)
@@ -20,7 +20,7 @@ box(.68,.27,.31,.19,'3  Channel value\nSame frozen policy\nDefined message chann
 for x in [.16,.5,.84]:arrow(x,.27,.5,.19)
 box(.10,.06,.80,.13,'Check replay, source provenance and trace/model hashes\nAggregate independent episodes (and training seeds)\nReport supported attribution + remaining boundary',fs=8.0)
 fig.subplots_adjust(left=.01,right=.99,bottom=.01,top=.99)
-for ext in ['pdf','svg','png']:fig.savefig(F/f'daci_workflow.{ext}',bbox_inches='tight',dpi=200)
+for ext in ['pdf','svg','png']:fig.savefig(F/f'advice_audit_workflow.{ext}',bbox_inches='tight',dpi=200)
 # Explicit counterexample: this figure depicts fitted pipelines, not an ablation of one policy.
 fig,ax=plt.subplots(figsize=(4.7,2.65));ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')
 box(.02,.59,.36,.28,'Local-input variant\nNonzero predictor\nLocal alternatives\nsometimes selected',fs=8.2)
@@ -32,4 +32,4 @@ ax.text(.68,.49,'+0.735 paired reward gain\n99.5833% interval [0.294, 1.216]',ha
 ax.text(.5,.98,'PickPlace: policy gain without runtime advice use',ha='center',va='top',fontsize=9)
 fig.subplots_adjust(left=.01,right=.99,bottom=.01,top=.99)
 for ext in ['pdf','svg','png']:fig.savefig(F/f'null_counterexample.{ext}',bbox_inches='tight',dpi=200)
-(F/'revision_diagram_records.json').write_text(json.dumps(dict(surface_class='internal_review',script=str(Path(__file__).resolve()),figures=['daci_workflow','null_counterexample'],source='frameworkcontract;originalvisualconfirmation/source_data/visual.json',review='pendingactualrenderinspection',scope='Mechanismdiagram and observednullcase; no syntheticrobotphotographs'),indent=2))
+(F/'revision_diagram_records.json').write_text(json.dumps(dict(surface_class='internal_review',script=str(Path(__file__).resolve()),figures=['advice_audit_workflow','null_counterexample'],source='frameworkcontract;originalvisualconfirmation/source_data/visual.json',review='pendingactualrenderinspection',scope='Mechanismdiagram and observednullcase; no syntheticrobotphotographs'),indent=2))

@@ -4,7 +4,6 @@ import json
 from pathlib import Path
 
 import numpy as np
-from .compat import canonical_schema
 
 PARTITIONS = ("train", "validation", "calibration", "test")
 
@@ -36,7 +35,7 @@ def load_split(path, episodes):
     content = {k: v for k, v in manifest.items() if k != "sha256"}
     if manifest.get("sha256") != canonical_hash(content):
         raise ValueError("Split manifest checksum mismatch")
-    if canonical_schema(manifest.get("schema")) != "advice_audit.episode_split.v1":
+    if manifest.get("schema") != "advice_audit.episode_split.v1":
         raise ValueError("Unsupported split schema")
     groups = manifest["group_ids"]
     if set(groups) != set(PARTITIONS) or any(not groups[k] for k in PARTITIONS):

@@ -1,8 +1,8 @@
 {
   "surface_class": "paper_main",
-  "script": "/home/ez/DACI/code/outputs/jaamas/revision_20261105/draw_framework.py",
+  "script": "/home/ez/DelayedAdviceAudit/code/outputs/jaamas/revision_20261105/draw_framework.py",
   "figures": [
-    "daci_workflow",
+    "advice_audit_workflow",
     "null_counterexample"
   ],
   "source": "frameworkcontract;originalvisualconfirmation/source_data/visual.json",

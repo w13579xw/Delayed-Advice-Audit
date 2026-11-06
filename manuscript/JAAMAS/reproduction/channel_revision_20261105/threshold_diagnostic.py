@@ -1,7 +1,7 @@
 import json,collections
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');OUT=R/'outputs/jaamas/revision_descriptives_20261105_v1';rows=json.loads((R/'outputs/jaamas/channel_revision_20261105_v1/main/rows.json').read_text());result={}
+R=Path('/home/ez/DelayedAdviceAudit/code');OUT=R/'outputs/jaamas/revision_descriptives_20261105_v1';rows=json.loads((R/'outputs/jaamas/channel_revision_20261105_v1/main/rows.json').read_text());result={}
 for task in ['drawer-open-v3','door-open-v3','button-press-v3']:
  for ch in ['S','F']:
   cts=collections.Counter();values=[]

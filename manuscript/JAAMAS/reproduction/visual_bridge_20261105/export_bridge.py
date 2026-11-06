@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,re,shutil,hashlib
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');A=R/'outputs/jaamas/visual_channel_bridge_analysis_20261105_v1';b=json.loads((A/'analysis.json').read_text());v=b['main'];s=json.loads((P/'source_data/channel_analysis.json').read_text())
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');A=R/'outputs/jaamas/visual_channel_bridge_analysis_20261105_v1';b=json.loads((A/'analysis.json').read_text());v=b['main'];s=json.loads((P/'source_data/channel_analysis.json').read_text())
 manifest=json.loads((P/'source_data/manifest.json').read_text())
 copies={'visual_channel_analysis.json':A/'analysis.json','visual_channel_audit.json':A/'audit.json','visual_channel_source_audit.json':R/'outputs/jaamas/visual_channel_source_audit_20261105_v1/checks.json','state_temporal_analysis.json':R/'outputs/jaamas/state_temporal_20261105_v1/analysis.json','door_curves.npz':R/'outputs/jaamas/state_temporal_20261105_v1/curves.npz','visual_channel_vectors.npz':A/'condition_vectors.npz'}
 for name,f in copies.items():

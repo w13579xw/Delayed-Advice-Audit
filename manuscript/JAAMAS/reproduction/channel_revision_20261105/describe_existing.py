@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,sys,collections,numpy as np,time
-R=Path('/home/ez/DACI/code');sys.path.insert(0,str(R/'scripts'));from server_run import save,now
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path.insert(0,str(R/'scripts'));from server_run import save,now
 OUT=R/'outputs/jaamas/revision_descriptives_20261105_v1';OUT.mkdir(exist_ok=False);res={}
 # Existing confirmation used only descriptively; no fitted changes/new tests.
 rows=json.loads((R/'outputs/vision/arrival_confirmation_20261104_v1/episodes.json').read_text())

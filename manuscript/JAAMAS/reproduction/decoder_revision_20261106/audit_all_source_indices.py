@@ -1,7 +1,7 @@
 """Additional read-only index audit, including gate-selected16-step source options."""
 from pathlib import Path
 import numpy as np,json
-R=Path('/home/ez/DACI/code');B=R/'outputs/jaamas/decoder_control_20261106_v1';counts=dict(cases=0,suffix_plans=0,raw_plans=0,blend_plans=0,source_steps_exact=0)
+R=Path('/home/ez/DelayedAdviceAudit/code');B=R/'outputs/jaamas/decoder_control_20261106_v1';counts=dict(cases=0,suffix_plans=0,raw_plans=0,blend_plans=0,source_steps_exact=0)
 for mode in ['smoke','identity','main']:
  for row in json.loads((B/mode/'rows.json').read_text()):
   folder=Path(row['folder']);d=json.loads((folder/'choices_before_outcomes.json').read_text())

@@ -1,8 +1,8 @@
 """Frozen actor selection for complete visual training replicas; no outcome use."""
 import os,json,hashlib
 from pathlib import Path
-R=Path('/home/ez/DACI/code');TRAIN=R/'outputs/jaamas/visual_full_training_20261105_v1'
-def actor_seed():return int(os.environ['DACI_REPLICATION_ACTOR_SEED'])
+R=Path('/home/ez/DelayedAdviceAudit/code');TRAIN=R/'outputs/jaamas/visual_full_training_20261105_v1'
+def actor_seed():return int(os.environ['ADVICE_AUDIT_REPLICATION_ACTOR_SEED'])
 def source_path(task,seed=None):
  seed=actor_seed() if seed is None else seed;tag='push' if task=='push-v3' else 'pick'
  return R/'outputs/vision'/f'act_budget15k_{tag}_20261103_v1/best' if seed==0 else TRAIN/f'{tag}_act15k_seed{seed}'/'best'

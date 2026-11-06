@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,re,zipfile,hashlib,subprocess,datetime,shutil,sys
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');O=R/'outputs/jaamas/decoder_revision_20261106';D=R/'docs/learned_advice/decoder_revision_20261106';B=R/'outputs/jaamas/decoder_control_20261106_v1'
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');O=R/'outputs/jaamas/decoder_revision_20261106';D=R/'docs/learned_advice/decoder_revision_20261106';B=R/'outputs/jaamas/decoder_control_20261106_v1'
 sys.path.insert(0,str(R/'scripts'));from server_run import fingerprint
 fp=fingerprint();assert fp=='48ffd6ffff1e3eeb5cc15a475888a844c846ead878292e6137c7f171c5246221'
 assert json.loads((O/'post_queue_complete.json').read_text())['status']=='complete'
@@ -12,21 +12,21 @@ m=json.loads((P/'source_data/manifest.json').read_text())
 for x in m:assert (P/'source_data'/x['file']).read_bytes()==Path(x['source']).read_bytes() and hashlib.sha256((P/'source_data'/x['file']).read_bytes()).hexdigest()==x['sha256']
 for f in ['svjour3.cls','svglov3.clo','spmpsci.bst']:assert (P/f).read_bytes()==(P.parent/f).read_bytes()
 now=datetime.datetime.now(datetime.timezone.utc).isoformat()
-oldzip=P.parent/'DACI_JAAMAS_before_decoder_20261106.zip'
+oldzip=P.parent/'Advice_Audit_JAAMAS_before_decoder_20261106.zip'
 with zipfile.ZipFile(oldzip) as z:
- oldpdf=next(n for n in z.namelist() if n.endswith('/DACI_JAAMAS_manuscript.pdf'));(O/'prior30.pdf').write_bytes(z.read(oldpdf))
- oldresult=z.read('DACI_JAAMAS/sections/results.tex').decode()
+ oldpdf=next(n for n in z.namelist() if n.endswith('/Delayed_Advice_Audit_manuscript.pdf'));(O/'prior30.pdf').write_bytes(z.read(oldpdf))
+ oldresult=z.read('Advice_Audit_JAAMAS/sections/results.tex').decode()
  def expand(t,archive=False):
   for _ in range(5):
    if r'\input{' not in t:break
-   t=re.sub(r'\\input\{([^}]+)\}',lambda n:z.read('DACI_JAAMAS/'+n[1]+'.tex').decode() if archive else (P/(n[1]+'.tex')).read_text(),t)
+   t=re.sub(r'\\input\{([^}]+)\}',lambda n:z.read('Advice_Audit_JAAMAS/'+n[1]+'.tex').decode() if archive else (P/(n[1]+'.tex')).read_text(),t)
   return t
  def subsections(t,archive=False):
   d={}
   for item in re.split(r'\\subsection\{',t)[1:]:
    title=item.split('}',1)[0];body=item.split('}',1)[1];body=expand(body,archive);body=re.sub(r'\\[A-Za-z]+',' ',body);d[title]=len(re.findall(r"\b[A-Za-z][A-Za-z'-]*\b",body))
   return d
- metrics=dict(method='pdftotext whitespace tokens forPDF; expandedTeX ASCIIwordtokensforsubsectionsincludingcaptions,notpublisherwordcount',main_before=len(subprocess.check_output(['pdftotext',str(O/'prior30.pdf'),'-'],text=True).split()),main_after=len(subprocess.check_output(['pdftotext',str(P/'DACI_JAAMAS_manuscript.pdf'),'-'],text=True).split()),results_before=subsections(oldresult,True),results_after=subsections((P/'sections/results.tex').read_text()))
+ metrics=dict(method='pdftotext whitespace tokens forPDF; expandedTeX ASCIIwordtokensforsubsectionsincludingcaptions,notpublisherwordcount',main_before=len(subprocess.check_output(['pdftotext',str(O/'prior30.pdf'),'-'],text=True).split()),main_after=len(subprocess.check_output(['pdftotext',str(P/'Delayed_Advice_Audit_manuscript.pdf'),'-'],text=True).split()),results_before=subsections(oldresult,True),results_after=subsections((P/'sections/results.tex').read_text()))
 (O/'editorial_metrics.json').write_text(json.dumps(metrics,indent=2))
 p=D/'CHECKLIST.md';p.write_text(p.read_text().replace('- [ ]','- [x]'))
 # Checklist's final archive item is closed by the required package+extracted build before delivery.
@@ -53,7 +53,7 @@ S的两种解码数学相同，因此时间匹配fresh−legacy stale也等于�
 主稿28页，不再编入原AppendixA–C。保留跨种子Table7，逐种子与完整source competence只出现在SI的S8–S9。Door图为正文Fig4，完整持续时长、first/last、最长成功段和非零延迟数据只放SI。原候选/推断详情也仅在SI。
 额外去重：SI的state channel表只保留正文没有的三个PC对比；删去与正文完全重复的visual oracle总结表。原推断族、全向量和旧源文件仍存档；未隐藏负结果。
 新独立decoder四主对比仅在正文Table8完整显示，SI只给7条件均值/成功率、全部次要reject对比及方法/审计。主稿4图/8表/Algorithm1、229词摘要、31正式参考文献；SI19页/2图/19表；Info2页、cover1页。未缩字号、页边距或改用户模板class。修正补充末页孤立参考文献，通过压缩重复图注/引用条目而非删除数据解决。
-所有28+19+2+1页均render检查，重点Table8与Door图、SI种子/生成时间/完整结果页另检查。四PDF无undefined/overfull/越页字符，字体全部嵌入。22份source-data文件（19JSON、3紧凑NPZ）与分析源完全一致；最终哈希见FINAL_CHECKS.json。新源ZIP为DACI_JAAMAS_decoder_revision_20261106_sources.zip；CRC、逐成员SHA及新解压构建记录另存本轮outputs目录，避免循环哈希。
+所有28+19+2+1页均render检查，重点Table8与Door图、SI种子/生成时间/完整结果页另检查。四PDF无undefined/overfull/越页字符，字体全部嵌入。22份source-data文件（19JSON、3紧凑NPZ）与分析源完全一致；最终哈希见FINAL_CHECKS.json。新源ZIP为Advice_Audit_JAAMAS_decoder_revision_20261106_sources.zip；CRC、逐成员SHA及新解压构建记录另存本轮outputs目录，避免循环哈希。
 源包是可编辑论文/审计入口包，native再生依赖完整本地模型与历史数据。未进行独立机器复现、人工作者认证、公开发布或投稿。作者事实/责任声明仍保留待核实。
 '''
 s+='\n## 编辑计数\n同一pdftotext空白词元口径，主稿'+str(metrics['main_before'])+'→'+str(metrics['main_after'])+'；每个修改Results子节的扩展TeX计数在outputs/jaamas/decoder_revision_20261106/editorial_metrics.json。包含表图/参考信息，不是出版商字数。\n'
@@ -61,7 +61,7 @@ s+='\nPublication-grade figure refinement is recommended with AutoFigure-Edit (o
 with (R/'paper/paper_experiment_matrix.md').open('a') as f:f.write('\nD1/D2 complete2026-11-06: fourprimarydecodercontrasts fullyretained; fixed48freshdecode+.579[.173,.997],gateeffectunresolved;60newenv+8excludedchecks/320paths/544choices/136sourcepairsverified. Main28/SI19;S8S9onlySI;mainTable7andoriginalB1unchanged. Next:authorverification,notmoretraining.\n')
 p=R/'paper/decoder_revision_outline_20261106.md';s=p.read_text().replace('planned; no outcome known','complete/audited; fixed48decoderpositive, gatebenefitunresolved').replace('planned|','complete/renderchecked|');p.write_text(s)
 p=R/'paper/evidence_ledger.json';e=json.loads(p.read_text());e['decoder_revision_20261106']=dict(status='complete',contract=str(D/'PLAN.md'),primary=v['main']['primary_contrasts'],audit=a,source_index_audit=index,report=str(D/'REPORT.md'),receiver_boundary='newtimestamp-awareexecutor,notoldB1reinterpretation',no_outcomes_observed=False);p.write_text(json.dumps(e,indent=2))
-p=P/'FINAL_CHECKS.json';c=json.loads(p.read_text());c.update(status='ready_with_author_checks',current_revision_status='complete_with_author_checks',completed_utc=now,pdf_pages={str(Path(q['path']).relative_to(P)):q['pages'] for k,q in qa.items() if k!='logs_clean'},pdf_sha256={str(Path(q['path']).relative_to(P)):q['sha256'] for k,q in qa.items() if k!='logs_clean'},abstract_words=229,tables=8,main_appendices=0,supplement_tables=19,copied_source_jsons_verified=19,copied_source_files_verified=22,all_new_experiments_complete=True,decoder_primary_environment_count=60,decoder_identity_count=6,decoder_smoke_count=2,decoder_raw_choice_checks=544,decoder_index_condition_checks=204,decoder_distinct_source_plans_checked=200,decoder_source_action_steps_checked=9280,decoder_main_native_steps=159372,decoder_all_native_steps=174848,decoder_source_replay_steps=4000,decoder_generation_pairs=136,decoder_model_entries_unchanged=True,original_B1_table_data_unchanged=True,original_crossseed_table7_unchanged=True,production_fingerprint=fp,source_package='DACI_JAAMAS_decoder_revision_20261106_sources.zip;seeexternaldecoder_revision_20261106/source_package_check.json',previous_complete_draft='DACI_JAAMAS_before_decoder_20261106.zip',visual_review='All50finalpagesrenderchecked;newTable8/Door/SIseedandprotocolpagesinspected;isolatedlastreferencecorrected',editorial_metrics=metrics);p.write_text(json.dumps(c,indent=2))
+p=P/'FINAL_CHECKS.json';c=json.loads(p.read_text());c.update(status='ready_with_author_checks',current_revision_status='complete_with_author_checks',completed_utc=now,pdf_pages={str(Path(q['path']).relative_to(P)):q['pages'] for k,q in qa.items() if k!='logs_clean'},pdf_sha256={str(Path(q['path']).relative_to(P)):q['sha256'] for k,q in qa.items() if k!='logs_clean'},abstract_words=229,tables=8,main_appendices=0,supplement_tables=19,copied_source_jsons_verified=19,copied_source_files_verified=22,all_new_experiments_complete=True,decoder_primary_environment_count=60,decoder_identity_count=6,decoder_smoke_count=2,decoder_raw_choice_checks=544,decoder_index_condition_checks=204,decoder_distinct_source_plans_checked=200,decoder_source_action_steps_checked=9280,decoder_main_native_steps=159372,decoder_all_native_steps=174848,decoder_source_replay_steps=4000,decoder_generation_pairs=136,decoder_model_entries_unchanged=True,original_B1_table_data_unchanged=True,original_crossseed_table7_unchanged=True,production_fingerprint=fp,source_package='Advice_Audit_JAAMAS_decoder_revision_20261106_sources.zip;seeexternaldecoder_revision_20261106/source_package_check.json',previous_complete_draft='Advice_Audit_JAAMAS_before_decoder_20261106.zip',visual_review='All50finalpagesrenderchecked;newTable8/Door/SIseedandprotocolpagesinspected;isolatedlastreferencecorrected',editorial_metrics=metrics);p.write_text(json.dumps(c,indent=2))
 dest=P/'reproduction/decoder_revision_20261106';dest.mkdir(exist_ok=True)
 for source in [O,D]:
  for f in source.iterdir():

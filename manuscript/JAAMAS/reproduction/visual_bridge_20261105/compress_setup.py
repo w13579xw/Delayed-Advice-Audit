@@ -1,6 +1,6 @@
 from pathlib import Path
 import re,json
-P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');S=P/'sections';T=P/'supplement';T.mkdir(exist_ok=False)
+P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');S=P/'sections';T=P/'supplement';T.mkdir(exist_ok=False)
 methods=(S/'experiments.tex').read_text().split(r'\subsection{Research execution and AI assistance}')[0]
 methods=methods.replace(r'\section{Experimental design}\label{sec:design}',r'\section{Extended experimental methods}')
 methods=re.sub(r'\\input\{source_data/study_inventory\}\n','',methods)
@@ -18,15 +18,15 @@ for f in inputs:
 (T/'extended_evidence.tex').write_text(combined)
 preamble=(P/'main.tex').read_text().split(r'\begin{document}')[0]
 preamble=preamble.replace(r'\journalname{Autonomous Agents and Multi-Agent Systems}',r'\journalname{Autonomous Agents and Multi-Agent Systems}'+'\n'+r'\usepackage{xr}'+'\n'+r'\externaldocument[main-]{../main}')
-preamble=preamble.replace(r'\hypersetup{pdftitle={DACI: Auditing the Value of Delayed Advice in Autonomous Agents}}',r'\hypersetup{pdftitle={DACI Online Resource 1: Extended Evidence}}')
+preamble=preamble.replace(r'\hypersetup{pdftitle={Delayed Advice Audit: Auditing the Value of Delayed Advice in Autonomous Agents}}',r'\hypersetup{pdftitle={Delayed Advice Audit Online Resource 1: Extended Evidence}}')
 (T/'supplement.tex').write_text(preamble+r'''
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \begin{document}
-\title{Online Resource 1: Extended Evidence for DACI}
-\titlerunning{DACI: Extended Evidence}
+\title{Online Resource 1: Extended Evidence for Delayed Advice Audit}
+\titlerunning{Delayed Advice Audit: Extended Evidence}
 \author{Author information pending}
-\institute{Companion to the DACI main article.}
+\institute{Companion to the Delayed Advice Audit main article.}
 \date{}\maketitle
 This resource preserves detailed experimental methods, every reported condition, numerical selection grids, historical source-budget studies and engineering provenance. It supports the compact main article without supplying additional independent cohorts. Section and table references without an S prefix refer to the main article. Current visual-channel and temporal extensions are documented after the retained evidence; historical protocols remain distinguishable.
 \input{extended_evidence}

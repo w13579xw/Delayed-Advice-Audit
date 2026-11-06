@@ -4,7 +4,7 @@ import json,hashlib
 import numpy as np
 import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-R=Path('/home/ez/DACI/code');D=R/'outputs/jaamas/visual_pipeline_20261105_v1/seed0_test_smoke';P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');F=P/'figures';assert json.loads((D/'run.json').read_text())['status']=='complete'
+R=Path('/home/ez/DelayedAdviceAudit/code');D=R/'outputs/jaamas/visual_pipeline_20261105_v1/seed0_test_smoke';P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');F=P/'figures';assert json.loads((D/'run.json').read_text())['status']=='complete'
 plt.style.use(R/'outputs/vision/critic_learning_curve_report_20261104_v2/academic.mplstyle');plt.rcParams.update({'font.size':8,'pdf.fonttype':42,'svg.fonttype':'none','figure.dpi':220})
 fig,axs=plt.subplots(2,4,figsize=(4.7,3.5));provenance=[]
 for i,(task,seed,label) in enumerate([('push-v3',859000100,'Push'),('pick-place-v3',859010100,'PickPlace')]):

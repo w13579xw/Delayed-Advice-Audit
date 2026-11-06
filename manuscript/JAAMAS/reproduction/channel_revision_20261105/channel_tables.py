@@ -1,7 +1,7 @@
 import json,collections
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');A=R/'outputs/jaamas/channel_revision_analysis_20261105_v2';d=json.loads((A/'analysis.json').read_text());labels={'drawer-open-v3':'Drawer','door-open-v3':'Door','button-press-v3':'Button'}
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');A=R/'outputs/jaamas/channel_revision_analysis_20261105_v2';d=json.loads((A/'analysis.json').read_text());labels={'drawer-open-v3':'Drawer','door-open-v3':'Door','button-press-v3':'Button'}
 s=[r'\begin{table}[tb]\centering\small',r'\caption{Fixed-policy channel contrasts on 60 fresh environments/task and five previously frozen critic seeds. $c_s$: stale public-source message; $c_f$: refreshed message; $c_\emptyset$: missing message, handled by a frozen reject wrapper. Confidence is approximately 99.5833\% per contrast (12-contrast family). Reward is the mean over the full 500-step trajectory.}\label{tab:channel}',r'\begin{tabular}{llrr}\toprule Task & Fixed-policy contrast & Mean & Interval\\\midrule']
 for t,x in d.items():
  for k,lab in [('refresh_minus_stale_cheap',r'$c_f-c_s$, $P,C$'),('refresh_minus_stale_full',r'$c_f-c_s$, $P,F$'),('stale_minus_erasure_full',r'$c_s-c_\emptyset$, $P,F$'),('refresh_minus_erasure_full',r'$c_f-c_\emptyset$, $P,F$')]:

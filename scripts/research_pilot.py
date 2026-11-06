@@ -12,12 +12,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-from advice_audit.protocol import canonical_schema, canonical_hash, make_split
+from advice_audit.protocol import canonical_hash, make_split
 from server_run import ROOT, fingerprint, now, save
 
 
 def validate_config(c):
-    if canonical_schema(c.get("schema")) != "advice_audit.state_pilot.v2" or c.get("target") != "gain_deadline":
+    if c.get("schema") != "advice_audit.state_pilot.v2" or c.get("target") != "gain_deadline":
         raise ValueError("Unsupported protocol schema/target")
     if c["episodes"] < 20 or min(c["validation_episodes"], c["test_episodes"]) < 1:
         raise ValueError("Insufficient episode groups")

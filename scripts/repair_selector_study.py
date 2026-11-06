@@ -9,7 +9,7 @@ from pathlib import Path
 
 import numpy as np
 
-from advice_audit.protocol import canonical_schema, canonical_hash
+from advice_audit.protocol import canonical_hash
 from advice_audit.repair import MODES
 from advice_audit.repair_selector import OPTIONS, RepairSelector, features_for, fit_selector, load_data, option_mask
 from advice_audit.report import crossed_summary
@@ -123,7 +123,7 @@ def main():
     if not args.backend or (root.exists() and any(root.iterdir())):
         parser.error("Need backend and a new/empty directory")
     c = dict(read(Path(args.config)), backend=args.backend)
-    if canonical_schema(c["schema"]) != "advice_audit.repair_selector.v1" or c["model_seeds"] != [0, 1, 2, 3, 4] or (c["horizon"], c["period"], c["chunk"], c["delays"]) != (80, 24, 12, [0, 4, 12]):
+    if c["schema"] != "advice_audit.repair_selector.v1" or c["model_seeds"] != [0, 1, 2, 3, 4] or (c["horizon"], c["period"], c["chunk"], c["delays"]) != (80, 24, 12, [0, 4, 12]):
         parser.error("Unsupported frozen selector protocol")
     if c["sources"] != ["expert", "local_nominal", "local_nominal_fast"] or c["cheap_source_gains"] != [6., 12.]:
         parser.error("Need expert and both predeclared cheap controls")

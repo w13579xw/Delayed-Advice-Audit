@@ -1,7 +1,7 @@
 # Editorial allocation and claim discipline
 Frozen before visual-channel outcomes, 2026-11-05.
 
-- Main evidentiary spine: three estimands → executable DACI workflow/algorithm → original +0.735 exact-null case → actual frozen visual and state channel effects → cross-regime finite-pool opportunity/regret → full three-system training variation.
+- Main evidentiary spine: three estimands → executable Delayed Advice Audit workflow/algorithm → original +0.735 exact-null case → actual frozen visual and state channel effects → cross-regime finite-pool opportunity/regret → full three-system training variation.
 - Main method retains observations, data splits/budgets, candidate families, channel/fallback/time semantics, independent groups and training scope. All primary inference families centralized in one appendix table referenced by Statistics.
 - Necessary appendix: exact candidate rules and fresh fixed-decoder boundary; inference matrix/exact-bound limitations; nonzero-delay exploratory uncertainty; complete Door time curves/duration; all full-seed contrasts and competence.
 - Online Resource 1: eight critic-data primary contrasts, full 36 state condition cells, tolerance/hyperparameter grids, all original visual delay endpoints, historical3k/source-budget controls, optimization/provenance/version/schedules. It is a separate resource, not hidden exclusions or newly independent data.

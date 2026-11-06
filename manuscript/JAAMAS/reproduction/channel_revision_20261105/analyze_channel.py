@@ -2,7 +2,7 @@
 import json,hashlib,sys,time,collections
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path[:0]=[str(R/'scripts'),str(R/'src'),str(R/'outputs/jaamas')]
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(R/'scripts'),str(R/'src'),str(R/'outputs/jaamas')]
 from server_run import save,now
 from state_core_20261105 import TASKS,OBS_IDS,Locals,Teacher,Critic,feature_groups,noise_stream
 ROOT=R/'outputs/jaamas/channel_revision_20261105_v1/main';OUT=R/'outputs/jaamas/channel_revision_analysis_20261105_v1';OUT.mkdir(exist_ok=False);start=time.monotonic();proto=json.loads((ROOT/'protocol.json').read_text());rows=json.loads((ROOT/'rows.json').read_text());assert len(rows)==180

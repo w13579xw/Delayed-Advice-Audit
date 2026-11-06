@@ -2,11 +2,11 @@
 import json,sys,tempfile,hashlib,os
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path[:0]=[str(R/'src'),str(R/'scripts'),str(R/'outputs/jaamas/revision_20261105')]
-from daci.metaworld_adapter import ContactEnv
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(R/'src'),str(R/'scripts'),str(R/'outputs/jaamas/revision_20261105')]
+from advice_audit.metaworld_adapter import ContactEnv
 from replication_support import make_manifest,source_path
 from visual_bundle import BundleClient,DeterministicCamera,actions
-os.environ['DACI_REPLICATION_ACTOR_SEED']='0'
+os.environ['ADVICE_AUDIT_REPLICATION_ACTOR_SEED']='0'
 B=R/'outputs/jaamas/visual_channel_bridge_20261105_v1';O=R/'outputs/jaamas/visual_channel_source_audit_20261105_v1';O.mkdir(exist_ok=False)
 manifest,mp=make_manifest('pick-place-v3',O,R,source_override=source_path('pick-place-v3',0));count=steps=0
 with tempfile.TemporaryDirectory(dir='/dev/shm',prefix='visual_source_audit_') as tmp:

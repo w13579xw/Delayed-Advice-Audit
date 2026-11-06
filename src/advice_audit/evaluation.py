@@ -8,7 +8,6 @@ import json
 import time
 from pathlib import Path
 import numpy as np
-from .compat import canonical_method
 from .envs import make_env
 from .policies import local_action, expert_plan
 from .features import query_features, arrival_features
@@ -56,8 +55,6 @@ def episode(backend, method, seed, delay, gates=None, horizon=120, chunk=12,
             random_probability=.25, ttl=6, audit=False, label_horizon=24,
             fixed_schedule=False, drift_threshold=.05, audit_deadline=False,
             audit_epsilon=1e-6):
-    reported_method = method
-    method = canonical_method(method)
     if method not in METHODS + EXTRA_METHODS:
         raise ValueError("Unknown method: " + method)
     if delay < 0 or budget < 0 or period < 1:
@@ -162,7 +159,7 @@ def episode(backend, method, seed, delay, gates=None, horizon=120, chunk=12,
             rewards.append(reward)
             if done:
                 break
-        result = dict(backend=backend, method=reported_method, seed=seed, delay=delay,
+        result = dict(backend=backend, method=method, seed=seed, delay=delay,
                       shift_scale=shift_scale, success=int(env.success), steps=env.t,
                       final_distance=float(info["distance"]), requests=requests,
                       accepts=accepts, rejects=rejects, harmful_accepts=harmful,
@@ -196,7 +193,7 @@ def evaluate(outdir, model_dir=None, backend="toy", methods=METHODS, episodes=20
     outdir.mkdir(parents=True, exist_ok=True)
     gates = Gates(model_dir) if model_dir else None
     learned = {"advice_audit", "advice_audit_calibrated", "veto_only", "veto_calibrated", "query_only"}
-    if learned.intersection(canonical_method(m) for m in methods) and gates is None:
+    if learned.intersection(methods) and gates is None:
         raise ValueError("Learned methods require --model-dir")
     if gates:
         meta = gates.config["data_metadata"]

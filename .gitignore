@@ -23,3 +23,7 @@ paper/visual_advice_audit/reproduction/assets/
 
 # Local document compiler; never commit binaries or package archives
 .tools/
+
+# Curated compact analyzed-data archive
+!archives/
+!archives/Delayed_Advice_Audit_data_20261106.zip

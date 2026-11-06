@@ -7,12 +7,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-from advice_audit.protocol import canonical_schema, canonical_hash, make_split
+from advice_audit.protocol import canonical_hash, make_split
 from server_run import ROOT, fingerprint, now, save
 
 
 def validate(config):
-    if canonical_schema(config["schema"]) != "advice_audit.alignment_study.v1":
+    if config["schema"] != "advice_audit.alignment_study.v1":
         raise ValueError("Unknown alignment protocol")
     if (config["horizon"], config["period"], config["interval"], config["delays"]) != (80, 24, 10, [0, 4, 12]):
         raise ValueError("This protocol freezes horizon80, period24, early interval10 and delays0/4/12")

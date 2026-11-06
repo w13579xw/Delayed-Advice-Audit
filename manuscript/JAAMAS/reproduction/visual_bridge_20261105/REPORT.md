@@ -1,5 +1,5 @@
 # 视觉通道桥接与精简修订
-状态：本轮B1–B4完成，待作者事实核实，未投递；旧40页完整版本已保存在 /home/ez/DACI/Springer/DACI_JAAMAS_before_bridge_20261105.zip。最终数据、页面数和交付检查在本报告完成时更新。
+状态：本轮B1–B4完成，待作者事实核实，未投递；旧40页完整版本已保存在 /home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS_before_bridge_20261105.zip。最终数据、页面数和交付检查在本报告完成时更新。
 
 ## 对本轮意见的处理
 1. 核心证据跨观测设置：新增原始PickPlace视觉ACT系统的固定策略真实消息通道试验。冻结原始模型，不重新训练或择优。原始零PC用于结构对照，非零PF用于3项预声明奖励对比；它们是同一actor系统的不同接收器，不能称为同一策略的同一种估计。
@@ -38,4 +38,4 @@ Publication-grade figure refinement is recommended with AutoFigure-Edit (open-so
 同一pdftotext空白词元计数从14600降到10869，下降25.55%；包括表格/引文/附录，不是出版商字数。详细结果是迁移到补充材料而非删除。AI方法披露一次，文末交叉引用；原始推断族和补充子组身份保留。
 
 四份PDF均编译成功；全部30+15+2+1页已通过拼图检查，主要通道表、非零延迟表、Door图及种子表另作放大检查。修正末页孤立表、短表跨页尾行及Information Sheet强制空页。无undefined引用、overfull或越页字符，字体全部嵌入。18份来源文件（16JSON、2紧凑NPZ）与原始分析/曲线文件精确一致。sourcezip逐成员SHA及CRC记录另存outputs/jaamas/bridge_revision_20261105/source_package_check.json。
-英文可编辑源文件和四PDF均在 /home/ez/DACI/Springer/DACI_JAAMAS。新归档名DACI_JAAMAS_bridge_revision_20261105_sources.zip；旧40页版本仍保留。源包不是包含完整预训练权重/全部历史trace的独立再生发布；完整工作区仍是native重现的依赖。作者姓名、贡献、经费、利益冲突、既往发表/并投、伦理适用和正式公开归档仍需人类确认。未进行外部投稿、付费服务或发布，也不保证录用。
+英文可编辑源文件和四PDF均在 /home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS。新归档名Advice_Audit_JAAMAS_bridge_revision_20261105_sources.zip；旧40页版本仍保留。源包不是包含完整预训练权重/全部历史trace的独立再生发布；完整工作区仍是native重现的依赖。作者姓名、贡献、经费、利益冲突、既往发表/并投、伦理适用和正式公开归档仍需人类确认。未进行外部投稿、付费服务或发布，也不保证录用。

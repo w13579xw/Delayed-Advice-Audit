@@ -2,13 +2,13 @@
 import argparse,json,hashlib,sys,time,tempfile,shutil,os,textwrap
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path[:0]=[str(R/'src'),str(R/'scripts'),str(R/'outputs/jaamas/revision_20261105')]
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(R/'src'),str(R/'scripts'),str(R/'outputs/jaamas/revision_20261105')]
 from server_run import save,now,fingerprint
-from daci.metaworld_adapter import ContactEnv
-from daci.value_kernel import FrozenKernelDecisions
+from advice_audit.metaworld_adapter import ContactEnv
+from advice_audit.value_kernel import FrozenKernelDecisions
 from visual_bundle import BundleClient,DeterministicCamera,actions
 from replication_support import make_manifest,source_path
-os.environ['DACI_REPLICATION_ACTOR_SEED']='0'
+os.environ['ADVICE_AUDIT_REPLICATION_ACTOR_SEED']='0'
 TASK='pick-place-v3';MODELS=R/'outputs/vision/value_kernel_pilot_20261104_v3'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def visible(robot,p):return dict(robot=robot.copy(),visual_features=p['features'].copy(),**{f'head{i}':p[f'head{i}'].copy() for i in range(4)})
@@ -36,7 +36,7 @@ def main():
  save(O/'protocol.json',dict(frozen_utc=now(),schedule=schedule,task=TASK,actor_seed=0,models=str(MODELS),model_hashes=hashes,source_fingerprint=fp,entry_sha256=sha(Path(__file__)),reference_entry_sha256=sha(reference),original_action_rule_sha256=hashlib.sha256(rule.encode()).hexdigest(),original_action_rule=rule,channels=dict(S='sameACT100x4 onrequestRGB+robot4',F='sameACT100x4 onarrivalRGB+robot4,literalreplacement;unchangedrequestdelayandsuffixindexing',E='absence->predeclaredrejectwrapper'),primary=['PF:F-S','PF:S-E','PF:F-E'],inference='main60nonzerodelayenv;6equalcells;30000stratifiedpairedbootstrap;98.3333%family3;RNG2026110563',missing_wrapper='fixedbeforetests;nozeroinput',scope='fixedreceivercontentrefresh;freshjointshift;noage-awaredecoderoptimization/privateinfo/servicecost/extra refreshlatency',mode=a.mode))
  shutil.copy2(__file__,O/'entry_snapshot.py');rows=[];steps=0;parity=[];modelcells=list(policy.decide([np.zeros(14) for _ in range(6)]));count=0
  try:
-  with tempfile.TemporaryDirectory(prefix='daci_visual_channel_',dir='/dev/shm') as temp:
+  with tempfile.TemporaryDirectory(prefix='advice_audit_visual_channel_',dir='/dev/shm') as temp:
    tmp=Path(temp);client=BundleClient(R/'.venv-vision/bin/python',R/'scripts/visual_bundle_worker.py',mp,tmp/'bundle');save(O/'worker_ready.json',client.ready)
    try:
     for case in schedule:

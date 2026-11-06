@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-PYTHON_OVERRIDE="${ADVICE_AUDIT_PYTHON:-${DACI_PYTHON:-}}"
+PYTHON_OVERRIDE="${ADVICE_AUDIT_PYTHON:-}"
 if [[ -n "$PYTHON_OVERRIDE" ]]; then
     PYTHON_BIN="$PYTHON_OVERRIDE"
 else

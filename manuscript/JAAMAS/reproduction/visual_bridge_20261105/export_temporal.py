@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,shutil
-P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');R=Path('/home/ez/DACI/code');A=R/'outputs/jaamas/state_temporal_20261105_v1/analysis.json';a=json.loads(A.read_text());shutil.copy2(A,P/'source_data/state_temporal_analysis.json')
+P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');R=Path('/home/ez/DelayedAdviceAudit/code');A=R/'outputs/jaamas/state_temporal_20261105_v1/analysis.json';a=json.loads(A.read_text());shutil.copy2(A,P/'source_data/state_temporal_analysis.json')
 lines=[r'\begin{table}[tb]\centering\small',r'\caption{Post-hoc state $P,F$ refresh-minus-stale reward differences with exploratory 95\% crossed-bootstrap intervals. Pooled nonzero delay uses 40 environments/task; individual delays use 20. All original noise cells and five critics are retained. These are dependent reanalyses, not new cohorts or confirmatory claims.}\label{tab:nonzero}',r'\begin{tabular}{llrr}\toprule Task & Delay & Mean & Interval\\\midrule']
 for task,title in [('drawer-open-v3','Drawer'),('door-open-v3','Door'),('button-press-v3','Button')]:
  for key,label in [('nonzero','16 and 64'),('delay16','16'),('delay64','64')]:

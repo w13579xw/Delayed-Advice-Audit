@@ -1,6 +1,6 @@
 {
   "main": {
-    "path": "/home/ez/DACI/Springer/DACI_JAAMAS/DACI_JAAMAS_manuscript.pdf",
+    "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/Delayed_Advice_Audit_manuscript.pdf",
     "pages": 28,
     "sha256": "61e806a6c48fd165bb7b071a5db2c18c2923cf313f232d80bb4b2353fbf43d1c",
     "characters_outside_page": 0,
@@ -8,7 +8,7 @@
     "text_words": 8025
   },
   "supplement": {
-    "path": "/home/ez/DACI/Springer/DACI_JAAMAS/supplement/DACI_Online_Resource_1.pdf",
+    "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/supplement/Delayed_Advice_Audit_Online_Resource_1.pdf",
     "pages": 19,
     "sha256": "3b8402efbb711b455e1ea202d35f43cc92a3e6fe3f8853a8a6f78ea53d6c798f",
     "characters_outside_page": 0,
@@ -16,7 +16,7 @@
     "text_words": 4457
   },
   "information": {
-    "path": "/home/ez/DACI/Springer/DACI_JAAMAS/submission/information_sheet.pdf",
+    "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/submission/information_sheet.pdf",
     "pages": 2,
     "sha256": "8f5e06ed0c391f499f99429d94a0cf5f4b8956546e36c7fe668ce31f32fac4e5",
     "characters_outside_page": 0,
@@ -24,7 +24,7 @@
     "text_words": 933
   },
   "letter": {
-    "path": "/home/ez/DACI/Springer/DACI_JAAMAS/submission/cover_letter.pdf",
+    "path": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/submission/cover_letter.pdf",
     "pages": 1,
     "sha256": "b7721df89d1e7b86f542e134a5a73ae0b058e9ce48115bfd3cb5178a90d837d2",
     "characters_outside_page": 0,

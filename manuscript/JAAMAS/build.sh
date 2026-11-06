@@ -12,10 +12,12 @@ cp main.pdf Delayed_Advice_Audit_manuscript.pdf
   export TEXINPUTS="..:${TEXINPUTS:-}"
   pdflatex -interaction=nonstopmode -halt-on-error supplement.tex > supplement_pass1.log 2>&1
   pdflatex -interaction=nonstopmode -halt-on-error supplement.tex > supplement_pass2.log 2>&1
-  cp supplement.pdf Advice_Audit_Online_Resource_1.pdf
+  cp supplement.pdf Delayed_Advice_Audit_Online_Resource_1.pdf
 )
 (
   cd submission
   pdflatex -interaction=nonstopmode -halt-on-error information_sheet.tex > information_build.log 2>&1
+  cp information_sheet.pdf Delayed_Advice_Audit_Information_Sheet.pdf
   pdflatex -interaction=nonstopmode -halt-on-error cover_letter.tex > cover_build.log 2>&1
+  cp cover_letter.pdf Delayed_Advice_Audit_Cover_Letter.pdf
 )

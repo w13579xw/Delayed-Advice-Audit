@@ -2,7 +2,7 @@
 import json,urllib.request,hashlib,datetime,concurrent.futures,subprocess
 from pathlib import Path
 from html.parser import HTMLParser
-O=Path('/home/ez/DACI/code/outputs/jaamas/literature_revision_20261105_v1');O.mkdir(exist_ok=False)
+O=Path('/home/ez/DelayedAdviceAudit/code/outputs/jaamas/literature_revision_20261105_v1');O.mkdir(exist_ok=False)
 class P(HTMLParser):
  def __init__(self):super().__init__();self.s=[];self.skip=0
  def handle_starttag(self,t,a):
@@ -38,7 +38,7 @@ dois={'celemin':'10.1007/s10846-018-0839-z','dulac':'10.1007/s10994-021-05961-4'
 urls.update({k+'_crossref':'https://api.crossref.org/works/'+v for k,v in dois.items()})
 def one(k,u):
  try:
-  with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'DACI-research-source-audit/1.0'}),timeout=45) as response:b=response.read();code=response.status
+  with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'Delayed Advice Audit-research-source-audit/1.0'}),timeout=45) as response:b=response.read();code=response.status
   ext='.pdf' if b.startswith(b'%PDF') else ('.json' if '/works/' in u else '.html');file=O/(k+ext);file.write_bytes(b)
   if ext=='.pdf':subprocess.run(['pdftotext','-layout',str(file),str(O/(k+'.txt'))],check=True,stdout=subprocess.DEVNULL)
   elif ext=='.html':p=P();p.feed(b.decode('utf8',errors='replace'));(O/(k+'.txt')).write_text('\n'.join(p.s))

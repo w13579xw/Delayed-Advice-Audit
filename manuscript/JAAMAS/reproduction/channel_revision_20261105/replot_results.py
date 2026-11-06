@@ -2,7 +2,7 @@ from pathlib import Path
 import json,hashlib
 import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-R=Path('/home/ez/DACI/code');P=Path('/home/ez/DACI/Springer/DACI_JAAMAS');F=P/'figures'
+R=Path('/home/ez/DelayedAdviceAudit/code');P=Path('/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS');F=P/'figures'
 plt.style.use(R/'outputs/vision/critic_learning_curve_report_20261104_v2/academic.mplstyle');plt.rcParams.update({'font.size':9,'axes.titlesize':10,'axes.labelsize':9,'pdf.fonttype':42,'svg.fonttype':'none','figure.dpi':180})
 records=[]
 def export(fig,name,source,message):

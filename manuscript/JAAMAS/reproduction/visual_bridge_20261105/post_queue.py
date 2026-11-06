@@ -1,6 +1,6 @@
 import time,json,subprocess,os
 from pathlib import Path
-R=Path('/home/ez/DACI/code');D=R/'outputs/jaamas/bridge_revision_20261105';B=R/'outputs/jaamas/visual_channel_bridge_20261105_v1'
+R=Path('/home/ez/DelayedAdviceAudit/code');D=R/'outputs/jaamas/bridge_revision_20261105';B=R/'outputs/jaamas/visual_channel_bridge_20261105_v1'
 while not (D/'queue_complete.json').exists():
  for mode in ['identity','main']:
   f=B/mode/'run.json'

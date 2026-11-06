@@ -6,6 +6,8 @@
 
 本项目研究如何区分三个不能互相替代的评估结果：独立训练策略的性能差异、冻结接收器对消息的依赖，以及预先定义的消息通道干预带来的实际轨迹收益。目标期刊为 Autonomous Agents and Multi-Agent Systems；尚未投稿。
 
+[统一命名检查](docs/release_consistency_20261106/REPORT.md) · [分析数据归档](archives/Delayed_Advice_Audit_data_20261106.zip)
+
 ## 当前证据与论文
 
 - PickPlace 的 packet-input 策略相对 local-input 策略奖励增加 +0.735，但胜出的零预测器在 250 个测试案例中全部拒绝干预。这证明该策略间差异不能归因于新返回的专家信息。
@@ -35,4 +37,4 @@ bash scripts/setup_linux.sh
 - [命名迁移与兼容性](docs/NAME_MIGRATION.md)、[本地目录](WORKSPACE_LAYOUT.md)。2026-11-06 更名验证：基础/Fetch 65 项、MetaWorld 31 项、视觉 1 项全部通过；固定 toy/Fetch/Push/PickPlace 样本改名前后逐位相同。
 - `docs/learned_advice/`、`paper/` 为按日期保留的研究记录与旧稿；当前投稿稿件以 `manuscript/JAAMAS/` 发布副本及本地 Springer 作者目录为准。
 
-旧命令、导入名和冻结文件中的旧标识保留兼容能力。历史实验记录、模型哈希和数据不因更名而重写。代码、论文和记录均不构成录用保证。
+当前发布仅提供统一命名的命令与导入接口；原始运行记录另存于私有溯源备份。数值结果、模型和推断结论保持不变。代码、论文和记录均不构成录用保证。

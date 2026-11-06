@@ -1,6 +1,6 @@
 # Descriptive-name release report — 2026-11-06
 
-Status: descriptive-name migration complete, including repository metadata and About. The paper is **Auditing the Value of Delayed Advice in Autonomous Agents**; the project is **Delayed Advice Audit**. Canonical code is `/home/ez/DelayedAdviceAudit/code`; the authoring paper is `/home/ez/DelayedAdviceAudit/Springer/Advice_Audit_JAAMAS`.
+Status: descriptive-name migration complete, including repository metadata and About. The paper is **Auditing the Value of Delayed Advice in Autonomous Agents**; the project is **Delayed Advice Audit**. Canonical code is `/home/ez/DelayedAdviceAudit/code`; the authoring paper is `/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS`.
 
 ## Changes
 

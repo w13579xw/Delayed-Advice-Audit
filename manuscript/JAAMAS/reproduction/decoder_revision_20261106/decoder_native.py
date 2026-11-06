@@ -2,14 +2,14 @@
 import os,sys,json,time,hashlib,tempfile,shutil,argparse
 from pathlib import Path
 import numpy as np
-R=Path('/home/ez/DACI/code');sys.path[:0]=[str(R/'src'),str(R/'scripts'),str(R/'outputs/jaamas/revision_20261105'),str(R/'outputs/jaamas/bridge_revision_20261105')]
+R=Path('/home/ez/DelayedAdviceAudit/code');sys.path[:0]=[str(R/'src'),str(R/'scripts'),str(R/'outputs/jaamas/revision_20261105'),str(R/'outputs/jaamas/bridge_revision_20261105')]
 from visual_channel import choose,rule,visible,MODELS,reference
 from replication_support import make_manifest,source_path
-from daci.metaworld_adapter import ContactEnv
-from daci.value_kernel import FrozenKernelDecisions
+from advice_audit.metaworld_adapter import ContactEnv
+from advice_audit.value_kernel import FrozenKernelDecisions
 from visual_bundle import BundleClient,DeterministicCamera,actions
 from server_run import save,now,fingerprint
-os.environ['DACI_REPLICATION_ACTOR_SEED']='0'
+os.environ['ADVICE_AUDIT_REPLICATION_ACTOR_SEED']='0'
 TASK='pick-place-v3';PF='with_packet/all_actions'
 def sha(f):return hashlib.sha256(Path(f).read_bytes()).hexdigest()
 def main():
@@ -23,7 +23,7 @@ def main():
  save(O/'protocol.json',dict(frozen_utc=now(),schedule=schedule,model_hashes=hashes,entry_hashes=entries,production_fingerprint=fp,original_rule=rule,task=TASK,actor_seed=0,gate=PF,primary=['fixed_F_time-fixed_F_legacy','fixed_F_time-fixed_S_legacy','gate_F_time-gate_F_legacy','gate_F_time-gate_S_legacy'],inference=dict(resamples=30000,rng=2026110601,confidence=.9875,family_size=4,unit='wholepaired60environmentsinsixcells;notbranches;noactorseedresampling'),decoder=dict(legacy='d+elapsed for suffix/blend',time='a-generation+elapsed;Sgenerationq,Fgenerationa;raw/localunchanged'),boundary='Newexecutionsemanticscontrol;frozenlegacytrainedgate;NOToriginalfixedreceiverchannelestimand;nogateagefeaturechange;noextraFgenerationlatency/cost/privateinfo'))
  shutil.copy2(__file__,O/'entry_snapshot.py');rows=[];steps=0;parity=[]
  try:
-  with tempfile.TemporaryDirectory(prefix='daci_decoder_',dir='/dev/shm') as tmp:
+  with tempfile.TemporaryDirectory(prefix='advice_audit_decoder_',dir='/dev/shm') as tmp:
    tmp=Path(tmp);client=BundleClient(R/'.venv-vision/bin/python',R/'scripts/visual_bundle_worker.py',mp,tmp/'bundle');save(O/'worker_ready.json',client.ready)
    try:
     for case in schedule:

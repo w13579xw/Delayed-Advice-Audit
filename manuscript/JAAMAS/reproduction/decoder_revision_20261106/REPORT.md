@@ -1,5 +1,5 @@
 # 独立生成时间解码对照与论文去重
-状态：本轮修改与实验完成，待作者事实核实，未投递；2026-11-06。原30页完整源/PDF保存在 /home/ez/DACI/Springer/DACI_JAAMAS_before_decoder_20261106.zip；原B1研究、数据、效应与推断族保持不变。
+状态：本轮修改与实验完成，待作者事实核实，未投递；2026-11-06。原30页完整源/PDF保存在 /home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS_before_decoder_20261106.zip；原B1研究、数据、效应与推断族保持不变。
 
 ## 已完成的编辑结构
 原主文AppendixA–C不再编入主稿。逐种子原Table11–12仅在OnlineResource1的S8–S9保留，正文原Table7跨种子总结保留。Door关键图从附录移入主文Results，只保留95%any/0%terminal、~30/500成功步及坐标带/奖励解释；完整时长、first/last、最长成功段以及非零延迟探索表迁至SI。原候选执行与统计推断矩阵的唯一完整位置也设在SI，主文保留核心执行/推断与边界说明。旧结果/负结果未删除。
@@ -36,7 +36,7 @@ S的两种解码数学相同，因此时间匹配fresh−legacy stale也等于�
 主稿28页，不再编入原AppendixA–C。保留跨种子Table7，逐种子与完整source competence只出现在SI的S8–S9。Door图为正文Fig4，完整持续时长、first/last、最长成功段和非零延迟数据只放SI。原候选/推断详情也仅在SI。
 额外去重：SI的state channel表只保留正文没有的三个PC对比；删去与正文完全重复的visual oracle总结表。原推断族、全向量和旧源文件仍存档；未隐藏负结果。
 新独立decoder四主对比仅在正文Table8完整显示，SI只给7条件均值/成功率、全部次要reject对比及方法/审计。主稿4图/8表/Algorithm1、229词摘要、31正式参考文献；SI19页/2图/19表；Info2页、cover1页。未缩字号、页边距或改用户模板class。修正补充末页孤立参考文献，通过压缩重复图注/引用条目而非删除数据解决。
-所有28+19+2+1页均render检查，重点Table8与Door图、SI种子/生成时间/完整结果页另检查。四PDF无undefined/overfull/越页字符，字体全部嵌入。22份source-data文件（19JSON、3紧凑NPZ）与分析源完全一致；最终哈希见FINAL_CHECKS.json。新源ZIP为DACI_JAAMAS_decoder_revision_20261106_sources.zip；CRC、逐成员SHA及新解压构建记录另存本轮outputs目录，避免循环哈希。
+所有28+19+2+1页均render检查，重点Table8与Door图、SI种子/生成时间/完整结果页另检查。四PDF无undefined/overfull/越页字符，字体全部嵌入。22份source-data文件（19JSON、3紧凑NPZ）与分析源完全一致；最终哈希见FINAL_CHECKS.json。新源ZIP为Advice_Audit_JAAMAS_decoder_revision_20261106_sources.zip；CRC、逐成员SHA及新解压构建记录另存本轮outputs目录，避免循环哈希。
 源包是可编辑论文/审计入口包，native再生依赖完整本地模型与历史数据。未进行独立机器复现、人工作者认证、公开发布或投稿。作者事实/责任声明仍保留待核实。
 
 ## 编辑计数

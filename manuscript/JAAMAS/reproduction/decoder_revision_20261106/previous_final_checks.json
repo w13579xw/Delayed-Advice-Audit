@@ -3,14 +3,14 @@
   "current_revision_status": "complete_with_author_checks",
   "completed_utc": "2026-11-05T15:27:50.103645+00:00",
   "pdf_pages": {
-    "DACI_JAAMAS_manuscript.pdf": 30,
-    "supplement/DACI_Online_Resource_1.pdf": 15,
+    "Delayed_Advice_Audit_manuscript.pdf": 30,
+    "supplement/Delayed_Advice_Audit_Online_Resource_1.pdf": 15,
     "submission/information_sheet.pdf": 2,
     "submission/cover_letter.pdf": 1
   },
   "pdf_sha256": {
-    "DACI_JAAMAS_manuscript.pdf": "5c88d7cc60450b7f3c8c394861c2cea2fa3fdff6a33b0dfb686b4a59350ff7c6",
-    "supplement/DACI_Online_Resource_1.pdf": "aeed48253be091bac5420703f57979d6fe109b9165a86f7f14601444a8544968",
+    "Delayed_Advice_Audit_manuscript.pdf": "5c88d7cc60450b7f3c8c394861c2cea2fa3fdff6a33b0dfb686b4a59350ff7c6",
+    "supplement/Delayed_Advice_Audit_Online_Resource_1.pdf": "aeed48253be091bac5420703f57979d6fe109b9165a86f7f14601444a8544968",
     "submission/information_sheet.pdf": "dc19e6a45fc32ed49762bbe65bfff72148d59d08fd10b00faba33004cb7189f0",
     "submission/cover_letter.pdf": "53fb926a9cec43114f73f484e76758fe43692a3d20f87386229a95ad98ac9658"
   },
@@ -52,10 +52,10 @@
   "public_release_verified": false,
   "real_robot_or_live_async_tested": false,
   "visual_private_information_channel_value_tested": false,
-  "source_package": "DACI_JAAMAS_bridge_revision_20261105_sources.zip;externalCRC/SHArecordinbridge_revision_20261105/source_package_check.json",
+  "source_package": "Advice_Audit_JAAMAS_bridge_revision_20261105_sources.zip;externalCRC/SHArecordinbridge_revision_20261105/source_package_check.json",
   "frozen_state_model_hashes_unchanged": true,
-  "previous_complete_draft": "DACI_JAAMAS_before_bridge_20261105.zip",
-  "prior_final_checks": "/home/ez/DACI/Springer/DACI_JAAMAS/reproduction/visual_bridge_20261105/prior40page_final_checks.json",
+  "previous_complete_draft": "Advice_Audit_JAAMAS_before_bridge_20261105.zip",
+  "prior_final_checks": "/home/ez/DelayedAdviceAudit/Springer/Delayed_Advice_Audit_JAAMAS/reproduction/visual_bridge_20261105/prior40page_final_checks.json",
   "supplement_figures": 2,
   "supplement_tables": 15,
   "copied_source_files_verified": 18,

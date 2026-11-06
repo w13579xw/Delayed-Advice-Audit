@@ -3,7 +3,7 @@ import json,sys
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src'))
-from daci.metaworld_adapter import BCLocal,ContactEnv,expert_action
+from advice_audit.metaworld_adapter import BCLocal,ContactEnv,expert_action
 OBS_IDS=np.array([0,1,2,3,4,5,6,36,37,38])
 POS_IDS=np.array([0,1,2,4,5,6,36,37,38])
 TASKS=('drawer-open-v3','door-open-v3','button-press-v3')
