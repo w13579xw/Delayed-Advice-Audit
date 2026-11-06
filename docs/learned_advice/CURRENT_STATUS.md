@@ -36,7 +36,7 @@ arrival_confirmation_20261104_v1、analysis和逐轨迹audit均complete/checkspa
 
 ## 写作路线
 
-三份互盲模拟评审及后评审综合保存在`outputs/novelty_review_20261104/`。这轮部分材料评审要求的独立确认现已完成；这不自动意味着整体可发表。新完整内部稿的另一轮3隔离context评估已完成，三份均未发现阻断受限反例的问题；模型身份/选模/阈值/稀疏对比的报告修订已落实，原报告不改，综合在outputs/visual_manuscript_review_20261104/SYNTHESIS.md。广义门控、专家作为特征、动作块对齐均有先行工作。贡献候选是明确条件下的零模型解释、受控负结果与复现审计。新稿使用已完成确认结果，限制单训练seed与两个任务，不主张新算法。
+这轮协议要求的独立确认现已完成；这不自动意味着整体可发表。模型身份、选模、阈值和稀疏对比的报告修订已落实。广义门控、专家作为特征、动作块对齐均有先行工作。贡献候选是明确条件下的零模型解释、受控负结果与复现审计。新稿使用已完成确认结果，限制单训练seed与两个任务，不主张新算法。
 
 完整历史、失败日志、环境、命令和下一步见`outputs/server/HANDOFF_STATUS.md`。旧内部稿`paper/manuscript.md`不代表本轮新证据已经成稿或验证完成。新的独立目录`paper/visual_advice_audit/`现有约4334词英文完整内部稿、术语表与18份精确源数据副本，全部确认效应、标题和结论按完整结果撰写。它不是已批准或已完成的投稿稿。
 
@@ -61,7 +61,7 @@ arrival_confirmation_20261104_v1、analysis和逐轨迹audit均complete/checkspa
 - **V9/开发集敏感性：完成。** 同40开发episode每task100次14/6完整episode重划分×四格×5容差，4000选模配置；原8格精确重现error0，未读500确认结果调参。Pick packet/cheap在1e-12下zero17/100，原零模型选择不跨划分普适。验证reward用于选模，不是新测试收益。
 - **V10/调用成本：完成。** 全151500次调用保留，local150000/ACT1500，每episode500/5次。平均worker累计1.862937/.070239秒，RPC3.383862/.084519秒；当前频率下local单次更快但累计更慢。不是等compute、净query收益或真实async测试。
 
-完整协议、逐seed结果、分析边界与后续路线：[补充实验报告](supplementary_campaign_20261104/REPORT.md)。通用英文补充材料：`paper/visual_advice_audit/SUPPLEMENTARY_EXPERIMENTS.md`；主稿约4882词，已加入必要的训练/划分/成本限定，保留修改前快照和旧冻结评审材料，新增内容未再经过模拟评审。所有模型、500确认统计与原18源JSON不变。
+完整协议、逐seed结果、分析边界与后续路线：[补充实验报告](supplementary_campaign_20261104/REPORT.md)。通用英文补充材料：`paper/visual_advice_audit/SUPPLEMENTARY_EXPERIMENTS.md`；主稿约4882词，已加入必要的训练/划分/成本限定，保留修改前快照和冻结材料。所有模型、500确认统计与原18源JSON不变。
 
 迁移后从/tmp按新绝对路径执行离线复现，5.136秒complete/checkspassed，500选择、8格选模、6主向量一致；不是重跑native物理。目前没有后台训练或仿真待完成。V8广义15k/arrival训练随机性和critic数据量学习曲线仍是研究局限，不把本轮写成全部补齐。
 

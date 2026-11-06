@@ -5,6 +5,6 @@
 - [x] B1 independentraw/decision/hash audit andinference
 - [x] B2 nonzero state delay descriptive intervals
 - [x] B3 Door temporal success/reward analysis
-- [x] B4 compactmain/SI/AI/stats/declarations
+- [x] B4 compactmain/SI/stats/declarations
 - [x] FinalPDF/SI/Info/letter andsourcezip QA
 - [x] Ledger/matrix/report/HANDOFF

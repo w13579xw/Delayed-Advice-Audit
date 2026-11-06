@@ -11,6 +11,5 @@
 - Prior/related publications and concurrent submission: none, as confirmed by the submitting user.
 - Code and analyzed data: maintained in the project repository; analyzed data accompany the submission. The repository is currently private.
 - DOI: none assigned. A dataset DOI requires a separate repository deposit; licensing and access conditions must be set for that deposit.
-- The manuscript retains a brief factual disclosure of the computational assistance actually used.
 
 This record is for author preparation, not a journal attachment. No journal or data-repository submission has been performed.
