@@ -13,7 +13,7 @@
 - PickPlace 的 packet-input 策略相对 local-input 策略奖励增加 +0.735，但胜出的零预测器在 250 个测试案例中全部拒绝干预。这证明该策略间差异不能归因于新返回的专家信息。
 - 已完成 Push/PickPlace 视觉任务及 Drawer/Door/Button 状态任务研究、冻结策略 S/F/absence 配对仿真、候选动作 headroom、选择规则敏感性与三个完整视觉训练系统复现。没有建立跨种子的完整到达策略正收益。
 - 独立视觉解码实验中，预定义固定 48 步新消息按生成时间解码，相比旧解码提高 +0.579061，98.75% CI [+0.172635,+0.997332]；它不证明刷新相对陈旧消息或门控策略相对本地继续执行有正收益。
-- [主论文 PDF](manuscript/JAAMAS/Delayed_Advice_Audit_manuscript.pdf)（27 页）、[Online Resource 1](manuscript/JAAMAS/supplement/Advice_Audit_Online_Resource_1.pdf)（19 页）、[Title Page](manuscript/JAAMAS/submission/Delayed_Advice_Audit_Title_Page.pdf)、[LaTeX 源码与构建](manuscript/JAAMAS/README.md)。作者为 Junxiang Wang 和 Jiaoyang Su（通讯作者）；两位作者已确认审阅与投稿批准，无资助、无利益冲突。
+- [主论文 PDF](manuscript/JAAMAS/Delayed_Advice_Audit_manuscript.pdf)（27 页）、[Online Resource 1](manuscript/JAAMAS/supplement/Delayed_Advice_Audit_Online_Resource_1.pdf)（19 页）、[Title Page](manuscript/JAAMAS/submission/Delayed_Advice_Audit_Title_Page.pdf)、[LaTeX 源码与构建](manuscript/JAAMAS/README.md)。作者为 Junxiang Wang 和 Jiaoyang Su（通讯作者）；两位作者已确认审阅与投稿批准，无资助、无利益冲突。
 
 当前证据支持仿真评估与归因方法；没有真实机器人、人类教师、真实异步服务或独立私有专家观测验证。合成环境步延迟不等于实测服务延迟。
 
@@ -31,10 +31,10 @@ bash scripts/setup_linux.sh
 
 每次使用新的输出目录；Fetch 使用 MuJoCo。toy/Fetch 是早期状态诊断，不是主论文的视觉任务。MetaWorld 与视觉依赖分别见 `requirements-metaworld.txt`、`requirements-vision.txt`。完整训练复现需要未纳入 Git 的数据、权重及冻结运行记录；本文源码包不能代替这些资产。
 
-## 复现与历史
+## 复现与研究记录
 
 - [服务器执行约束](AGENTS.md)、[原型服务器指南](docs/SERVER_AGENT_GUIDE.md)。这些引导文档的早期阶段描述不代表当前研究状态。
 - [命名迁移与兼容性](docs/NAME_MIGRATION.md)、[本地目录](WORKSPACE_LAYOUT.md)。2026-11-06 更名验证：基础/Fetch 65 项、MetaWorld 31 项、视觉 1 项全部通过；固定 toy/Fetch/Push/PickPlace 样本改名前后逐位相同。
-- `docs/learned_advice/`、`paper/` 为按日期保留的研究记录与旧稿；当前投稿稿件以 `manuscript/JAAMAS/` 发布副本及本地 Springer 作者目录为准。
+- `docs/learned_advice/` 保留实验协议和研究记录；本地 `paper/` 仅保留分析源数据、实验矩阵与离线复现资产。旧稿、旧投稿包、排版预览、上传暂存文件及缓存已清理。当前稿件以 `manuscript/JAAMAS/` 发布副本及本地 Springer 作者目录为准，统一提交目录见 [本地目录](WORKSPACE_LAYOUT.md)。
 
-当前发布仅提供统一命名的命令与导入接口；原始运行记录另存于私有溯源备份。数值结果、模型和推断结论保持不变。代码、论文和记录均不构成录用保证。
+当前发布仅提供统一命名的命令与导入接口；原始运行记录、失败日志及冻结源快照保留在本地 `outputs/`，大规模数据、权重和运行环境不纳入 Git。数值结果、模型和推断结论保持不变。代码、论文和记录均不构成录用保证。
