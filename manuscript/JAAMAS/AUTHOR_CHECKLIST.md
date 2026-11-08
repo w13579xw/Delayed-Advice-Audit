@@ -10,6 +10,6 @@
 - Competing interests: none, as confirmed by the submitting user.
 - Prior/related publications and concurrent submission: none, as confirmed by the submitting user.
 - Code and analyzed data: maintained in the project repository; analyzed data accompany the submission. The repository is currently private.
-- DOI: none assigned. A dataset DOI requires a separate repository deposit; licensing and access conditions must be set for that deposit.
+- Code and analyzed data: Zenodo DOI 10.5281/zenodo.24050071 (reserved; record not yet published); proposed code MIT and analyzed-data CC BY 4.0 licenses require author confirmation before publication.
 
 This record is for author preparation, not a journal attachment. No journal or data-repository submission has been performed.
