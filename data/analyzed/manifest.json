@@ -1,0 +1,29 @@
+{
+  "project": "Delayed Advice Audit",
+  "records": [
+    "channel_analysis.json",
+    "channel_secondary_success.json",
+    "confirmation_delay.json",
+    "curve.json",
+    "decoder_analysis.json",
+    "decoder_audit.json",
+    "decoder_source_audit.json",
+    "decoder_vectors.npz",
+    "door_curves.npz",
+    "hyperparameter_grid.json",
+    "qualification.json",
+    "state.json",
+    "state_checks.json",
+    "state_models.json",
+    "state_temporal_analysis.json",
+    "tolerance_grid.json",
+    "visual.json",
+    "visual_channel_analysis.json",
+    "visual_channel_audit.json",
+    "visual_channel_source_audit.json",
+    "visual_channel_vectors.npz",
+    "visual_replication_analysis.json",
+    "visual_replication_audit.json"
+  ],
+  "record_count": 23
+}

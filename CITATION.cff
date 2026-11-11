@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this code and analyzed-data release when reusing it."
+title: "Delayed Advice Audit: Code and Analyzed Data"
+version: 1.0.1
+date-released: 2026-11-11
+type: software
+authors:
+  - family-names: Wang
+    given-names: Junxiang
+  - family-names: Su
+    given-names: Jiaoyang
+license: MIT

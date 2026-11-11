@@ -1,0 +1,62 @@
+[
+  {
+    "bandwidth": 0.25,
+    "ridge": 0.01,
+    "validation_mse": 0.014582703333483509
+  },
+  {
+    "bandwidth": 0.25,
+    "ridge": 0.1,
+    "validation_mse": 0.01458270333531644
+  },
+  {
+    "bandwidth": 0.25,
+    "ridge": 1.0,
+    "validation_mse": 0.01458270334457275
+  },
+  {
+    "bandwidth": 0.25,
+    "ridge": 10.0,
+    "validation_mse": 0.014582703353829067
+  },
+  {
+    "bandwidth": 1.0,
+    "ridge": 0.01,
+    "validation_mse": 0.013822681437847251
+  },
+  {
+    "bandwidth": 1.0,
+    "ridge": 0.1,
+    "validation_mse": 0.013728767418235942
+  },
+  {
+    "bandwidth": 1.0,
+    "ridge": 1.0,
+    "validation_mse": 0.013719228000014088
+  },
+  {
+    "bandwidth": 1.0,
+    "ridge": 10.0,
+    "validation_mse": 0.014312940666396922
+  },
+  {
+    "bandwidth": 4.0,
+    "ridge": 0.01,
+    "validation_mse": 0.01659691105679993
+  },
+  {
+    "bandwidth": 4.0,
+    "ridge": 0.1,
+    "validation_mse": 0.012281296747442324
+  },
+  {
+    "bandwidth": 4.0,
+    "ridge": 1.0,
+    "validation_mse": 0.011249016458813781
+  },
+  {
+    "bandwidth": 4.0,
+    "ridge": 10.0,
+    "validation_mse": 0.012031939115205892
+  }
+]

@@ -29,7 +29,7 @@ def main():
     save(root/'protocol.json',dict(frozen_utc=now(),schedules=schedules,source='frozen15k-budgetACTbestofflinevalidation',offsamples=0,training_features_offsamples=4,primary_audit='nativeany-success;cutoff/rewardsecondary',roles='train/validationpilotonly;noformaltest/calibration',options=12,source_packet='same request packet,hidden from controls until arrival',input_firewall='onlyRGB-derivedfeatures/robot4/cheappredictions;outcomesandprefixsuccessoutsideinputfiles',smoke_only=a.smoke));rows=[];parities=[];steps_total=0
     try:
         for task,tag,base in tasks:
-            source=ROOT/'outputs/vision'/f'act_budget15k_{tag}_20261103_v1'/'best';manifest,path=make_manifest(task,root,ROOT,source_override=source);local=manifest['selected'];options=['reject']+[f'cheap_head{i}_48' for i in range(4) if i!=local]+['cheap_ensemble48','cheap_request48','cheap_arrival48','act_raw16','act_raw48','act_suffix16','act_suffix48','act_blend48']
+            source=ROOT/'experiments/visual_fit'/f'act_budget15k_{tag}_20261103_v1'/'best';manifest,path=make_manifest(task,root,ROOT,source_override=source);local=manifest['selected'];options=['reject']+[f'cheap_head{i}_48' for i in range(4) if i!=local]+['cheap_ensemble48','cheap_request48','cheap_arrival48','act_raw16','act_raw48','act_suffix16','act_suffix48','act_blend48']
             with tempfile.TemporaryDirectory(prefix='advice_audit_valuedata_',dir='/dev/shm') as temporary:
                 work=Path(temporary);client=BundleClient(ROOT/'.venv-vision/bin/python',ROOT/'scripts/visual_bundle_worker.py',path,work/'bundle');save(root/(task+'_worker_ready.json'),client.ready)
                 try:

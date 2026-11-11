@@ -1,9 +1,0 @@
-- [x] User approved descriptive title/project/repository
-- [x] Pre-migration source snapshot and numeric fixtures
-- [x] Canonical root/package/CLI with legacy compatibility
-- [x] Current docs/paper/output metadata and filenames
-- [x] Unit + real Fetch + MetaWorld + vision + numeric parity checks
-- [x] Rebuilt four PDFs/render/source-data/template/source-ZIP and extracted-build QA
-- [x] Private GitHub code/document sync and remote verification
-- [x] GitHub repository settings rename verified by stable ID; About saved/verified through authenticated UI; local origin updated
-- [x] Current naming/legacy exceptions/report/HANDOFF

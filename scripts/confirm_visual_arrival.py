@@ -32,7 +32,7 @@ def main():
     rows=[];native_steps=0;latencies=[];choice_hashes=[];unique_count=0
     try:
         for task,tag,base in tasks:
-            source=ROOT/'outputs/vision'/f'act_budget15k_{tag}_20261103_v1'/'best';manifest,path=make_manifest(task,root,ROOT,source_override=source);local=manifest['selected'];policy=FrozenKernelDecisions(models,task);fixed_cheap=policy.analysis['best_fixed_cheap_from_train']['name'];fixed_full=policy.analysis['best_fixed_full_from_train']['name'];tracked_task=[Path(v)/'head.safetensors' for v in manifest['heads']]+[source/'core.safetensors'];task_hashes=file_hashes(tracked_task);save(root/(task+'_actor_sha256.json'),task_hashes)
+            source=ROOT/'experiments/visual_fit'/f'act_budget15k_{tag}_20261103_v1'/'best';manifest,path=make_manifest(task,root,ROOT,source_override=source);local=manifest['selected'];policy=FrozenKernelDecisions(models,task);fixed_cheap=policy.analysis['best_fixed_cheap_from_train']['name'];fixed_full=policy.analysis['best_fixed_full_from_train']['name'];tracked_task=[Path(v)/'head.safetensors' for v in manifest['heads']]+[source/'core.safetensors'];task_hashes=file_hashes(tracked_task);save(root/(task+'_actor_sha256.json'),task_hashes)
             with tempfile.TemporaryDirectory(prefix='advice_audit_confirm_',dir='/dev/shm') as temporary:
                 work=Path(temporary);client=BundleClient(ROOT/'.venv-vision/bin/python',ROOT/'scripts/visual_bundle_worker.py',path,work/'bundle');save(root/(task+'_worker_ready.json'),client.ready)
                 try:

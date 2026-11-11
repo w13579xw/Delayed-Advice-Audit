@@ -1,9 +1,0 @@
-# Frozen training replication contract, 2026-11-03
-
-Motivation: all accepted visual heads and matched ACT currently use training seed0. Test-episode uncertainty alone does not support claims across training randomness. This protocol is fixed before new training; it does not select the best seed or tune any hyperparameter using qualification outcomes.
-
-Reuse immutable200-demo/task feature dataset, original180/20complete-episode split, original losses/sampling/normalization/optimizer/budgets. Train seeds1and2 separately for push/pick. Visual head trainer's two action capacities may both be generated for code consistency, but use only the frozen seed0 development capacity (Push c16/h128; Pick c32/h256); no new capacity selection. Matched ACT uses fixed3000updates, originalbest offline validation maskedL1 rule, frozenencoder,source slice100 from seed0 development for every new seed. Original unadaptedGPU source slice1 remains fixed.
-
-Evaluate each frozen new visual head and adapted source on the same61000000..49/61100000..49 paired environments used by seed0; do not choose a new seed-specific execution slice. Reusing test environments for a predeclared training-replication analysis does not create additional independent test episodes. Report each training seed and the mean, episode-paired differences, and hierarchical training-seed/episode bootstrap with only3trainingseeds explicitly noted. Never call150rows150independent environments. These are replication/secondary analyses, not additional prospective primary tests with a new multiplicity claim.
-
-Budget: about2minutes/task/seed for visual action heads,7minutes/task/seed for ACT, then roughly20minutes native evaluation. Single3090, sequential inference/training. Start only after bounded opportunity profile/pilot establishes whether this exact line remains worth following; no claim all replication jobs have already launched. Retain every failed run and all seed0models/tests unchanged.

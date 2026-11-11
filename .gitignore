@@ -1,29 +1,17 @@
-.venv/
-.venv-metaworld/
-.venv-act/
 __pycache__/
 *.pyc
-*.egg-info/
 .pytest_cache/
+.venv*/
 outputs/
-*.zip
-source_manifest.sha256
+checkpoints/
+logs/
+*.egg-info/
 .env
 .env.*
-!.env.example
-logs/
-checkpoints/
-data/
-runs/
-
-.venv-vision/
-
-# Local offline-paper arrays and fitted geometry (release separately)
-paper/visual_advice_audit/reproduction/assets/
-
-# Local document compiler; never commit binaries or package archives
-.tools/
-
-# Curated compact analyzed-data archive
-!archives/
-!archives/Delayed_Advice_Audit_data_20261106.zip
+*.tex
+*.bib
+*.pdf
+*.docx
+*.doc
+manuscript/
+submission/

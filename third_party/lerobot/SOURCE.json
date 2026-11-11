@@ -1,0 +1,17 @@
+{
+  "package": "lerobot0.3.3",
+  "source": "PyPIwheel lerobot-0.3.3-py3-none-any.whl",
+  "wheel_sha256": "ae8354b516f5c8cfaa059d5ac926b4d03e96ca73350b971f8c7d75b905ba953d",
+  "modeling_act_sha256": "48ba3a2620198154b7b63948d14ebf76fa50da53efba194aedd76d9392c955ae",
+  "classes_and_functions": [
+    "ACT",
+    "ACTDecoder",
+    "ACTDecoderLayer",
+    "ACTEncoder",
+    "ACTEncoderLayer",
+    "ACTSinusoidalPositionEmbedding2d",
+    "create_sinusoidal_pos_embedding",
+    "get_activation_fn"
+  ],
+  "derivation": "Model definitions verbatim; standalone imports/config adapter. Installed upstream remains unchanged."
+}

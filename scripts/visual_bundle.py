@@ -21,7 +21,7 @@ def actions(task,robot,prediction,manifest):
  return result  # Preserve action-head float32 vs native pose-policy float64 semantics.
 
 def make_manifest(task,root,ROOT,source_override=None):
- training=ROOT/'outputs/vision'/('head_training_push_20261103_v1' if task=='push-v3' else 'head_training_pick_20261103_v1')
+ training=ROOT/'experiments/visual_fit'/('head_training_push_20261103_v1' if task=='push-v3' else 'head_training_pick_20261103_v1')
  heads=[training/name for name in ('action_c16_h128','action_c32_h256','pose_c16_h128','pose_c32_h256')]
  freeze=json.loads((ROOT/'outputs/vision/development_summary_20261103_v1'/(task+'_freeze.json')).read_text());selected=[v.resolve() for v in heads].index(Path(freeze['selected']['model']).resolve())
  sourcefreeze=json.loads((ROOT/'outputs/vision/matched_source_development_20261103_v1'/(task+'_matched_freeze.json')).read_text())

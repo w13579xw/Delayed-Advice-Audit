@@ -1,0 +1,44 @@
+{
+  "seed": 64300228,
+  "query": 32,
+  "delay": 16,
+  "branch_order_seed": 237834181,
+  "task": "pick-place-v3",
+  "arrival": 48,
+  "decisions": {
+    "cheap_inputs/cheap_actions": "cheap_head3_48",
+    "cheap_inputs/all_actions": "act_suffix48",
+    "with_packet/cheap_actions": "reject",
+    "with_packet/all_actions": "act_suffix48",
+    "reject": "reject",
+    "fixed_cheap": "cheap_head3_48",
+    "fixed_full": "cheap_head3_48",
+    "elapsed_suffix48": "act_suffix48"
+  },
+  "cell_predictions": {
+    "cheap_inputs/cheap_actions": {
+      "choice": "cheap_head3_48",
+      "predicted_gain": 0.009667148303210879,
+      "null_model": false
+    },
+    "cheap_inputs/all_actions": {
+      "choice": "act_suffix48",
+      "predicted_gain": 0.04171900695604037,
+      "null_model": false
+    },
+    "with_packet/cheap_actions": {
+      "choice": "reject",
+      "predicted_gain": 0.0,
+      "null_model": true
+    },
+    "with_packet/all_actions": {
+      "choice": "act_suffix48",
+      "predicted_gain": 0.03358411351428911,
+      "null_model": false
+    }
+  },
+  "decision_seconds": 0.013484791968949139,
+  "written_before_future": true,
+  "offline_diagnostic_prefix_any_success": false,
+  "created_utc": "2026-11-03T18:56:23.352375+00:00"
+}

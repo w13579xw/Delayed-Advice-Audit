@@ -1,0 +1,1 @@
+Third-party LeRobot-derived components retain the Apache-2.0 notices supplied in third_party/lerobot/LICENSE. External simulation packages, demonstrations and pretrained models are not included and retain their respective terms. The MIT grant covers the authors' original code only.

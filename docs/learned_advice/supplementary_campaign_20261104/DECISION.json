@@ -1,9 +1,0 @@
-{
-  "status": "complete",
-  "campaign_outcome": "partial_support_with_narrowed_scope",
-  "next_route": "generic_manuscript_and_human_verification",
-  "venue": "undecided",
-  "no_mdpi_template_conversion": true,
-  "no_new_simulation_queued": true,
-  "interpretation": "Training and split sensitivity narrow transportability; original bounded rejection counterexample preserved."
-}
