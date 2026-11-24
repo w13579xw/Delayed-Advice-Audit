@@ -1,3 +1,7 @@
+<p align="center">
+  <strong>English</strong> | <a href="./README_CN.md">简体中文</a>
+</p>
+
 # Delayed Advice Audit
 
 Research software and analyzed data for auditing fitted-policy performance, runtime message dependence and predefined message-channel value in robot simulation.
@@ -30,7 +34,7 @@ python -m pip install 'numpy>=1.24,<3'
 python reproduction/reproduce_offline.py --out outputs/offline_check
 ```
 
-This audit starts from cached normalized kernel distances and development labels. It verifies fitting/selection, frozen decisions and paired-result arithmetic; it does not independently verify visual feature extraction or distance construction and does not execute ACT or native simulation. The numerical inputs and comparison targets retain their original values. See reproduction/README.md.
+This audit starts from cached normalized kernel distances and development labels. It verifies fitting/selection, frozen decisions and paired-result arithmetic; it does not independently verify visual feature extraction or distance construction and does not execute ACT or native simulation. The numerical inputs and comparison targets retain their original values. See `reproduction/README.md`.
 
 ## Release scope and licenses
 
